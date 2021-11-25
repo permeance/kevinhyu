@@ -1,7 +1,28 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
-    title: "Kevin Yu",
+    siteUrl: "https://www.kevinhyu.com",
+    title: "Kevin's Personal Website",
   },
-  plugins: [],
+  plugins: ['gatsby-plugin-image', 'gatsby-plugin-sharp',
+  {
+    resolve: "gatsby-plugin-manifest",
+    options: {
+      name: "Favicon",
+      short_name: "Favicon",
+      start_url: "/",
+      background_color: "#6b37bf",
+      theme_color: "#6b37bf",
+      // Enables "Add to Homescreen" prompt and disables browser UI (including back button)
+      // see https://developers.google.com/web/fundamentals/web-app-manifest/#display
+      display: "standalone",
+      icon: "static/favicon.ico" // This path is relative to the root of the site.
+    }
+  },
+  {
+    resolve: "gatsby-source-filesystem",
+    options: {
+      name: `blog`,
+      path: `${__dirname}/blog`,
+    }
+  }],
 };
