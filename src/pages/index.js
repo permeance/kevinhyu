@@ -51,17 +51,6 @@ const IndexPage = () => {
 
 export default IndexPage;
 
-//detect if mobile
-var mobile;
-if (
-  /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-    navigator.userAgent
-  )
-) {
-  mobile = true;
-} else {
-  mobile = false;
-}
 /*
 //Hiding & showing items
 function animate() {
