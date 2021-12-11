@@ -4,26 +4,32 @@ import "./layout.css";
 
 import LogoHex from "../images/logoHex.inline.svg";
 
+/* contains nav bar and footer */
 const Layout = ({ pageTitle, children }) => {
   return (
-    <div>
+    <div class="container">
       <nav>
-        <ul>
-          <li class="logo">
+        <ul class="nav-list">
+          <li class="nav-logo">
             <Link to="/">
               <LogoHex width={63} height={70} />
             </Link>
           </li>
           <li class="nav-text">
-            <Link to="/contact">Contact</Link>
-          </li>
-          <li class="nav-text">
             <Link to="/projects">Projects</Link>
           </li>
-          <hr class="one" />
+          <li class="nav-text">
+            <Link to="/contact">Contact</Link>
+          </li>
+          <li class="nav-line">
+            <hr class="navline" />
+          </li>
         </ul>
       </nav>
       <main>{children}</main>
+      <div class="footer">
+        © {new Date().getFullYear()} by Kevin Yu. All rights reserved.
+      </div>
     </div>
   );
 };

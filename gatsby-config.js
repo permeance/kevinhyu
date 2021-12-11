@@ -7,7 +7,19 @@ module.exports = {
     "gatsby-plugin-image",
     "gatsby-plugin-mdx",
     {
-      resolve: `gatsby-plugin-sharp`,
+      resolve: "gatsby-plugin-netlify",
+      options: {
+        headers: {
+          "/fonts/*": [
+            "Cache-Control: public",
+            "Cache-Control: max-age=365000000",
+            "Cache-Control: immutable",
+          ],
+        },
+      },
+    },
+    {
+      resolve: "gatsby-plugin-sharp",
       options: {
         defaults: {
           formats: [`auto`, `webp`],
@@ -50,6 +62,13 @@ module.exports = {
       options: {
         name: `projects`,
         path: `${__dirname}/projects`,
+      },
+    },
+    {
+      resolve: "gatsby-plugin-google-fonts",
+      options: {
+        fonts: [`Exo`],
+        display: "swap",
       },
     },
   ],
