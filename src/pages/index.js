@@ -29,9 +29,16 @@ const IndexPage = () => {
             </p>
           </div>
         </div>
-        <a href="#Experience">
-          <FontAwesomeIcon class = "fa-adj" icon={faArrowCircleDown} />
-        </a>
+        <div class="fa-adj">
+          <a href="#Experience">
+            <FontAwesomeIcon
+              color="#81e5d9"
+              size="4x"
+              icon={faArrowCircleDown}
+              className="color-shift"
+            />
+          </a>
+        </div>
       </main>
       <a id="Experience">
         <h1 class="anchor" />
