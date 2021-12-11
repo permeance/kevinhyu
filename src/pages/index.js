@@ -4,6 +4,9 @@ import { StaticImage } from "gatsby-plugin-image";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowCircleDown } from "@fortawesome/free-solid-svg-icons";
+import { library } from "@fortawesome/fontawesome-svg-core";
+
+library.add(faArrowCircleDown);
 
 const IndexPage = () => {
   return (
@@ -27,7 +30,7 @@ const IndexPage = () => {
           </div>
         </div>
         <a href="#Experience">
-          <FontAwesomeIcon icon={faArrowCircleDown} class="fa-adj" />
+          <FontAwesomeIcon class = "fa-adj" icon={faArrowCircleDown} />
         </a>
       </main>
       <a id="Experience">
