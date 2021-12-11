@@ -1,6 +1,6 @@
 /*
 Color Scheme
-Background colors: #1A202C
+Background colors: #1A202C, #1D283A
 White: #FAF9F9
 Teal: #81E5D9, lighter: #4FD1C5
 Gray: #2D313D, lighter: #40444F
@@ -9,6 +9,7 @@ Gray: #2D313D, lighter: #40444F
 :root {
   -webkit-font-smoothing: antialiased;
   --color-background: #1a202c;
+  --color-background-secondary: #1d283a;
   --color-navbar: #1a202c;
   --color-text: #faf9f9;
   --color-primary: #81e5d9;
@@ -45,9 +46,14 @@ main {
 }
 
 .content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+
   padding: 2rem 2rem;
   z-index: 1;
-
+  min-height: calc(100vh - 90px - 100px);
 }
 
 h1 {
@@ -63,7 +69,149 @@ p {
   font-weight: 300;
 }
 
-/* Home Page */
+.fa-adj {
+  width: 100%;
+  margin-top: -50px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  position: relative;
+  width: 50px;
+
+  color: var(--color-primary);
+
+  animation-name: appear;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+@keyframes appear {
+  0% {
+    opacity: 0%;
+  }
+  30% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+.fa-adj:hover {
+  color: var(--color-text);
+}
+
+/* Timeline (Home Page) */
+
+.section {
+  width: 100%;
+  background-image: linear-gradient(
+    var(--color-background-secondary),
+    var(--color-background)
+  );
+}
+
+/* this is not a future-proof way of doing this. */
+.timeline {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: grid;
+  min-height: 1000px;
+  align-items: center;
+  padding: 2rem 2rem;
+  margin-top: 4rem;
+
+  grid-template-columns:
+    [left-text-left] 1fr [left-text-right] 5% [left-block-left] 3% [left-block-right] 2% [middle-line] 2%
+    [right-block-left] 3% [right-block-right] 5% [right-text-left] 1fr [right-text-right];
+  grid-template-rows:
+    [top-title] 100px [bottom-title] 0.5fr [current] 1fr [fall-2021] 1fr [summer-2021] 1fr [spring-2021] 1fr
+    [fall-2020] 1fr [summer-2020] 1fr [spring-2020] 1fr
+    [fall-2019] 1fr [summer-2019] 1fr [spring-2019] 1fr
+    [fall-2018];
+  row-gap: 5px;
+}
+
+.timeline::before {
+  content: "";
+  width: 2px;
+  background: pink;
+  grid-row: current / fall-2018;
+  grid-column-start: middle-line;
+  justify-self: center;
+}
+
+.timeline-title {
+  text-align: center;
+  grid-column-start: left-text-left;
+  grid-column-end: right-text-right;
+  grid-row-start: top-title;
+}
+
+hr.time-line {
+  width: 2px;
+  height: 100%;
+  border: none;
+
+  grid-column-start: middle-line;
+  grid-row: current / fall-2018;
+  background: white;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: var(--color-text);
+}
+
+.timeline-block {
+  background-color: var(--color-primary);
+  height: 100%;
+  width: 100%;
+  border-radius: 0.2rem;
+  opacity: 0.5;
+}
+
+.timeline-block.FTC {
+  grid-column: right-block-left / right-block-right;
+  grid-row: spring-2020 / fall-2018;
+  background: red;
+}
+.timeline-block.Jacobi1 {
+  grid-column: left-block-left / left-block-right;
+  grid-row: summer-2019 / fall-2019;
+  background: royalblue;
+}
+.timeline-block.CMS {
+  grid-column: right-block-left / right-block-right;
+  grid-row: spring-2020 / summer-2021;
+  background: white;
+}
+.timeline-block.Jacobi2 {
+  grid-column: left-block-left / left-block-right;
+  grid-row: summer-2021 / fall-2021;
+  background: royalblue;
+}
+
+.timeline-block.LHR {
+  grid-column: left-block-left / left-block-right;
+  grid-row: fall-2021 / current;
+  background: #bf5700;
+}
+.timeline-block.TREL {
+  grid-column: right-block-left / right-block-right;
+  grid-row: fall-2021 / current;
+  background: black;
+}
+
+.timeline-text {
+}
+
+.timeline-block:hover,
+.timeline-text:hover {
+}
+
+/* Intro (Home Page) */
 
 .intro-grid {
   display: grid;
@@ -100,7 +248,6 @@ p {
   animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-timing-function: cubic-bezier(0.5, 0.15, 0.5, 0.85);
-  margin-top: 5px;
 }
 @keyframes floating {
   0% {
@@ -221,12 +368,16 @@ a:hover {
 .right {
   float: right;
 }
-
+.anchor {
+  padding-top: 40px; 
+  margin-top: -40px;
+}
 /* Remove Scroll */
 
 html {
   overflow: scroll;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 ::-webkit-scrollbar {
   width: 0;

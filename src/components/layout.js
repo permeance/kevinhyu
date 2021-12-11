@@ -26,7 +26,7 @@ const Layout = ({ pageTitle, children }) => {
           </li>
         </ul>
       </nav>
-      <main>{children}</main>
+      {children}
       <div class="footer">
         © {new Date().getFullYear()} by Kevin Yu. All rights reserved.
       </div>

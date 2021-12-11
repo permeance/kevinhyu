@@ -4,10 +4,11 @@ import Layout from "../components/layout";
 const ContactPage = () => {
   return (
     <Layout>
-      <title>Contact | Kevin Yu</title> 
+      <title>Contact | Kevin Yu</title>
       <meta name="Contact" content="Contact information for Kevin Yu"></meta>
-      {/* prettier-ignore */}
-      <div class="content">
+      <main>
+        {/* prettier-ignore */}
+        <div class="content">
         <h1>Contact</h1>
         <p>
           Please send me a message at{" "}
@@ -17,6 +18,7 @@ const ContactPage = () => {
           . I'd love to hear from you!
         </p>
       </div>
+      </main>
     </Layout>
   );
 };

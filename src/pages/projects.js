@@ -6,14 +6,16 @@ const ProjectsPage = ({ data }) => {
   return (
     <Layout>
       <title>Projects | Kevin Yu</title>
-      <meta name="Projects" content="Kevin Yu's Project Portfolio"></meta>"
-      <div class="content">
-        <ul>
-          {data.allFile.nodes.map((node) => (
-            <li key={node.name}>{node.name}</li>
-          ))}
-        </ul>
-      </div>
+      <meta name="Projects" content="Kevin Yu's Project Portfolio"></meta>
+      <main>
+        <div class="content">
+          <ul>
+            {data.allFile.nodes.map((node) => (
+              <li key={node.name}>{node.name}</li>
+            ))}
+          </ul>
+        </div>
+      </main>
     </Layout>
   );
 };
