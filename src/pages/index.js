@@ -6,12 +6,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowCircleDown, faRubleSign } from "@fortawesome/free-solid-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
 
-import Img from "gatsby-image";
-import { redirectTo } from "@reach/router";
-
-
-
-
 library.add(faArrowCircleDown);
 
 const IndexPage = () => {
@@ -55,7 +49,6 @@ const IndexPage = () => {
           <h1 class="timeline-title">My Experience</h1>
           <hr class="time-line" />
 
-
           {/* Year markers */}
 
           <p class = "timeline-year-text" style={{"grid-row-end": "spring-2021"}}>2021</p>
@@ -69,13 +62,6 @@ const IndexPage = () => {
 
           <p class = "timeline-year-text" style={{"grid-row-end": "spring-2018"}}>2018</p>
           <div class = "dot" style={{"grid-row-end": "spring-2018"}} />
-
-
-
-
-
-
-
 
           {/* Line segments */}
 
@@ -100,8 +86,6 @@ const IndexPage = () => {
           <hr class="timeline-segment left-left" style={{"grid-row-start": "item-3"}}/>
           <hr class="timeline-segment left-right" style={{"grid-row-start": "midsummer-2019"}}/>
 
-
-
           {/* TREL */}
           <svg class="timeline-diag right" style={{"grid-row": "item-1 / midfall-2021"}} >
               <line class= "timelineBar" x1="0" y1="100%" x2="100%" y2="0"/>
@@ -124,22 +108,7 @@ const IndexPage = () => {
           <hr class="timeline-segment right-left" style={{"grid-row-start": "spring-2019"}}/>
 
 
-
-
-
-
-
-
-
-          {/* Blocks */}
-
-          
-      
-
-
-          
-          
-          
+          {/* Blocks and Text */}
         
           {/* LHR */}
           {/* prettier-ignore */}
@@ -149,7 +118,6 @@ const IndexPage = () => {
             <p>Battery Engineer</p>
           </div>
           <div id="LHR" class="timeline-block left" style={{background: "#BF5700", "grid-row": "fall-2021 / current"}} />
-
 
           {/* Jacobi Motors 2 */}
           <div id="J2" class="timeline-text left" style={{"grid-row-start": "item-2"}}>
@@ -164,9 +132,6 @@ const IndexPage = () => {
             <p>Test Engineering Intern</p>
           </div>          
           <div id="J1" class="timeline-block left" style={{background: "royalblue", "grid-row": "summer-2019 / fall-2019"}}/>
-            
-
-
 
           {/* TREL */}
           {/* prettier-ignore */}
@@ -175,10 +140,7 @@ const IndexPage = () => {
             <h2>(TREL)</h2>
             <p>COPV Technical Engineer</p>
           </div>
-          
           <div id="TREL" class="timeline-block right" style={{background: "black", "grid-row": "fall-2021 / current"}} />
-
-
 
           {/* CMS */}
           {/* prettier-ignore */}
@@ -189,7 +151,6 @@ const IndexPage = () => {
           
           <div id="CMS" class="timeline-block right" style={{background: "white", "grid-row": "summer-2020 / summer-2021"}} />
 
-
           {/* FTC */}
           {/* prettier-ignore */}
           <div id="FTC" class="timeline-text right" style={{"grid-row-start": "item-3"}}>
@@ -198,15 +159,8 @@ const IndexPage = () => {
             <p>Team Lead</p>
           </div>
           <div id="FTC" class="timeline-block right" style={{background: "red", "grid-row": "summer-2020 / fall-2017"}} />
-
-  
-
-
         </div>
-            
-
       </div>
-
       <p>ㅤ</p>
       <p>ㅤ</p>
       <p>ㅤ</p>

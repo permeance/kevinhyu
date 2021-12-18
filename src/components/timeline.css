@@ -61,7 +61,8 @@
 }
 
 .timeline-text {
-  height: 225%;
+  grid-row: item-1 / item-4; /* inheriting row to not shift main grid */
+  height: 100%;
   align-self: start;
 }
 
