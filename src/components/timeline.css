@@ -25,15 +25,7 @@
     [fall-2019] 0.5fr [midsummer-2019] 0.5fr [summer-2019 item-3] 1fr [spring-2019] 1fr
     [fall-2018] 0.5fr [midsummer-2018] 0.5fr [summer-2018] 1fr [spring-2018 item-4] 1fr
     [fall-2017];
-
-  
-  
 }
-/*
-row-gap: 5px;
-*/
-
-
 
 .timeline-title {
   text-align: center;
@@ -64,20 +56,12 @@ row-gap: 5px;
   border-radius: 1px 1px;
   height: 5px;
   width: 20px;
-  
+
   background-color: var(--color-primary);
 }
-/*
-
-
-
-
-
-*/
 
 .timeline-text {
-  grid-row: item-1 / item-4;
-  height: 30%;
+  height: 225%;
   align-self: start;
 }
 
@@ -101,7 +85,6 @@ row-gap: 5px;
   margin-top: 0;
 }
 
-
 .timeline-block {
   background-color: var(--color-primary);
   height: calc(100% - 0.25rem);
@@ -118,8 +101,6 @@ row-gap: 5px;
   grid-column: right-block-left / right-block-right;
 }
 
-
-
 .timeline-diag {
   position: relative;
 
@@ -135,7 +116,6 @@ row-gap: 5px;
   grid-column: seg-6 / seg-7;
 }
 
-
 .timeline-segment {
   margin-top: 0;
   margin-bottom: auto;
@@ -144,7 +124,6 @@ row-gap: 5px;
   color: var(--color-text);
   opacity: 85%;
 }
-
 
 .timeline-segment.left-left {
   grid-column: seg-1 / seg-2;
@@ -160,19 +139,14 @@ row-gap: 5px;
   grid-column: seg-5 / seg-6;
 }
 
-
-
 line.timelineBar {
   stroke: var(--color-text);
   stroke-width: 1px;
 }
 
-
-
 .highlight:hover {
   opacity: 100%;
 }
-
 
 #LHR:hover ~ #LHR {
   opacity: 100%;
