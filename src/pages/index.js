@@ -70,6 +70,13 @@ const IndexPage = () => {
           <p class = "timeline-year-text" style={{"grid-row-end": "spring-2018"}}>2018</p>
           <div class = "dot" style={{"grid-row-end": "spring-2018"}} />
 
+
+
+
+
+
+
+
           {/* Line segments */}
 
           {/* LHR */}
@@ -124,62 +131,80 @@ const IndexPage = () => {
 
 
 
-          {/* Text */}
+          {/* Blocks */}
 
+          
+      
+
+
+          
+          
+          
+        
           {/* LHR */}
-          <div class="timeline-block left" style={{background: "#BF5700", "grid-row": "fall-2021 / current"}} />
+          {/* prettier-ignore */}
+          <div id="LHR" class="timeline-text left" style={{"grid-row-start": "item-1"}}>
+            <h2><a class="hyperlink-teal" href="https://www.longhornracing.org/electric-vehicle">Longhorn Racing Electric</a></h2>
+            <h2>(Formula SAE)</h2>
+            <p>Battery Engineer</p>
+          </div>
+          <div id="LHR" class="timeline-block left" style={{background: "#BF5700", "grid-row": "fall-2021 / current"}} />
+
+
           {/* Jacobi Motors 2 */}
-          <div class="timeline-block left" style={{background: "royalblue", "grid-row": "summer-2021 / fall-2021"}} />
+          <div id="J2" class="timeline-text left" style={{"grid-row-start": "item-2"}}>
+            <h2>Jacobi Motors</h2>
+            <p>Mechanical Engineering Intern</p>
+          </div>
+          <div id="J2" class="timeline-block left" style={{background: "royalblue", "grid-row": "summer-2021 / fall-2021"}} />
+
           {/* Jacobi Motors 1 */}
-          <div class="timeline-block left test" style={{background: "royalblue", "grid-row": "summer-2019 / fall-2019"}}/>
+          <div id="J1" class="timeline-text left" style={{"grid-row-start": "item-3"}}>
+            <h2>Jacobi Motors</h2>
+            <p>Test Engineering Intern</p>
+          </div>          
+          <div id="J1" class="timeline-block left" style={{background: "royalblue", "grid-row": "summer-2019 / fall-2019"}}/>
+            
+
+
 
           {/* TREL */}
-          <div class="timeline-block right" style={{background: "black", "grid-row": "fall-2021 / current"}} />
+          {/* prettier-ignore */}
+          <div id="TREL" class="timeline-text right" style={{"grid-row-start": "item-1"}}>
+            <h2><a class="hyperlink-teal" href="https://www.texasrocketlab.com/">Texas Rocket Engineering Lab</a></h2>
+            <h2>(TREL)</h2>
+            <p>COPV Technical Engineer</p>
+          </div>
+          
+          <div id="TREL" class="timeline-block right" style={{background: "black", "grid-row": "fall-2021 / current"}} />
+
+
+
           {/* CMS */}
-          <div class="timeline-block right" style={{background: "white", "grid-row": "summer-2020 / summer-2021"}} />
+          {/* prettier-ignore */}
+          <div id="CMS" class="timeline-text right" style={{"grid-row-start": "item-2"}}>
+            <h2><a class="hyperlink-teal" href="https://www.custommedshields.com/">Custom Medical Shields</a></h2>
+            <p>Founder</p>
+          </div>
+          
+          <div id="CMS" class="timeline-block right" style={{background: "white", "grid-row": "summer-2020 / summer-2021"}} />
+
+
           {/* FTC */}
-          <div class="timeline-block right" style={{background: "red", "grid-row": "summer-2020 / fall-2017"}} />
-
-          <div class="timeline-text left">
-            {/* prettier-ignore */}
-            <div>
-              <h2><a class="hyperlink-teal" href="https://www.longhornracing.org/electric-vehicle">Longhorn Racing Electric</a></h2>
-              <h2>(Formula SAE)</h2>
-              <p>Battery Engineer</p>
-            </div>
-
-            <div>
-              <h2>Jacobi Motors</h2>
-              <p>Mechanical Engineering Intern</p>
-            </div>
-
-            <div>
-              <h2>Jacobi Motors</h2>
-              <p>Test Engineering Intern</p>
-            </div>
+          {/* prettier-ignore */}
+          <div id="FTC" class="timeline-text right" style={{"grid-row-start": "item-3"}}>
+            <h2>FIRST Tech Challenge</h2>
+            <h2>Team 9048: <i>The Philobots</i></h2>
+            <p>Team Lead</p>
           </div>
+          <div id="FTC" class="timeline-block right" style={{background: "red", "grid-row": "summer-2020 / fall-2017"}} />
 
-          <div class="timeline-text right">
-            {/* prettier-ignore */}
-            <div>
-              <h2><a class="hyperlink-teal" href="https://www.texasrocketlab.com/">Texas Rocket Engineering Lab</a></h2>
-              <h2>(TREL)</h2>
-              <p>COPV Technical Engineer</p>
-            </div>
-            {/* prettier-ignore */}
-            <div>
-              <h2><a class="hyperlink-teal" href="https://www.custommedshields.com/">Custom Medical Shields</a></h2>
-              <p>Founder</p>
-            </div>
+  
 
-            {/* prettier-ignore */}
-            <div>
-              <h2>FIRST Tech Challenge</h2>
-              <h2>Team 9048: <i>The Philobots</i></h2>
-              <p>Team Lead</p>
-            </div>
-          </div>
+
         </div>
+            
+
       </div>
 
       <p>ㅤ</p>

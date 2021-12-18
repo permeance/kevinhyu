@@ -67,15 +67,18 @@ row-gap: 5px;
   
   background-color: var(--color-primary);
 }
+/*
 
+
+
+
+
+*/
 
 .timeline-text {
   grid-row: item-1 / item-4;
-  height: 100%;
-
-  background: none !important;
-  display: grid;
-  grid-template-rows: repeat(auto-fit, minmax(60px, 1fr));
+  height: 30%;
+  align-self: start;
 }
 
 .timeline-text.left {
@@ -166,12 +169,26 @@ line.timelineBar {
 
 
 
-.timeline-block:hover,
-.timeline-text:hover {
+.highlight:hover {
   opacity: 100%;
 }
 
 
-.test:hover {
-  opacity: 5%;
+#LHR:hover ~ #LHR {
+  opacity: 100%;
+}
+#J2:hover ~ #J2 {
+  opacity: 100%;
+}
+#J1:hover ~ #J1 {
+  opacity: 100%;
+}
+#TREL:hover ~ #TREL {
+  opacity: 100%;
+}
+#CMS:hover ~ #CMS {
+  opacity: 100%;
+}
+#FTC:hover ~ #FTC {
+  opacity: 100%;
 }

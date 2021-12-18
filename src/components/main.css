@@ -10,6 +10,7 @@ Gray: #2D313D, lighter: #40444F
   -webkit-font-smoothing: antialiased;
   --color-background: #1a202c;
   --color-background-secondary: #1d283a;
+  --color-background-tertiary: #334563;
   --color-navbar: #1a202c;
   --color-text: #faf9f9;
   --color-primary: #81e5d9;
