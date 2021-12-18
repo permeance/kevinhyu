@@ -1,6 +1,9 @@
 import React from "react";
 import { Link, useStaticQuery, graphql } from "gatsby";
-import "./layout.css";
+import "./main.css";
+import "./timeline.css";
+import "./navbar.css";
+import "./intro.css";
 
 import LogoHex from "../images/logoHex.inline.svg";
 
@@ -28,7 +31,7 @@ const Layout = ({ pageTitle, children }) => {
       </nav>
       {children}
       <div class="footer">
-        © {new Date().getFullYear()} by Kevin Yu. All rights reserved.
+        © {new Date().getFullYear()} by Kevin Yu.
       </div>
     </div>
   );

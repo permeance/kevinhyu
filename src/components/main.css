@@ -1,0 +1,152 @@
+/*
+Color Scheme
+Background colors: #1A202C, #1D283A
+White: #FAF9F9
+Teal: #81E5D9, lighter: #4FD1C5
+Gray: #2D313D, lighter: #40444F
+*/
+
+:root {
+  -webkit-font-smoothing: antialiased;
+  --color-background: #1a202c;
+  --color-background-secondary: #1d283a;
+  --color-navbar: #1a202c;
+  --color-text: #faf9f9;
+  --color-primary: #81e5d9;
+  --color-primary-hover: #4fd1c5;
+  --color-secondary: #2d313d;
+  --color-secondary-hover: #40444f;
+}
+
+.container {
+  min-height: 100%;
+  min-width: 100%;
+  position: absolute;
+  margin: auto;
+
+  font-family: Exo;
+  color: var(--color-text);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+
+  background-color: var(--color-background);
+}
+
+main {
+  max-width: 1200px;
+  margin-top: 90px;
+  margin-left: auto;
+  margin-right: auto;
+
+  color: var(--color-text);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+
+  padding: 2rem 2rem;
+  z-index: 1;
+  min-height: calc(100vh - 90px - 100px);
+}
+/*
+path {
+  fill: yellow;
+  stroke: black;
+  stroke-width: 8px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  pointer-events: none;
+}
+*/
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+
+  color: var(--color-primary);
+  transition: 0.4s;
+}
+
+h2 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--color-primary);
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: var(--color-text);
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+/* Timeline (Home Page) */
+
+.section {
+  width: 100%;
+  background-image: linear-gradient(
+    var(--color-background-secondary),
+    var(--color-background)
+  );
+}
+
+/* Footer */
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+
+  text-align: center;
+}
+
+/* hyperlink */
+
+.hyperlink-white {
+  text-decoration: none;
+  color: var(--color-text);
+  transition: 0.4s;
+}
+
+.hyperlink-teal {
+  text-decoration: none;
+  color: var(--color-primary);
+  transition: 0.4s;
+}
+
+a:hover {
+  color: var(--color-primary-hover);
+}
+
+/* Utility */
+
+.underline {
+  text-decoration: underline;
+}
+
+.anchor {
+  padding-top: 40px;
+  margin-top: -40px;
+}
+/* Remove Scroll */
+
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+  width: 0;
+}
