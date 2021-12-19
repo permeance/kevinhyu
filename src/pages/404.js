@@ -15,7 +15,7 @@ const NotFoundPage = () => {
           we couldn’t find what you were looking for.
           <br />
           <br />
-          <Link to="/" class="hyperlink underline">
+          <Link to="/" class="hyperlink-white underline">
             Go home
           </Link>
           .

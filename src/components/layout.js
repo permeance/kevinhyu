@@ -29,6 +29,8 @@ const Layout = ({ pageTitle, children }) => {
           </li>
         </ul>
       </nav>
+      {/* TODO: Change once updated responsive design */}
+      <meta name="viewport" content="width=750"/>
       {children}
       <div class="footer">
         © {new Date().getFullYear()} by Kevin Yu.
