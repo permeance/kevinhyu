@@ -138,7 +138,7 @@ p {
 }
 
 .badge:hover {
-  transform: scale(1);
+  transform: scale(0.98);
   opacity: 0.95;
 }
 
