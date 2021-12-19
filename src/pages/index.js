@@ -170,9 +170,6 @@ const IndexPage = () => {
         <a href="https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-SKRJEV8QBL" style={{"grid-area": "CSWE"}} class="badge">
           <StaticImage objectFit="contain" src="../images/CSWE.png"/>
         </a>
-        <a href="https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-MTASED3NUX" style={{"grid-area": "CSWP"}} class="badge">
-          <StaticImage objectFit="contain" src="../images/CSWA.png"/>
-        </a>
         <a href="https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-GMXN7F4LHU" style={{"grid-area": "CSWPSU"}} class="badge">
           <StaticImage objectFit="contain" src="../images/CSWPSU.png"/>
         </a>
@@ -185,8 +182,11 @@ const IndexPage = () => {
         <a href="https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-HB4PUKCL3X" style={{"grid-area": "CSWPDT"}} class="badge">
           <StaticImage objectFit="contain" src="../images/CSWPDT.png"/>
         </a>
-        <a href="https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-XAAABWJ6S6" style={{"grid-area": "CSWA"}} class="badge">
+        <a href="https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-MTASED3NUX" style={{"grid-area": "CSWP"}} class="badge">
           <StaticImage objectFit="contain" src="../images/CSWP.png"/>
+        </a>
+        <a href="https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-XAAABWJ6S6" style={{"grid-area": "CSWA"}} class="badge">
+          <StaticImage objectFit="contain" src="../images/CSWA.png"/>
         </a>
         <a href="https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-GH5CQXA6S2" style={{"grid-area": "CSWAAM"}} class="badge">
           <StaticImage objectFit="contain" src="../images/CSWAAM.png"/>
