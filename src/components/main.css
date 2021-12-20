@@ -13,6 +13,7 @@ Gray: #2D313D, lighter: #40444F
   --color-background-tertiary: #334563;
   --color-navbar: #1a202c;
   --color-text: #faf9f9;
+  --color-text-secondary: #d3d3d3;
   --color-primary: #81e5d9;
   --color-primary-hover: #4fd1c5;
   --color-secondary: #2d313d;
@@ -82,23 +83,33 @@ h3 {
 p {
   font-size: 1rem;
   font-weight: 300;
+
+  color: var(--color-text-secondary);
 }
 
 .section {
   width: 100%;
   margin-top: 3rem;
-  margin-bottom: 12rem;
+  margin-bottom: 5rem;
 
+  padding: 3rem 0;
+}
+
+.section.gradient {
   background-image: linear-gradient(
     var(--color-background-secondary),
     var(--color-background)
   );
 }
+.section.solid {
+  background: var(--color-background-secondary);
+}
 
-.cert-title {
+
+.title {
   width: 100%;
   text-align: center;
-  margin: 2rem auto;
+  margin: 0 auto;
 }
 
 
@@ -107,8 +118,6 @@ p {
   height: 400px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 0;
-  margin-bottom: 12rem;
   padding: 4rem 2rem;
   
   display: grid;

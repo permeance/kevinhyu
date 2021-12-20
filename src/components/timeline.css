@@ -3,10 +3,10 @@
   margin: 0 auto;
 
   display: grid;
-  height: 1300px;
+  height: 1350px;
 
   align-items: center;
-  padding: 2rem 2rem;
+  padding: 2rem 0;
   margin-top: 4rem;
 
   grid-template-columns:
@@ -24,11 +24,6 @@
     [fall-2019] 0.5fr [midsummer-2019] 0.5fr [summer-2019 item-3] 1fr [spring-2019] 1fr
     [fall-2018] 0.5fr [midsummer-2018] 0.5fr [summer-2018] 1fr [spring-2018 item-4] 1fr
     [fall-2017];
-}
-
-.timeline-title {
-  text-align: center;
-  padding-top: 3rem;
 }
 
 .timeline > hr.time-line {
@@ -148,19 +143,25 @@ line.timelineBar {
 
 #LHR:hover ~ #LHR {
   opacity: 100%;
+  box-shadow: 0 0 5px orange;
 }
 #J2:hover ~ #J2 {
   opacity: 100%;
+  box-shadow: 0 0 5px lightblue;
 }
 #J1:hover ~ #J1 {
   opacity: 100%;
+  box-shadow: 0 0 5px lightblue;
 }
 #TREL:hover ~ #TREL {
   opacity: 100%;
+  box-shadow: 0 0 5px black;
 }
 #CMS:hover ~ #CMS {
   opacity: 100%;
+  box-shadow: 0 0 5px white;
 }
 #FTC:hover ~ #FTC {
   opacity: 100%;
+  box-shadow: 0 0 5px white;
 }
