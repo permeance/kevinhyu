@@ -82,7 +82,7 @@
   background-color: var(--color-primary);
   height: calc(100% - 0.25rem);
   width: 100%;
-  border-radius: 0.2rem;
+  border-radius: 0.7rem;
   opacity: 0.5;
 }
 

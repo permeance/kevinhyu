@@ -1,12 +1,10 @@
 import React from "react";
 import Layout from "../components/layout";
 import { StaticImage } from "gatsby-plugin-image";
+import { Link } from "gatsby";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowCircleDown, faRubleSign } from "@fortawesome/free-solid-svg-icons";
-import { library } from "@fortawesome/fontawesome-svg-core";
-
-library.add(faArrowCircleDown);
+import { faArrowCircleDown, faCogs, faRulerCombined, faShapes, faMicrochip, faCube } from "@fortawesome/free-solid-svg-icons";
 
 const IndexPage = () => {
   return (
@@ -14,21 +12,29 @@ const IndexPage = () => {
       <title>Home | Kevin Yu</title>
       <meta name="Home" content="Kevin Yu's Engineering Portfolio Home Page" />
       <main>
-        <div class="content">
+        <div class="intro">
           <div class="intro-grid">
             <StaticImage class="intro-portrait" src="../images/pfp.png" />
             <h1 class="intro-title floating">Hey, I'm Kevin.</h1>
             <h3 class="intro-subtitle">
-              I'm an {age} year old mechanical engineering student studying at
+              I'm an {age} year old mechanical engineering student at
               the{" "}
-              <a class="hyperlink-teal" href="https://cockrell.utexas.edu/">
+              <a class="hyperlink-teal" href="https://cockrell.utexas.edu/" target="_blank" rel="noopener noreferrer">
                 University of Texas
               </a>
-              {" "}with a focus in robotics and mechatronics.
+              {" "}with a specialization in mechatronics.
             </h3>
           </div>
+          <div class="title">
+            <hr class="introline"/>
+            <h4>I'm passionate about building cross-displinary engineering projects to make things greener, more efficient, and more integrated. 
+              I've worked with EV motors, created specialized medical PPE, and immersed myself in collegiate rocketry. Please check out my{" "}
+            <Link to="/projects" class="hyperlink-teal">projects</Link>
+              {" "}or view my online curriculum vitae below!</h4> 
+          </div>
+          
         </div>
-        <div class="fa-adj">
+        <div class="fa-arrow">
           <a href="#experience">
             <FontAwesomeIcon
               color="#81e5d9"
@@ -39,13 +45,13 @@ const IndexPage = () => {
           </a>
         </div>
       </main>
-      <a id="experience">
-        <h1 class="anchor" />
-      </a>
+      <div id="experience">
+        <div class="anchor" />
+      </div>
       <div class="section gradient">    
         <div class="title">
           <h1>Experience</h1>
-          <h3>I'm pursuing mechanical engineering in many fields.</h3>
+          <h3>I have had the priviledge of working with many extraordinary design teams.</h3>
         </div>
         <div class="timeline">
           <hr class="time-line" />
@@ -110,7 +116,6 @@ const IndexPage = () => {
 
 
           {/* Blocks and Text */}
-        
           {/* LHR */}
           <div id="LHR" class="timeline-text left" style={{"grid-row-start": "item-1"}}>
             <h2><a class="hyperlink-teal" href="https://www.longhornracing.org/electric-vehicle" target="_blank" rel="noopener noreferrer">Longhorn Racing Electric</a></h2>
@@ -162,7 +167,7 @@ const IndexPage = () => {
             <h2>FIRST Tech Challenge</h2>
             <h2>Team 9048: <i>The Philobots</i></h2>
             <h3>Team Lead</h3>
-            <p>Led the technical training, team leadership, and robot systems integration on eleven-student team. Design and manufacture of robot deposit system each year.</p>
+            <p>Led the technical training, team leadership, and robot systems integration on the eleven-student team. Design and manufacture of robot deposit system each year.</p>
           </div>
           <div id="FTC" class="timeline-block right" style={{background: "red", "grid-row": "summer-2020 / fall-2017"}} />
         </div>
@@ -170,10 +175,10 @@ const IndexPage = () => {
       <div class="section solid">
         <div class="title">
           <h1>Certifications</h1> 
-          <h3>I'm committed to applying and improving my design and software skills.</h3>
+          <h3>I am dedicated to applying and improving my design software skills.</h3>
         </div>
         <div class = "certifications">
-          <a href="https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-SKRJEV8QBL" style={{"grid-area": "CSWE"}} class="badge" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.credly.com/badges/9001baf8-d0aa-4e08-9c30-8bfec61c5f06?source=linked_in_profile" style={{"grid-area": "CSWE"}} class="badge" target="_blank" rel="noopener noreferrer">
             <StaticImage objectFit="contain" src="../images/CSWE.png"/>
           </a>
           <a href="https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-GMXN7F4LHU" style={{"grid-area": "CSWPSU"}} class="badge" target="_blank" rel="noopener noreferrer">
@@ -202,10 +207,40 @@ const IndexPage = () => {
       <div class="section">
         <div class="title">
           <h1>Skills</h1>
-          <h3></h3>
+        </div>
+        <div class="skills">
+          <div class="skill">
+            <FontAwesomeIcon color="#57a19a" size="4x" icon={faShapes} />
+            <h3 class="skill-header">3D Printing</h3>
+            <p>Adept at maintaining and running SLA and FDM 3D printer farms.</p>
+          </div>
+          <div class="skill">
+            <FontAwesomeIcon color="#57a19a" size="4x" icon={faRulerCombined} />
+            <h3 class="skill-header">Machining</h3>
+            <p>Experienced with DFM, GD&T, hand-programming G-code, and Fusion 360 and HSMWorks CAM.</p>
+          </div>
+          <div class="skill">
+            <FontAwesomeIcon color="#57a19a" size="4x" icon={faCogs} />
+            <h3 class="skill-header">CAD Design</h3>
+            <p>Proficient in Solidworks, familiar with Fusion 360. Capable of resilient modeling strategy for capturing design intent and working in teams.</p>
+          </div>
+          <div class="skill">
+            <FontAwesomeIcon color="#57a19a" size="4x" icon={faCube}/>
+            <h3 class="skill-header">Rendering</h3>
+            <p>Skilled in photo-realistic product rendering and animation in Keyshot.</p>
+          </div>
+          <div class="skill">
+            <FontAwesomeIcon color="#57a19a" size="4x" icon={faMicrochip} />
+            <h3 class="skill-header">Circuit Design</h3>
+            <p>Working knowledge in KiCAD for power electronics design.</p>
+          </div>
         </div>
       </div>
       
+      <div class="section box">
+        <h3 class="title">Any questions? <Link to="/contact" class="hyperlink-gray underline">Contact me!</Link></h3>
+      </div>
+
     </Layout>
   );
 };

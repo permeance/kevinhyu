@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useStaticQuery, graphql } from "gatsby";
+import { Link } from "gatsby";
 import "./main.css";
 import "./timeline.css";
 import "./navbar.css";
@@ -33,7 +33,7 @@ const Layout = ({ pageTitle, children }) => {
       <meta name="viewport" content="width=750"/>
       {children}
       <div class="footer">
-        © {new Date().getFullYear()} by Kevin Yu.
+        <p>© {new Date().getFullYear()} by Kevin Yu.</p>
       </div>
     </div>
   );
