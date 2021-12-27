@@ -5,7 +5,7 @@ const ContactPage = () => {
   return (
     <Layout>
       <title>Contact | Kevin Yu</title>
-      <meta name="Contact" content="Contact information for Kevin Yu"></meta>
+      <meta name="Contact" content="Contact information for Kevin Yu"/>
       <main>
         {/* prettier-ignore */}
         <div class="section">

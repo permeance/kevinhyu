@@ -7,14 +7,16 @@ import "./intro.css";
 
 import LogoHex from "../images/logoHex.inline.svg";
 
+
 /* contains nav bar and footer */
 const Layout = ({ pageTitle, children }) => {
   return (
     <div class="container">
+      <html lang="en"/>
       <nav>
         <ul class="nav-list">
           <li class="nav-logo">
-            <Link to="/">
+            <Link to="/" aria-label="Home">
               <LogoHex width={63} height={70} />
             </Link>
           </li>

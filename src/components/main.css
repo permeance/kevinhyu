@@ -4,14 +4,26 @@ Background colors: #1A202C, #1D283A
 White: #FAF9F9
 Teal: #81E5D9, lighter: #4FD1C5
 Gray: #2D313D, lighter: #40444F
+
+
+1a202c
+1d283a
+HSV: 215 62 (17, 25, 32)
+
+
 */
+
+@font-face {
+  font-family: 'Exo';
+  src: local('Exo'), url(../fonts/Exo-VariableFont_wght.ttf) format('truetype');
+}
 
 :root {
   -webkit-font-smoothing: antialiased;
-  --color-background: #1a202c;
-  --color-background-secondary: #1d283a;
-  --color-background-tertiary: #334563;
-  --color-navbar: #1a202c;
+  --color-background: #101c2b;
+  --color-background-secondary: #182940;
+  --color-background-tertiary: #1f3452;
+  --color-navbar: #101c2b;
   --color-text: #faf9f9;
   --color-text-secondary: #d3d3d3;
   --color-primary: #81e5d9;
@@ -40,7 +52,7 @@ body {
 }
 
 main {
-  max-width: 1200px;
+  max-width: 1260px;
   margin-top: 90px;
   margin-left: auto;
   margin-right: auto;
@@ -58,24 +70,14 @@ h1 {
 
 h2 {
   font-size: 1.25rem;
-  font-weight: 500;
   color: var(--color-primary);
+  line-height: 2rem;
 }
 
-h3 {
-  font-size: 1.25rem;
-  font-weight: 300;
+h2.white {
   color: var(--color-text);
-
-  line-height: 2rem;
 }
 
-h4 {
-  font-size: 1.25rem;
-  font-weight: 300;
-  color: var(--color-text-secondary);
-  line-height: 2rem;
-}
 
 p {
   font-size: 1rem;
@@ -126,8 +128,83 @@ b {
   margin: 0 auto;
 }
 
+
+.modal-portal {
+  position: absolute;
+  top: 5vh;
+  left: 5vw;
+  right: 5vw;
+  height: auto;
+  max-height: 90vh;
+  border-radius: 0.5vw;
+  padding: 2rem;
+
+  overflow-y: scroll;
+  background-color: var(--color-background-tertiary);
+  z-index: 3;
+}
+
+.modal-portal-content {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  
+  display: flex;
+  flex-direction: column;
+
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  gap: 0.5rem;
+}
+
+
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 3;
+}
+
+
+
+/* Page specific CSS modules */
+
+.modal-exit {
+  position: fixed;
+  height: 66px;
+  width: 66px;
+
+  top: calc(5vh + 24px);
+  right: calc(5vw + 24px);
+}
+.modal-exit:hover {
+  color:var(--color-text);
+}
+
+
+
+
+
+.projects {
+  width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  
+  justify-content: center;
+  text-align: center;
+
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+}
+
+
 .certifications {
-  max-width: 1200px;
+  max-width: 1280px;
   height: 350px;
   margin-left: auto;
   margin-right: auto;
@@ -168,7 +245,7 @@ b {
 }
 
 .skills {
-  max-width: 1200px;
+  max-width: 1280px;
   width: 100%;
   height: 400px;
   margin-left: auto;
@@ -214,7 +291,7 @@ b {
 
 /* hyperlink */
 
-.hyperlink-white, .hyperlink-gray {
+.hyperlink-white {
   text-decoration: none;
   color: var(--color-text);
   transition: 0.4s;
@@ -224,10 +301,6 @@ b {
   text-decoration: none;
   color: var(--color-primary);
   transition: 0.4s;
-}
-
-.hyperlink-gray:hover {
-  color: var(--color-text-secondary);
 }
 
 a:hover {

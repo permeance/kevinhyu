@@ -16,26 +16,26 @@ const IndexPage = () => {
           <div class="intro-grid">
             <StaticImage class="intro-portrait" src="../images/pfp.png" />
             <h1 class="intro-title floating">Hey, I'm Kevin.</h1>
-            <h3 class="intro-subtitle">
+            <h2 class="white intro-subtitle">
               I'm an {age} year old mechanical engineering student at
               the{" "}
               <a class="hyperlink-teal" href="https://cockrell.utexas.edu/" target="_blank" rel="noopener noreferrer">
                 University of Texas
               </a>
               {" "}with a specialization in mechatronics.
-            </h3>
+            </h2>
           </div>
           <div class="title">
             <hr class="introline"/>
-            <h4>I'm passionate about building cross-displinary engineering projects to make things greener, more efficient, and more integrated. 
+            <h2 class="white">I'm passionate about building cross-displinary engineering projects to make things greener, more efficient, and more integrated.
               I've worked with EV motors, created specialized medical PPE, and immersed myself in collegiate rocketry. Please check out my{" "}
             <Link to="/projects" class="hyperlink-teal">projects</Link>
-              {" "}or view my online curriculum vitae below!</h4> 
+              {" "}or view my online curriculum vitae below!</h2> 
           </div>
           
         </div>
         <div class="fa-arrow">
-          <a href="#experience">
+          <a href="#experience" aria-label="Experience timeline">
             <FontAwesomeIcon
               color="#81e5d9"
               size="4x"
@@ -51,7 +51,7 @@ const IndexPage = () => {
       <div class="section gradient">    
         <div class="title">
           <h1>Experience</h1>
-          <h3>I have had the priviledge of working with many extraordinary design teams.</h3>
+          <h2 class="white">I have had the priviledge of working with many extraordinary design teams.</h2>
         </div>
         <div class="timeline">
           <hr class="time-line" />
@@ -120,7 +120,7 @@ const IndexPage = () => {
           <div id="LHR" class="timeline-text left" style={{"grid-row-start": "item-1"}}>
             <h2><a class="hyperlink-teal" href="https://www.longhornracing.org/electric-vehicle" target="_blank" rel="noopener noreferrer">Longhorn Racing Electric</a></h2>
             <h2>(Formula SAE)</h2>
-            <h3>Battery Engineer</h3>
+            <h2 class="white">Battery Engineer</h2>
             <p>Design of structural six-segment battery case. Mechanical and electrical design of vehicle low-voltage battery system.</p>
           </div>
           <div id="LHR" class="timeline-block left" style={{background: "#BF5700", "grid-row": "fall-2021 / current"}} />
@@ -128,7 +128,7 @@ const IndexPage = () => {
           {/* Jacobi Motors 2 */}
           <div id="J2" class="timeline-text left" style={{"grid-row-start": "item-2"}}>
             <h2>Jacobi Motors</h2>
-            <h3>Mechanical Engineering Intern</h3>
+            <h2 class="white">Mechanical Engineering Intern</h2>
             <p>Design, manufacture, and implementation of a carbon filament winding tensioner for wrapping high-speed automotive rotors. 
               Fabricated custom electronics enclosures.</p>
           </div>
@@ -137,7 +137,7 @@ const IndexPage = () => {
           {/* Jacobi Motors 1 */}
           <div id="J1" class="timeline-text left" style={{"grid-row-start": "item-3"}}>
             <h2>Jacobi Motors</h2>
-            <h3>Test Engineering Intern</h3>
+            <h2 class="white">Test Engineering Intern</h2>
             <p>Conducted dynamometer testing of a prototype variable flux memory motor. Debugged and documented vehicle telemetry data graphical user interface.</p>
           </div>          
           <div id="J1" class="timeline-block left" style={{background: "royalblue", "grid-row": "summer-2019 / fall-2019"}}/>
@@ -145,8 +145,8 @@ const IndexPage = () => {
           {/* TREL */}
           <div id="TREL" class="timeline-text right" style={{"grid-row-start": "item-1"}}>
             <h2><a class="hyperlink-teal" href="https://www.texasrocketlab.com/" target="_blank" rel="noopener noreferrer">Texas Rocket Engineering Lab</a></h2>
-            <h2>(TREL)</h2>
-            <h3>COPV Technical Engineer</h3>
+            <h2 class="teal">(TREL)</h2>
+            <h2 class="white">COPV Technical Engineer</h2>
             <p>Responsible for helium pressure vessel analysis. 
               Optimizing Ansys ACP process to estimate carbon composite overwrap strain more quickly and accurately.</p>
           </div>
@@ -155,7 +155,7 @@ const IndexPage = () => {
           {/* CMS */}
           <div id="CMS" class="timeline-text right" style={{"grid-row-start": "item-2"}}>
             <h2><a class="hyperlink-teal" href="https://www.custommedshields.com/" target="_blank" rel="noopener noreferrer">Custom Medical Shields</a></h2>
-            <h3>Founder</h3>
+            <h2 class="white">Founder</h2>
             <p>Provided custom face shields for professionals with specialized eyewear during the pandemic. 
               Managed design, manufacture (CNC routing), and quality control of shields distributed to customers in six states.
             </p>
@@ -166,7 +166,7 @@ const IndexPage = () => {
           <div id="FTC" class="timeline-text right" style={{"grid-row-start": "item-3"}}>
             <h2>FIRST Tech Challenge</h2>
             <h2>Team 9048: <i>The Philobots</i></h2>
-            <h3>Team Lead</h3>
+            <h2 class="white">Team Lead</h2>
             <p>Led the technical training, team leadership, and robot systems integration on the eleven-student team. Design and manufacture of robot deposit system each year.</p>
           </div>
           <div id="FTC" class="timeline-block right" style={{background: "red", "grid-row": "summer-2020 / fall-2017"}} />
@@ -175,31 +175,31 @@ const IndexPage = () => {
       <div class="section solid">
         <div class="title">
           <h1>Certifications</h1> 
-          <h3>I am dedicated to applying and improving my design software skills.</h3>
+          <h2 class="white">I am dedicated to applying and improving my design software skills.</h2>
         </div>
         <div class = "certifications">
-          <a href="https://www.credly.com/badges/9001baf8-d0aa-4e08-9c30-8bfec61c5f06?source=linked_in_profile" style={{"grid-area": "CSWE"}} class="badge" target="_blank" rel="noopener noreferrer">
+          <a aria-label="CSWE" href="https://www.credly.com/badges/9001baf8-d0aa-4e08-9c30-8bfec61c5f06?source=linked_in_profile" style={{"grid-area": "CSWE"}} class="badge" target="_blank" rel="noopener noreferrer">
             <StaticImage objectFit="contain" src="../images/CSWE.png"/>
           </a>
-          <a href="https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-GMXN7F4LHU" style={{"grid-area": "CSWPSU"}} class="badge" target="_blank" rel="noopener noreferrer">
+          <a aria-label="CSWP-SU" href="https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-GMXN7F4LHU" style={{"grid-area": "CSWPSU"}} class="badge" target="_blank" rel="noopener noreferrer">
             <StaticImage objectFit="contain" src="../images/CSWPSU.png"/>
           </a>
-          <a href="https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-EA3LZM2SHX" style={{"grid-area": "CSWPWD"}} class="badge" target="_blank" rel="noopener noreferrer">
+          <a aria-label="CSWP-WD" href="https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-EA3LZM2SHX" style={{"grid-area": "CSWPWD"}} class="badge" target="_blank" rel="noopener noreferrer">
             <StaticImage objectFit="contain" src="../images/CSWPWD.png"/>
           </a>
-          <a href="https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-9X46YV7SGN" style={{"grid-area": "CSWPSM"}} class="badge" target="_blank" rel="noopener noreferrer">
+          <a aria-label="CSWP-SM" href="https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-9X46YV7SGN" style={{"grid-area": "CSWPSM"}} class="badge" target="_blank" rel="noopener noreferrer">
             <StaticImage objectFit="contain" src="../images/CSWPSM.png"/>
           </a>
-          <a href="https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-HB4PUKCL3X" style={{"grid-area": "CSWPDT"}} class="badge" target="_blank" rel="noopener noreferrer">
+          <a aria-label="CSWP-DT" href="https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-HB4PUKCL3X" style={{"grid-area": "CSWPDT"}} class="badge" target="_blank" rel="noopener noreferrer">
             <StaticImage objectFit="contain" src="../images/CSWPDT.png"/>
           </a>
-          <a href="https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-MTASED3NUX" style={{"grid-area": "CSWP"}} class="badge" target="_blank" rel="noopener noreferrer">
+          <a aria-label="CSWP" href="https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-MTASED3NUX" style={{"grid-area": "CSWP"}} class="badge" target="_blank" rel="noopener noreferrer">
             <StaticImage objectFit="contain" src="../images/CSWP.png"/>
           </a>
-          <a href="https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-XAAABWJ6S6" style={{"grid-area": "CSWA"}} class="badge" target="_blank" rel="noopener noreferrer">
+          <a aria-label="CSWA" href="https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-XAAABWJ6S6" style={{"grid-area": "CSWA"}} class="badge" target="_blank" rel="noopener noreferrer">
             <StaticImage objectFit="contain" src="../images/CSWA.png"/>
           </a>
-          <a href="https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-GH5CQXA6S2" style={{"grid-area": "CSWAAM"}} class="badge" target="_blank" rel="noopener noreferrer">
+          <a aria-label="CSWA-AM" href="https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-GH5CQXA6S2" style={{"grid-area": "CSWAAM"}} class="badge" target="_blank" rel="noopener noreferrer">
             <StaticImage objectFit="contain" src="../images/CSWAAM.png"/>
           </a>
         </div>
@@ -211,34 +211,33 @@ const IndexPage = () => {
         <div class="skills">
           <div class="skill">
             <FontAwesomeIcon color="#57a19a" size="4x" icon={faShapes} />
-            <h3 class="skill-header">3D Printing</h3>
-            <p>Adept at maintaining and running SLA and FDM 3D printer farms.</p>
+            <h2 class="white skill-header">3D Printing</h2>
+            <p>Adept at maintaining, running, and designing for SLA and FDM 3D printers.</p>
           </div>
           <div class="skill">
             <FontAwesomeIcon color="#57a19a" size="4x" icon={faRulerCombined} />
-            <h3 class="skill-header">Machining</h3>
+            <h2 class="white skill-header">Machining</h2>
             <p>Experienced with DFM, GD&T, hand-programming G-code, and Fusion 360 and HSMWorks CAM.</p>
           </div>
           <div class="skill">
             <FontAwesomeIcon color="#57a19a" size="4x" icon={faCogs} />
-            <h3 class="skill-header">CAD Design</h3>
+            <h2 class="white skill-header">CAD Design</h2>
             <p>Proficient in Solidworks, familiar with Fusion 360. Capable of resilient modeling strategy for capturing design intent and working in teams.</p>
           </div>
           <div class="skill">
             <FontAwesomeIcon color="#57a19a" size="4x" icon={faCube}/>
-            <h3 class="skill-header">Rendering</h3>
-            <p>Skilled in photo-realistic product rendering and animation in Keyshot.</p>
+            <h2 class="white skill-header">Rendering</h2>
+            <p>Skilled in photorealistic model rendering and animation in Keyshot.</p>
           </div>
           <div class="skill">
             <FontAwesomeIcon color="#57a19a" size="4x" icon={faMicrochip} />
-            <h3 class="skill-header">Circuit Design</h3>
+            <h2 class="white skill-header">Circuit Design</h2>
             <p>Working knowledge in KiCAD for power electronics design.</p>
           </div>
         </div>
       </div>
-      
       <div class="section box">
-        <h3 class="title">Any questions? <Link to="/contact" class="hyperlink-gray underline">Contact me!</Link></h3>
+        <h2 class="white title">Any questions? <Link to="/contact" class="hyperlink-teal underline">Contact me!</Link></h2>
       </div>
 
     </Layout>

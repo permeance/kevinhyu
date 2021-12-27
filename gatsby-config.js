@@ -64,12 +64,5 @@ module.exports = {
         path: `${__dirname}/projects`,
       },
     },
-    {
-      resolve: "gatsby-plugin-google-fonts",
-      options: {
-        fonts: [`Exo`],
-        display: "swap",
-      },
-    },
   ],
 };
