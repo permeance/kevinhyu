@@ -143,25 +143,19 @@ line.timelineBar {
 
 #LHR:hover ~ #LHR {
   opacity: 100%;
-  box-shadow: 0 0 5px orange;
 }
 #J2:hover ~ #J2 {
   opacity: 100%;
-  box-shadow: 0 0 5px lightblue;
 }
 #J1:hover ~ #J1 {
   opacity: 100%;
-  box-shadow: 0 0 5px lightblue;
 }
 #TREL:hover ~ #TREL {
   opacity: 100%;
-  box-shadow: 0 0 5px black;
 }
 #CMS:hover ~ #CMS {
   opacity: 100%;
-  box-shadow: 0 0 5px white;
 }
 #FTC:hover ~ #FTC {
   opacity: 100%;
-  box-shadow: 0 0 5px white;
 }

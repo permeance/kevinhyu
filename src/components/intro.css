@@ -70,13 +70,16 @@
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  
-  animation-name: appear;
-  animation-duration: 4s;
-  animation-iteration-count: 1;
-  animation-timing-function: linear;
 }
-@keyframes appear {
+
+.appear {
+  animation-name: appearAnim;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@keyframes appearAnim {
   0% {
     opacity: 0%;
   }
@@ -87,15 +90,32 @@
     opacity: 100%;
   }
 }
+
 .color-shift:hover {
   color: var(--color-text);
 }
 
 hr.introline {
   height: 1.5px;
-  width: 75%;
+  max-width: 75%;
   margin: 4rem auto;
 
   background: var(--color-primary);
   opacity: 100%;
+
+  animation-name: stretchLine;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+@keyframes stretchLine {
+  0% {
+    width: 10%;
+    opacity: 50%;
+  }
+  100% {
+    width: 75%;
+    opacity: 100%;
+  }
 }

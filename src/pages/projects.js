@@ -12,7 +12,8 @@ const ProjectsPage = () => {
     <Layout>
       <title>Projects | Kevin Yu</title>
       <meta name="Projects" content="Kevin Yu's Project Portfolio" />
-      <div class="section">
+      
+      <section>
         <div class="title">
           <h1>Projects</h1>
           <h2 class="white">
@@ -20,13 +21,15 @@ const ProjectsPage = () => {
             reach out for a full portfolio.
           </h2>
         </div>
-      </div>
-      <div class="section gradient">
+      </section>
+      
+      <section class="gradient">
         <div class="projects">
 
           <button onClick={() => setModalIsOpen(true)}>Open Modal</button>
         </div>
-      </div>
+      </section>
+      
       <Modal className="modal-portal" overlayClassName="modal-overlay" isOpen={modalIsOpen} contentLabel="onRequestClose Example" onRequestClose={() => setModalIsOpen(false)} ariaHideApp={false} >
         <FontAwesomeIcon color="#81e5d9" size="6x" icon={faTimes} className="modal-exit" onClick={() => setModalIsOpen(false)}/>
         
