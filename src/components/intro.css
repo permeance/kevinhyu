@@ -18,7 +18,7 @@
   width: 100%;
 
   grid-template-columns: [first] 5% [left-text] 50% [right-text] auto [left-image] 35% [right-image];
-  grid-template-rows: [top-image] 100px [top-title] 80px [top-subtitle] auto [bottom-image];
+  grid-template-rows: [top-image] 100px [top-title] 120px [top-subtitle] auto [bottom-image];
 
   margin-bottom: 4rem;
 }

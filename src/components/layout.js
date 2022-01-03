@@ -11,30 +11,31 @@ import LogoHex from "../images/logoHex.inline.svg";
 /* contains nav bar and footer */
 const Layout = ({ pageTitle, children }) => {
   return (
-    <div class="container">
+    <div className="container">
       <html lang="en"/>
       <nav>
-        <ul class="nav-list">
-          <li class="nav-logo">
+        <ul className="nav-list">
+          <li className="nav-logo">
             <Link to="/" aria-label="Home">
               <LogoHex width={63} height={70} />
             </Link>
           </li>
-          <li class="nav-text">
+          <li className="nav-text">
             <Link to="/projects">Projects</Link>
           </li>
-          <li class="nav-text">
+          <li className="nav-text">
             <Link to="/contact">Contact</Link>
           </li>
-          <li class="nav-line">
-            <hr class="navline" />
+          <li className="nav-line">
+            <hr className="navline" />
           </li>
         </ul>
       </nav>
+
       {/* TODO: Change once updated responsive design */}
       <meta name="viewport" content="width=750"/>
       {children}
-      <div class="footer">
+      <div className="footer">
         <p>© {new Date().getFullYear()} by Kevin Yu.</p>
       </div>
     </div>

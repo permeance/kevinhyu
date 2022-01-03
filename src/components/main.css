@@ -11,6 +11,8 @@ Gray: #2D313D, lighter: #40444F
 HSV: 215 62 (17, 25, 32)
 
 
+213145
+
 */
 
 @font-face {
@@ -21,10 +23,9 @@ HSV: 215 62 (17, 25, 32)
 
 :root {
   -webkit-font-smoothing: antialiased;
-  --color-background: #101c2b;
-  --color-background-secondary: #182940;
-  --color-background-tertiary: #1f3452;
-  --color-navbar: #101c2b;
+  --color-background: #0b141f;
+  --color-background-secondary: #152538;
+  --color-background-tertiary: #1f2937;
   --color-text: #faf9f9;
   --color-text-secondary: #d3d3d3;
   --color-primary: #81e5d9;
@@ -53,7 +54,7 @@ body {
 }
 
 main {
-  max-width: 1260px;
+  max-width: 1280px;
   margin-top: 90px;
   margin-left: auto;
   margin-right: auto;
@@ -62,11 +63,12 @@ main {
 }
 
 h1 {
-  font-size: 2.5rem;
-  font-weight: 800;
+  font-size: 3rem;
+  font-weight: bold;
 
   color: var(--color-primary);
   transition: 0.4s;
+  line-height: 6rem;
 }
 
 h2 {
@@ -87,10 +89,6 @@ p {
   color: var(--color-text-secondary);
 }
 
-b {
-  font-weight: 600;
-}
-
 section {
   width: 100%;
   margin-top: 6rem;
@@ -101,7 +99,7 @@ section {
   justify-content: flex-start;
   gap: 2rem;
 
-  padding: 3rem 0;
+  padding: 8rem 0;
 }
 
 section.gradient {
@@ -123,69 +121,12 @@ section.box {
   border: 2px solid var(--color-primary);
 }
 
-
-
 .title {
   width: 100%;
   text-align: center;
   margin: 0 auto;
 }
 
-.modal-portal {
-  position: absolute;
-  top: 5vh;
-  left: 5vw;
-  right: 5vw;
-  height: auto;
-  max-height: 90vh;
-  border-radius: 0.5vw;
-  padding: 2rem;
-
-  overflow-y: scroll;
-  background-color: var(--color-background-tertiary);
-  z-index: 3;
-}
-
-.modal-portal-content {
-  width: 100%;
-  max-width: 1280px;
-  margin: 0 auto;
-  
-  display: flex;
-  flex-direction: column;
-
-  justify-content: flex-start;
-  align-items: center;
-  text-align: center;
-  gap: 0.5rem;
-}
-
-.modal-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.3);
-  z-index: 3;
-}
-
-
-
-
-
-
-.modal-exit {
-  position: fixed;
-  height: 66px;
-  width: 66px;
-
-  top: calc(5vh + 24px);
-  right: calc(5vw + 24px);
-}
-.modal-exit:hover {
-  color:var(--color-text);
-}
 
 /* Page specific CSS modules */
 
@@ -198,6 +139,7 @@ section.box {
   text-align: center;
 
   grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
   grid-template-rows: auto;
 }
 
@@ -207,7 +149,7 @@ section.box {
   height: 350px;
   margin-left: auto;
   margin-right: auto;
-  padding: 2rem;
+  padding: 0 2rem;
 
   display: grid;
   grid-template-columns: repeat(7, 1fr);
@@ -293,13 +235,13 @@ section.box {
 .hyperlink-white {
   text-decoration: none;
   color: var(--color-text);
-  transition: 0.4s;
+  transition: 0.1s;
 }
 
 .hyperlink-teal {
   text-decoration: none;
   color: var(--color-primary);
-  transition: 0.4s;
+  transition: 0.1s;
 }
 
 a:hover {

@@ -9,8 +9,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowCircleDown, faCogs, faRulerCombined, faShapes, faMicrochip, faCube } from "@fortawesome/free-solid-svg-icons";
 
 const IndexPage = () => {
-      
-
   return (
     <Layout>
       <title>Home | Kevin Yu</title>
@@ -36,8 +34,8 @@ const IndexPage = () => {
             <Link to="/projects" className="hyperlink-teal">projects</Link>
               {" "}or view my online curriculum vitae below!</h2> 
           </div>
-          
         </div>
+
         <div className="fa-arrow appear">
           <a href="#experience" aria-label="Experience timeline">
             <FontAwesomeIcon
@@ -56,7 +54,7 @@ const IndexPage = () => {
 
       <section className="gradient">
         <Fade>
-          <div>
+          <>
             <div className="title">
                   <h1>Experience</h1>
                   <h2 style={{color: "var(--color-text)"}}>I have had the privilege of working with many extraordinary design teams.</h2>
@@ -115,7 +113,7 @@ const IndexPage = () => {
                 <h2><a className="hyperlink-teal" href="https://www.longhornracing.org/electric-vehicle" target="_blank" rel="noopener noreferrer">Longhorn Racing Electric</a></h2>
                 <h2>(Formula SAE)</h2>
                 <h2 className="white">Battery Engineer</h2>
-                <p>Design of structural six-segment battery case. Mechanical and electrical design of vehicle low-voltage battery system.</p>
+                <p>Design of structural six-segment battery case and high voltage electronics enclosure. Mechanical and electrical design of vehicle low-voltage battery system.</p>
               </div>
               <div id="LHR" className="timeline-block left" style={{background: "#BF5700", "grid-row": "fall-2021 / current"}} />
               {/* Jacobi Motors 2 */}
@@ -160,7 +158,7 @@ const IndexPage = () => {
               </div>
               <div id="FTC" className="timeline-block right" style={{background: "red", "grid-row": "summer-2020 / fall-2017"}} />
             </div>      
-          </div>
+          </>
         </Fade>
       </section>  
 
@@ -202,7 +200,7 @@ const IndexPage = () => {
       </Fade>
 
       <Fade>
-        <div>
+        <>
           <div className="title">
             <h1>Skills</h1>
           </div>
@@ -233,7 +231,7 @@ const IndexPage = () => {
               <p>Working knowledge in KiCAD for power electronics design.</p>
             </div>
           </div>
-        </div>
+        </>
       </Fade>
 
       <Fade>
@@ -241,7 +239,6 @@ const IndexPage = () => {
           <h2 className="white title">Any questions? <Link to="/contact" className="hyperlink-teal underline">Contact me!</Link></h2>
         </section>
       </Fade>
-
 
     </Layout>
   );
