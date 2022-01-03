@@ -18,7 +18,7 @@ const ProjectsPage = () => {
           <h1>Projects</h1>
           <h2 className="white">
             Here's a brief look at some of the projects I've worked on! Please
-            reach out for a full portfolio.
+            reach out for specific details.
           </h2>
         </div>
       </section>

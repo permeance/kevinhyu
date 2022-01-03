@@ -34,19 +34,49 @@ class ProjectModals extends React.Component {
 
 
         <div className="tile" aria-label="Login" onClick={() => this.handleOpenModal("login")}>
-          <p>One</p>
+          One
         </div>
 
         {/* prettier-ignore */}
         <Modal className="modal-portal" overlayClassName="modal-overlay" isOpen={this.state.showModal && this.state.activeModal === "login"} onRequestClose={this.handleCloseModal} contentLabel="login modal" ariaHideApp={false} >
           <FontAwesomeIcon color="#81e5d9" size="6x" icon={faTimes} className="modal-exit" onClick={this.handleCloseModal} />
-          <div class="modal-portal-content">
+          <div className="modal-portal-content">
             <div className= "title">
               <h1>Projects</h1>
+              <h2 className="white">Stuff</h2> 
             </div>
             <p>Text</p> 
           </div>
         </Modal>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
         <div className="tile" onClick={() => this.handleOpenModal("calendar")}>

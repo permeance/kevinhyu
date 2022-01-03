@@ -1,16 +1,17 @@
 .tile {
     height: 300px;
     width: 100%;
-
     background-color: var(--color-background-tertiary);
-    border: 1px solid #363f4b;
+    border: 1.5px solid #363f4b;
     border-radius: 12px;
     text-decoration: none;
 
     cursor: pointer;
 }
 
-
+.tile:hover {
+  border: 2px solid var(--color-primary);
+}
 
 
 
@@ -38,8 +39,8 @@
   flex-direction: column;
 
   justify-content: flex-start;
-  align-items: center;
-  text-align: center;
+  align-items: left;
+  text-align: left;
   gap: 0.5rem;
 }
 

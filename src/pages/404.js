@@ -6,6 +6,7 @@ const NotFoundPage = () => {
     <div class="container">
       <main>
         <title>Error 404 (Not Found)</title>
+        <meta name="404" content="Page Not Found"/>
         <h1>Page not found</h1>
         <p>
           Sorry{" "}
