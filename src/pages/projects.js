@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "../components/layout";
 
 
-import ProjectModals from "/src/components/ProjectModals";
+import ProjectModals from "/src/components/projectModals";
 {/* change to /project/ProjectModals*/}
 
 const ProjectsPage = () => {
