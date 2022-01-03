@@ -3,10 +3,10 @@
   margin: 0 auto;
 
   display: grid;
-  height: 1600px;
+  height: 1400px;
 
   align-items: center;
-  padding: 15rem 0;
+  padding: 3rem 0;
   margin-top: 4rem;
 
   grid-template-columns:

@@ -1,12 +1,17 @@
 import * as React from "react";
 import { Link } from "gatsby";
+import {Helmet} from "react-helmet";
 
 const NotFoundPage = () => {
   return (
     <div class="container">
       <main>
-        <title>Error 404 (Not Found)</title>
-        <meta name="404" content="Page Not Found"/>
+        <Helmet>
+          <title>Error 404 (Not Found)</title>
+          <html lang="en"/>
+          <meta name="404" content="Page Not Found"/>
+        </Helmet>
+
         <h1>Page not found</h1>
         <p>
           Sorry{" "}

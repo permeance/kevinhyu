@@ -5,14 +5,22 @@ import { Link } from "gatsby";
 
 import Layout from "../components/layout";
 
+import {Helmet} from "react-helmet";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowCircleDown, faCogs, faRulerCombined, faShapes, faMicrochip, faCube } from "@fortawesome/free-solid-svg-icons";
 
 const IndexPage = () => {
   return (
-    <Layout>
-      <title>Home | Kevin Yu</title>
-      <meta name="Home" content="Kevin Yu's Engineering Portfolio Home Page" />
+    
+    <Layout>  
+      <Helmet>
+        <title>Home | Kevin Yu</title>
+        <html lang="en" />
+        <meta name="Home" content="Kevin Yu's Engineering Portfolio Home Page" />
+      </Helmet>
+
+
       <main>
         <div className="intro">
           <div className="intro-grid">

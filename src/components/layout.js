@@ -12,7 +12,6 @@ import LogoHex from "../images/logoHex.inline.svg";
 const Layout = ({ pageTitle, children }) => {
   return (
     <div className="container">
-      <html lang="en"/>
       <nav>
         <ul className="nav-list">
           <li className="nav-logo">

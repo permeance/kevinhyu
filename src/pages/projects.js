@@ -1,5 +1,6 @@
 import React from "react";
 import Layout from "../components/layout";
+import {Helmet} from "react-helmet";
 
 
 import ProjectModals from "/src/components/projectModals";
@@ -10,9 +11,13 @@ const ProjectsPage = () => {
 
   return (
     <Layout>
-      <title>Projects | Kevin Yu</title>
-      <meta name="Projects" content="Kevin Yu's Project Portfolio" />
-      
+
+      <Helmet>
+        <title>Projects | Kevin Yu</title>
+        <html lang="en" />
+        <meta name="Projects" content="Kevin Yu's Project Portfolio" />
+      </Helmet>
+
       <section style={{"padding": "0", "margin": "10rem auto 0 auto"}}>
         <div className="title">
           <h1>Projects</h1>
@@ -22,7 +27,6 @@ const ProjectsPage = () => {
           </h2>
         </div>
       </section>
-      
       <section style={{"padding": "0", "margin": "10rem auto"}}>
         <div className="projects">
           <ProjectModals/>
