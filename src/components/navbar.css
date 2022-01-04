@@ -42,9 +42,10 @@ nav {
   }
   
   hr.navline {
+    border: none;
     height: 2px;
     background: var(--color-text);
-    border: none;
+    opacity: 25%;
   }
   
   nav li a {

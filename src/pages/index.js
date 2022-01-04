@@ -172,7 +172,7 @@ const IndexPage = () => {
 
 
       <Fade>
-        <section className="solid">
+        <section className="solid" style={{"padding-top":"4rem"}}>
           <div className="title">
                 <h1>Certifications</h1> 
                 <h2 className="white">I am dedicated to applying and improving my design software skills.</h2>
@@ -208,7 +208,7 @@ const IndexPage = () => {
 
       <Fade>
         <>
-          <div className="title">
+          <div className="title" style={{"margin-top": "10rem"}}>
             <h1>Skills</h1>
           </div>
           <div className="skills">

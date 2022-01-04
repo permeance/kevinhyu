@@ -73,8 +73,9 @@ h1 {
 
 h2 {
   font-size: 1.25rem;
+  font-weight: 300;
   color: var(--color-primary);
-  line-height: 2rem;
+  line-height: 1.75rem;
 }
 
 h2.white {

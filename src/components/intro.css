@@ -99,6 +99,7 @@ hr.introline {
   height: 1.5px;
   max-width: 75%;
   margin: 4rem auto;
+  border: none;
 
   background: var(--color-primary);
   opacity: 100%;
