@@ -1,5 +1,4 @@
 import React from "react";
-import { Fade } from "react-reveal";
 import Layout from "../components/layout";
 import {Helmet} from "react-helmet";
 
@@ -10,7 +9,7 @@ const ContactPage = () => {
       <Helmet>
         <title>Contact | Kevin Yu</title>
         <html lang="en"/>
-        <meta name="Contact" content="Contact information for Kevin Yu"/>
+        <meta name="description" content="Contact information for Kevin Yu"/>
       </Helmet>
       
       <Layout>

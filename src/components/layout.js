@@ -5,7 +5,7 @@ import "./timeline.css";
 import "./navbar.css";
 import "./intro.css";
 
-import LogoHex from "../images/logoHex.inline.svg";
+import LogoHex from "/static/logoHex.inline.svg";
 
 
 /* contains nav bar and footer */

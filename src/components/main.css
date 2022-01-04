@@ -17,7 +17,7 @@ HSV: 215 62 (17, 25, 32)
 
 @font-face {
   font-family: 'Exo';
-  src: local('Exo'), url(../fonts/Exo-VariableFont_wght.ttf) format('truetype');
+  src: local('Exo'), url(/Exo-VariableFont_wght.ttf) format('truetype');
   font-display: swap;
 }
 

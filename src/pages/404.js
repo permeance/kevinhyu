@@ -9,7 +9,7 @@ const NotFoundPage = () => {
         <Helmet>
           <title>Error 404 (Not Found)</title>
           <html lang="en"/>
-          <meta name="404" content="Page Not Found"/>
+          <meta name="description" content="Page Not Found"/>
         </Helmet>
 
         <h1>Page not found</h1>

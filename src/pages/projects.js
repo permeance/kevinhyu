@@ -7,7 +7,6 @@ import ProjectModals from "/src/components/projectModals";
 {/* change to /project/ProjectModals*/}
 
 const ProjectsPage = () => {
-  const [modalIsOpen, setModalIsOpen] = React.useState(false);
 
   return (
     <Layout>
@@ -15,7 +14,7 @@ const ProjectsPage = () => {
       <Helmet>
         <title>Projects | Kevin Yu</title>
         <html lang="en" />
-        <meta name="Projects" content="Kevin Yu's Project Portfolio" />
+        <meta name="description" content="Kevin Yu's Project Portfolio" />
       </Helmet>
 
       <section style={{"padding": "0", "margin": "10rem auto 0 auto"}}>

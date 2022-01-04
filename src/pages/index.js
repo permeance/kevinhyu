@@ -17,14 +17,13 @@ const IndexPage = () => {
       <Helmet>
         <title>Home | Kevin Yu</title>
         <html lang="en" />
-        <meta name="Home" content="Kevin Yu's Engineering Portfolio Home Page" />
+        <meta name="description" content="Kevin Yu's Engineering Portfolio Home Page" />
       </Helmet>
-
 
       <main>
         <div className="intro">
           <div className="intro-grid">
-            <StaticImage className="intro-portrait" src="../images/pfp.png" />
+            <StaticImage className="intro-portrait" src="../img/pfp.jpg" />
             <h1 className="intro-title floating">Hey, I'm Kevin.</h1>
             <h2 className="white intro-subtitle">
               I'm an {age} year old mechanical engineering student at
@@ -180,28 +179,28 @@ const IndexPage = () => {
           </div>
           <div class = "certifications">
             <a aria-label="CSWE" href="https://www.credly.com/badges/9001baf8-d0aa-4e08-9c30-8bfec61c5f06?source=linked_in_profile" style={{"grid-area": "CSWE"}} className="badge" target="_blank" rel="noopener noreferrer">
-              <StaticImage objectFit="contain" src="../images/CSWE.png"/>
+              <StaticImage objectFit="contain" src="../img/CSWE.png"/>
             </a>
             <a aria-label="CSWP-SU" href="https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-GMXN7F4LHU" style={{"grid-area": "CSWPSU"}} className="badge" target="_blank" rel="noopener noreferrer">
-              <StaticImage objectFit="contain" src="../images/CSWPSU.png"/>
+              <StaticImage objectFit="contain" src="../img/CSWPSU.png"/>
             </a>
             <a aria-label="CSWP-WD" href="https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-EA3LZM2SHX" style={{"grid-area": "CSWPWD"}} className="badge" target="_blank" rel="noopener noreferrer">
-              <StaticImage objectFit="contain" src="../images/CSWPWD.png"/>
+              <StaticImage objectFit="contain" src="../img/CSWPWD.png"/>
             </a>
             <a aria-label="CSWP-SM" href="https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-9X46YV7SGN" style={{"grid-area": "CSWPSM"}} className="badge" target="_blank" rel="noopener noreferrer">
-              <StaticImage objectFit="contain" src="../images/CSWPSM.png"/>
+              <StaticImage objectFit="contain" src="../img/CSWPSM.png"/>
             </a>
             <a aria-label="CSWP-DT" href="https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-HB4PUKCL3X" style={{"grid-area": "CSWPDT"}} className="badge" target="_blank" rel="noopener noreferrer">
-              <StaticImage objectFit="contain" src="../images/CSWPDT.png"/>
+              <StaticImage objectFit="contain" src="../img/CSWPDT.png"/>
             </a>
             <a aria-label="CSWP" href="https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-MTASED3NUX" style={{"grid-area": "CSWP"}} className="badge" target="_blank" rel="noopener noreferrer">
-              <StaticImage objectFit="contain" src="../images/CSWP.png"/>
+              <StaticImage objectFit="contain" src="../img/CSWP.png"/>
             </a>
             <a aria-label="CSWA" href="https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-XAAABWJ6S6" style={{"grid-area": "CSWA"}} className="badge" target="_blank" rel="noopener noreferrer">
-              <StaticImage objectFit="contain" src="../images/CSWA.png"/>
+              <StaticImage objectFit="contain" src="../img/CSWA.png"/>
             </a>
             <a aria-label="CSWA-AM" href="https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-GH5CQXA6S2" style={{"grid-area": "CSWAAM"}} className="badge" target="_blank" rel="noopener noreferrer">
-              <StaticImage objectFit="contain" src="../images/CSWAAM.png"/>
+              <StaticImage objectFit="contain" src="../img/CSWAAM.png"/>
             </a>
           </div>
         </section>
