@@ -1,16 +1,15 @@
 import React from "react";
 import { Link } from "gatsby";
 
-import "../styles/main.css";
+import "../styles/global.css";
 import "../styles/timeline.css";
-import "../styles/intro.css";
 
 import LogoHex from "/static/logoHex.inline.svg";
 
 /* contains nav bar and footer */
 const Layout = ({ children }) => {
   return (
-    <>
+    <div>
       <nav className="fixed w-full px-6 py-2 top-0 z-10 bg-midnight-100 bg-opacity-90">
         <ul className="max-w-screen-xl mx-auto flex flex-row">
           <li className="mx-2 my-1 hover:scale-[1.05] duration-150 ease-in-out">
@@ -39,7 +38,7 @@ const Layout = ({ children }) => {
       <section className="absolute bottom-0 h-8 w-full text-center ">
         <p>© {new Date().getFullYear()} by Kevin Yu.</p>
       </section>
-    </>
+    </div>
   );
 };
 

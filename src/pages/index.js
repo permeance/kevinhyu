@@ -244,7 +244,7 @@ const IndexPage = () => {
 
       <Fade>
         <section className="max-w-screen-md mx-auto mb-12 p-3 bg-gray-800 rounded-xl border border-teal-100 text-center">
-          <h2 className="my-auto">Any questions? <Link to="/contact" className="hyperlink-teal underline">Contact me!</Link></h2>
+          <h2 className="my-auto">Any questions? <Link to="/contact" className="underline hover:text-teal-100">Contact me!</Link></h2>
         </section>
       </Fade>
     </Layout>

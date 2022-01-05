@@ -25,7 +25,7 @@ module.exports = {
         defaults: {
           formats: [`auto`, `webp`],
           placeholder: `dominantColor`,
-          quality: 75,
+          quality: 50,
           backgroundColor: `transparent`,
           tracedSVGOptions: {},
           blurredOptions: {},

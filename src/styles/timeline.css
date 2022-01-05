@@ -130,7 +130,7 @@ hr.timeline-segment {
 }
 
 line.timelineBar {
-  stroke: var(--color-text);
+  stroke: white;
   stroke-width: 1px;
 }
 

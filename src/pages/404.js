@@ -14,7 +14,7 @@ const NotFoundPage = () => {
       </Helmet>
 
       <section className= "mx-20 my-20">
-        <h1 className="my-8 text-5xl text-teal">Page not found</h1>
+        <h1 className="my-8 text-5xl text-teal-100">Page not found</h1>
         <p className="my-2 text-1xl text-white">
           Sorry{" "}
           <span role="img" aria-label="Pensive emoji">
@@ -23,7 +23,7 @@ const NotFoundPage = () => {
           we couldn’t find what you were looking for.
           <br />
           <br />
-          <Link to="/" class="underline hover:text-teal">
+          <Link to="/" class="underline hover:text-teal-100">
             Go home
           </Link>
           .
