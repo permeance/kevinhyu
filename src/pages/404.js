@@ -1,19 +1,21 @@
 import * as React from "react";
-import { Link } from "gatsby";
 import {Helmet} from "react-helmet";
+
+import { Link } from "gatsby";
 
 const NotFoundPage = () => {
   return (
-    <div class="container">
-      <main>
-        <Helmet>
-          <title>Error 404 (Not Found)</title>
-          <html lang="en"/>
-          <meta name="description" content="Page Not Found"/>
-        </Helmet>
+    <>
+      <Helmet>
+        <title>Error 404 (Not Found)</title>
+        <meta name="description" content="Page Not Found"/>
+        <meta name="robots" content="none" />
+        <html lang="en" />
+      </Helmet>
 
-        <h1>Page not found</h1>
-        <p>
+      <section className= "mx-20 my-20">
+        <h1 className="my-8 text-5xl text-teal">Page not found</h1>
+        <p className="my-2 text-1xl text-white">
           Sorry{" "}
           <span role="img" aria-label="Pensive emoji">
             😔
@@ -21,13 +23,13 @@ const NotFoundPage = () => {
           we couldn’t find what you were looking for.
           <br />
           <br />
-          <Link to="/" class="hyperlink-white underline">
+          <Link to="/" class="underline hover:text-teal">
             Go home
           </Link>
           .
         </p>
-      </main>
-    </div>
+      </section>
+    </>
   );
 };
 

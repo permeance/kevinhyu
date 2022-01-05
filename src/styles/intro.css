@@ -1,0 +1,30 @@
+/* Intro (Home Page) */
+
+
+
+.fa-arrow {
+  width: 100%;
+  margin-top: -100px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.appear {
+  animation-name: appearAnim;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@keyframes appearAnim {
+  0% {
+    opacity: 0%;
+  }
+  30% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}

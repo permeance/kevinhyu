@@ -1,7 +1,7 @@
 import React from "react";
-import Layout from "../components/layout";
 import {Helmet} from "react-helmet";
 
+import Layout from "../components/layout";
 
 import ProjectModals from "/src/components/projectModals";
 {/* change to /project/ProjectModals*/}
@@ -10,27 +10,29 @@ const ProjectsPage = () => {
 
   return (
     <Layout>
-
       <Helmet>
         <title>Projects | Kevin Yu</title>
-        <html lang="en" />
         <meta name="description" content="Kevin Yu's Project Portfolio" />
+        <meta name="robots" content="all" />
+        <html lang="en" />
       </Helmet>
 
-      <section style={{"padding": "0", "margin": "10rem auto 0 auto"}}>
-        <div className="title">
-          <h1>Projects</h1>
-          <h2 className="white">
+      <div className="max-w-screen-xl m-auto">
+        <section className="mt-40 mb-40">
+          <h1 className="m-10 text-center text-teal-100 text-5xl">Projects</h1>
+          <h2 className="mx-10 text-center text-white text-2xl">
             Here's a brief look at some of the projects I've worked on! Please
             reach out for specific details.
           </h2>
-        </div>
-      </section>
-      <section style={{"padding": "0", "margin": "10rem auto"}}>
-        <div className="projects">
-          <ProjectModals/>
-        </div>
-      </section>
+        </section>
+
+        <section>
+          <div className="mx-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            <ProjectModals/>
+          </div>
+        </section>
+
+      </div>
     </Layout>
   );
 };

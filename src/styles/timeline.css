@@ -1,13 +1,6 @@
 .timeline {
-  max-width: 1280px;
-  margin: 0 auto;
-
   display: grid;
-  height: 1400px;
-
   align-items: center;
-  padding: 3rem 0;
-  margin-top: 4rem;
 
   grid-template-columns:
     [left-text-left] 1fr [left-text-right]
@@ -26,7 +19,7 @@
     [fall-2017];
 }
 
-.timeline > hr.time-line {
+.timeline > hr.centerline {
   width: 2px;
   height: 100%;
   border: none;
@@ -34,7 +27,7 @@
 
   grid-column: left-block-right / right-block-left;
   grid-row: current / fall-2017;
-  background: var(--color-text);
+  background: white;
   opacity: 20%;
 }
 
@@ -49,14 +42,16 @@
   border-radius: 1px 1px;
   height: 5px;
   width: 20px;
-
-  background-color: var(--color-primary);
 }
 
 .timeline-text {
   grid-row: item-1 / item-4; /* inheriting row to not shift main grid */
   height: 100%;
   align-self: start;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .timeline-text.left {
@@ -80,7 +75,7 @@
 }
 
 .timeline-block {
-  background-color: var(--color-primary);
+  background-color: transparent;
   height: calc(100% - 0.25rem);
   width: 100%;
   border-radius: 0.7rem;
@@ -137,10 +132,6 @@ hr.timeline-segment {
 line.timelineBar {
   stroke: var(--color-text);
   stroke-width: 1px;
-}
-
-.highlight:hover {
-  opacity: 100%;
 }
 
 #LHR:hover ~ #LHR {
