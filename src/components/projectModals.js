@@ -33,8 +33,8 @@ class ProjectModals extends React.Component {
         </div>
 
         {/* prettier-ignore */}
-        <Modal className="absolute top-10 left-10 right-10 p-16 max-h-screen rounded-2xl z-20 bg-gray-800 overflow-scroll" overlayClassName="fixed top-0 left-0 right-0 bottom-0 z-30" isOpen={this.state.showModal && this.state.activeModal === "one"} onRequestClose={this.handleCloseModal} contentLabel="one modal" ariaHideApp={false} >
-          <FontAwesomeIcon color="#81e5d9" size="6x" icon={faTimes} className="fixed h-16 w-16 top-20 right-20 hover:text-white" onClick={this.handleCloseModal} />
+        <Modal className="absolute top-10 left-4 right-4 sm:left-10 sm:right-10 px-4 pt-20 pb-8 md:p-16 max-h-screen rounded-2xl z-20 bg-gray-800 overflow-scroll backdrop-blur" overlayClassName="fixed top-0 left-0 right-0 bottom-0 z-30 backdrop-blur" isOpen={this.state.showModal && this.state.activeModal === "one"} onRequestClose={this.handleCloseModal} contentLabel="one modal" ariaHideApp={false} >
+          <FontAwesomeIcon color="#81e5d9" size="6x" icon={faTimes} className="fixed h-16 w-16 top-6 right-6 hover:text-white" onClick={this.handleCloseModal} />
           <div className="flex flex-col flex-start text-left gap-5">
             <h1 className="text-5xl text-teal-100 text-center">one</h1>
             <h2 className="text-xl text-white text-center">Stuff</h2>

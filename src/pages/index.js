@@ -23,9 +23,9 @@ const IndexPage = () => {
       </Helmet>
 
       <section className="">
-        <div className="max-w-screen-xl h-screen mx-auto">
-          <div className="my-36 mx-12 flex flex-col justify-start gap-20 md:flex-row md:gap-10">
-            <div className="my-auto">
+        <div className="h-[1180px] md:max-w-screen-xl h-screen mx-auto">
+          <div className="my-36 mx-6 flex flex-col justify-start gap-20 md:flex-row md:gap-10 md:mx-12">
+            <div className="mx-auto my-auto md:ml-0">
               <h1 className="mb-10 text-5xl text-teal-100 font-bold animate-floating">Hey, I'm Kevin.</h1>
               <h2 className="text-xl max-w-xl">
                 I'm an {age} year old mechanical engineering student at
@@ -36,11 +36,11 @@ const IndexPage = () => {
                 {" "}with a specialization in mechatronics.
               </h2>
             </div>
-            <StaticImage className="mr-0 ml-auto rounded-3xl" src="../img/pfp.jpg" />
+            <StaticImage className="mx-auto ml-auto rounded-3xl md:mr-0" src="../img/pfp.jpg" />
           </div>
           <div className="">
             <hr className="my-12 mx-auto w-8/12 h-px border-teal-100 animate-stretch"/>
-            <h2 className="my-12 mx-auto w-10/12 text-white text-lg text-center">I'm passionate about building cross-displinary engineering projects to make things greener, more efficient, and more integrated.
+            <h2 className="my-12 mx-auto w-10/12 text-base text-gray-200 md:text-lg md:text-center">I'm passionate about building cross-displinary engineering projects to make things greener, more efficient, and more integrated.
               I've worked with EV motors, created specialized medical PPE, and immersed myself in collegiate rocketry. Please check out my{" "}
             <Link to="/projects" className="text-teal-100 hover:text-teal-200">projects</Link>
               {" "}or view my online curriculum vitae below!</h2> 
@@ -53,6 +53,9 @@ const IndexPage = () => {
         </div>
       </section>
 
+
+
+
       <div id="experience">
         <div className="pt-10 -mt-10" />
       </div>
@@ -60,7 +63,7 @@ const IndexPage = () => {
       <section className="bg-gradient-to-b from-midnight-200 to-midnight-100">
         <Fade>
           <div className="max-w-screen-xl mx-auto pt-20 pb-48">
-            <div className="mb-24 text-center">
+            <div className="mb-24 mx-4 text-center">
                   <h1 className="mb-6 text-teal-100 text-5xl">Experience</h1>
                   <h2 className="text-xl">I have had the privilege of working with many extraordinary design teams.</h2>
             </div>
@@ -168,36 +171,43 @@ const IndexPage = () => {
         <section className="bg-midnight-200">
           <div className="max-w-screen-xl mx-auto py-20">
 
-            <div className="mb-16 text-center">
+            <div className="mb-16 mx-4 text-center">
                   <h1 className="mb-6 text-teal-100 text-5xl">Certifications</h1> 
                   <h2 className="text-xl">I am dedicated to applying and improving my design software skills.</h2>
             </div>
 
-            <div class = "mx-6 grid grid-cols-7 grid-rows-2 place-items-center">
-              <a aria-label="CSWE" href="https://www.credly.com/badges/9001baf8-d0aa-4e08-9c30-8bfec61c5f06?source=linked_in_profile" className="hover:scale-[1.01] duration-150 ease-in-out col-span-2 row-span-2" target="_blank" rel="noopener noreferrer">
-                <StaticImage objectFit="contain" src="../img/CSWE.png"/>
-              </a>
-              <a aria-label="CSWP" href="https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-MTASED3NUX" className="hover:scale-[1.02] duration-150 ease-in-out" target="_blank" rel="noopener noreferrer">
-                <StaticImage objectFit="contain" src="../img/CSWP.png"/>
-              </a>
-              <a aria-label="CSWP-SU" href="https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-GMXN7F4LHU" className="hover:scale-[1.02] duration-150 ease-in-out" target="_blank" rel="noopener noreferrer">
-                <StaticImage objectFit="contain" src="../img/CSWPSU.png"/>
-              </a>
-              <a aria-label="CSWP-WD" href="https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-EA3LZM2SHX" className="hover:scale-[1.02] duration-150 ease-in-out" target="_blank" rel="noopener noreferrer">
-                <StaticImage objectFit="contain" src="../img/CSWPWD.png"/>
-              </a>
-              <a aria-label="CSWP-SM" href="https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-9X46YV7SGN" className="hover:scale-[1.02] duration-150 ease-in-out" target="_blank" rel="noopener noreferrer">
-                <StaticImage objectFit="contain" src="../img/CSWPSM.png"/>
-              </a>
-              <a aria-label="CSWP-DT" href="https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-HB4PUKCL3X" className="hover:scale-[1.02] duration-150 ease-in-out" target="_blank" rel="noopener noreferrer">
-                <StaticImage objectFit="contain" src="../img/CSWPDT.png"/>
-              </a>
-              <a aria-label="CSWA" href="https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-XAAABWJ6S6" className="hover:scale-[1.02] duration-150 ease-in-out" target="_blank" rel="noopener noreferrer">
-                <StaticImage objectFit="contain" src="../img/CSWA.png"/>
-              </a>
-              <a aria-label="CSWA-AM" href="https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-GH5CQXA6S2" className="hover:scale-[1.02] duration-150 ease-in-out" target="_blank" rel="noopener noreferrer">
-                <StaticImage objectFit="contain" src="../img/CSWAAM.png"/>
-              </a>
+            <div className = "mx-12 grid grid-cols-2 grid-auto-rows gap-3 md:h-auto md:grid-cols-7 md:grid-rows-2 md:place-items-stretch place-items-start">
+              <div className ="w-56 md:w-auto col-span-2 row-span-1 mx-auto md:w-auto md:mx-2 md:col-span-2 md:row-span-2 md:my-auto">
+                <a aria-label="CSWE" href="https://www.credly.com/badges/9001baf8-d0aa-4e08-9c30-8bfec61c5f06?source=linked_in_profile" className="hover:scale-[1.01] duration-150 ease-in-out" target="_blank" rel="noopener noreferrer">
+                  <StaticImage objectFit="contain" src="../img/CSWE.png"/>
+                </a>
+              </div>
+              <div className="md:w-full flex flex-col mx-auto md:flex-row gap-2 md:col-span-5">
+                <a aria-label="CSWP" href="https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-MTASED3NUX" className="hover:scale-[1.02] duration-150 ease-in-out" target="_blank" rel="noopener noreferrer">
+                  <StaticImage objectFit="contain" src="../img/CSWP.png"/>
+                </a>
+                <a aria-label="CSWP-SU" href="https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-GMXN7F4LHU" className="hover:scale-[1.02] duration-150 ease-in-out" target="_blank" rel="noopener noreferrer">
+                  <StaticImage objectFit="contain" src="../img/CSWPSU.png"/>
+                </a>
+                <a aria-label="CSWP-WD" href="https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-EA3LZM2SHX" className="hover:scale-[1.02] duration-150 ease-in-out" target="_blank" rel="noopener noreferrer">
+                  <StaticImage objectFit="contain" src="../img/CSWPWD.png"/>
+                </a>
+                <a aria-label="CSWP-SM" href="https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-9X46YV7SGN" className="hover:scale-[1.02] duration-150 ease-in-out" target="_blank" rel="noopener noreferrer">
+                  <StaticImage objectFit="contain" src="../img/CSWPSM.png"/>
+                </a>
+                <a aria-label="CSWP-DT" href="https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-HB4PUKCL3X" className="hover:scale-[1.02] duration-150 ease-in-out" target="_blank" rel="noopener noreferrer">
+                  <StaticImage objectFit="contain" src="../img/CSWPDT.png"/>
+                </a>
+              </div>
+              
+              <div className="md:w-full mx-auto flex flex-col md:flex-row gap-2 md:col-span-2">
+                <a aria-label="CSWA" href="https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-XAAABWJ6S6" className="hover:scale-[1.02] duration-150 ease-in-out" target="_blank" rel="noopener noreferrer">
+                  <StaticImage objectFit="contain" src="../img/CSWA.png"/>
+                </a>
+                <a aria-label="CSWA-AM" href="https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-GH5CQXA6S2" className="hover:scale-[1.02] duration-150 ease-in-out" target="_blank" rel="noopener noreferrer">
+                  <StaticImage objectFit="contain" src="../img/CSWAAM.png"/>
+                </a>
+              </div>
             </div>
           </div>
         </section>
@@ -206,35 +216,39 @@ const IndexPage = () => {
       <Fade>
         <>
           <section>
-            <div className="max-w-screen-xl mx-auto pt-28 pb-40">
+            <div className="max-w-screen-xl mx-auto pt-28 pb-20 sm:pb-40">
               <div className="mb-16 text-center">
                 <h1 className="text-teal-100 text-5xl">Skills</h1>
               </div>
-              <div className="mx-6 grid grid-cols-5 grid-rows-1 gap-8">
-                <div className="flex flex-col gap-2 text-center items-center gap-4">
-                  <FontAwesomeIcon color="#57a19a" size="4x" icon={faShapes} />
-                  <h2 className="text-xl">3D Printing</h2>
-                  <p className="text-gray-300">Adept at maintaining, running, and designing for SLA and FDM 3D printers.</p>
+              <div className="mx-12 flex flex-col content-center gap-12 lg:grid lg:grid-cols-5 lg:grid-rows-1 lg:gap-8">
+                <div className="flex flex-col gap-12 sm:grid sm:grid-cols-3 sm:gap-8 lg:col-span-3">
+                  <div className="flex flex-col gap-2 text-center items-center gap-4">
+                    <FontAwesomeIcon color="#57a19a" size="4x" icon={faShapes} />
+                    <h2 className="text-xl">3D Printing</h2>
+                    <p className="text-gray-300">Adept at maintaining, running, and designing for SLA and FDM 3D printers.</p>
+                  </div>
+                  <div className="flex flex-col gap-2 text-center items-center gap-4">
+                    <FontAwesomeIcon color="#57a19a" size="4x" icon={faRulerCombined} />
+                    <h2 className="text-xl">Machining</h2>
+                    <p className="text-gray-300">Experienced with DFM, GD&T, hand-programming G-code, and Fusion 360 and HSMWorks CAM.</p>
+                  </div>
+                  <div className="flex flex-col gap-2 text-center items-center gap-4">
+                    <FontAwesomeIcon color="#57a19a" size="4x" icon={faCogs} />
+                    <h2 className="text-xl">CAD Design</h2>
+                    <p className="text-gray-300">Proficient in Solidworks, familiar with Fusion 360. Capable of resilient modeling strategy for capturing design intent and working in teams.</p>
+                  </div>
                 </div>
-                <div className="flex flex-col gap-2 text-center items-center gap-4">
-                  <FontAwesomeIcon color="#57a19a" size="4x" icon={faRulerCombined} />
-                  <h2 className="text-xl">Machining</h2>
-                  <p className="text-gray-300">Experienced with DFM, GD&T, hand-programming G-code, and Fusion 360 and HSMWorks CAM.</p>
-                </div>
-                <div className="flex flex-col gap-2 text-center items-center gap-4">
-                  <FontAwesomeIcon color="#57a19a" size="4x" icon={faCogs} />
-                  <h2 className="text-xl">CAD Design</h2>
-                  <p className="text-gray-300">Proficient in Solidworks, familiar with Fusion 360. Capable of resilient modeling strategy for capturing design intent and working in teams.</p>
-                </div>
-                <div className="flex flex-col gap-2 text-center items-center gap-4">
-                  <FontAwesomeIcon color="#57a19a" size="4x" icon={faCube}/>
-                  <h2 className="text-xl">Rendering</h2>
-                  <p className="text-gray-300">Skilled in photorealistic model rendering and animation in Keyshot.</p>
-                </div>
-                <div className="flex flex-col gap-2 text-center items-center gap-4">
-                  <FontAwesomeIcon color="#57a19a" size="4x" icon={faMicrochip} />
-                  <h2 className="text-xl">Circuit Design</h2>
-                  <p className="text-gray-300">Working knowledge in KiCAD for power electronics design.</p>
+                <div className="flex flex-col gap-12 sm:grid sm:grid-cols-2 sm:gap-8 sm:col-span-2 sm:w-2/3 mx-auto lg:w-auto">
+                  <div className="flex flex-col gap-2 text-center items-center gap-4">
+                    <FontAwesomeIcon color="#57a19a" size="4x" icon={faCube}/>
+                    <h2 className="text-xl">Rendering</h2>
+                    <p className="text-gray-300">Skilled in photorealistic model rendering and animation in Keyshot.</p>
+                  </div>
+                  <div className="flex flex-col gap-2 text-center items-center gap-4">
+                    <FontAwesomeIcon color="#57a19a" size="4x" icon={faMicrochip} />
+                    <h2 className="text-xl">Circuit Design</h2>
+                    <p className="text-gray-300">Working knowledge in KiCAD for power electronics design.</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -243,8 +257,10 @@ const IndexPage = () => {
       </Fade>
 
       <Fade>
-        <section className="max-w-screen-md mx-auto mb-12 p-3 bg-gray-800 rounded-xl border border-teal-100 text-center">
-          <h2 className="my-auto">Any questions? <Link to="/contact" className="underline hover:text-teal-100">Contact me!</Link></h2>
+        <section className="max-w-screen-md mx-auto">
+          <div className="mx-4 mb-12 p-3 bg-gray-800 rounded-xl border border-teal-100 text-center">
+            <h2 className="my-auto">Any questions? <Link to="/contact" className="underline hover:text-teal-100">Contact me!</Link></h2>
+          </div>
         </section>
       </Fade>
     </Layout>
