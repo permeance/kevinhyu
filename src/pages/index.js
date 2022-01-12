@@ -13,7 +13,6 @@ import Layout from "../components/layout";
 
 const IndexPage = () => {
   return (
-    
     <Layout>  
       <Helmet>
         <title>Home | Kevin Yu</title>
@@ -23,7 +22,7 @@ const IndexPage = () => {
       </Helmet>
 
       <section className="">
-        <div className="h-[1180px] md:max-w-screen-xl h-screen mx-auto">
+        <div className="h-[1180px] md:max-w-screen-xl md:h-screen mx-auto">
           <div className="my-36 mx-6 flex flex-col justify-start gap-20 md:flex-row md:gap-10 md:mx-12">
             <div className="mx-auto my-auto md:ml-0">
               <h1 className="mb-10 text-5xl text-teal-100 font-bold animate-floating">Hey, I'm Kevin.</h1>
@@ -46,28 +45,24 @@ const IndexPage = () => {
               {" "}or view my online curriculum vitae below!</h2> 
           </div>
         </div>
-        <div className="-mt-72 mb-20 text-center hidden md:block">
+        <div className="-mt-72 mb-20 text-center -z-20 hidden md:block">
           <a className="animate-appear" href="#experience" aria-label="Experience timeline">
             <FontAwesomeIcon color="#81e5d9" size="4x" icon={faArrowCircleDown} className="hover:text-white" />
           </a>
         </div>
       </section>
 
-
-
-
       <div id="experience">
         <div className="pt-10 -mt-10" />
       </div>
-
       <section className="bg-gradient-to-b from-midnight-200 to-midnight-100">
         <Fade>
-          <div className="max-w-screen-xl mx-auto pt-20 pb-48">
+          <div className="max-w-screen-xl mx-auto pt-20 pb-24">
             <div className="mb-24 mx-4 text-center">
                   <h1 className="mb-6 text-teal-100 text-5xl">Experience</h1>
                   <h2 className="text-xl">I have had the privilege of working with many extraordinary design teams.</h2>
             </div>
-            <div className="w-full h-[1480px] mx-auto px-12 timeline">
+            <div className="w-full h-auto md:h-[1480px] mx-auto px-6 timeline">
               <hr className="centerline" />
               {/* Year markers */}
               <p class = "timeline-year-text" style={{"grid-row-end": "spring-2021"}}>2021</p>
@@ -119,45 +114,50 @@ const IndexPage = () => {
               {/* LHR */}
               <div id="LHR" className="timeline-text left" style={{"grid-row-start": "item-1"}}>
                 <h2 className="text-teal-100 text-xl hover:text-teal-200"><a className="hyperlink-teal" href="https://www.longhornracing.org/electric-vehicle" target="_blank" rel="noopener noreferrer">Longhorn Racing Electric<br/>(Formula SAE)</a></h2>
+                <i className="text-gray-400 md:hidden">Fall 2021 - Present</i>
                 <h2 className="text-xl">Battery Engineer</h2>
                 <p className="text-gray-300">Design of structural six-segment battery case and high voltage electronics enclosure. Mechanical and electrical design of vehicle low-voltage battery system.</p>
               </div>
               <div id="LHR" className="timeline-block left" style={{background: "#BF5700", "grid-row": "fall-2021 / current"}} />
-              {/* Jacobi Motors 2 */}
-              <div id="J2" className="timeline-text left" style={{"grid-row-start": "item-2"}}>
-                <h2 className="text-teal-100 text-xl">Jacobi Motors</h2>
-                <h2 className="text-xl">Mechanical Engineering Intern</h2>
-                <p className="text-gray-300">Design, manufacture, and implementation of a carbon filament winding tensioner for wrapping high-speed automotive rotors. 
-                  Fabricated custom electronics enclosures.</p>
-              </div>
-              <div id="J2" className="timeline-block left" style={{background: "royalblue", "grid-row": "summer-2021 / fall-2021"}} />
-              {/* Jacobi Motors 1 */}
-              <div id="J1" className="timeline-text left" style={{"grid-row-start": "item-3"}}>
-                <h2 className="text-teal-100 text-xl">Jacobi Motors</h2>
-                <h2 className="text-xl">Test Engineering Intern</h2>
-                <p className="text-gray-300">Conducted dynamometer testing of a prototype variable flux memory motor. Debugged and documented vehicle telemetry data graphical user interface.</p>
-              </div>          
-              <div id="J1" className="timeline-block left" style={{background: "royalblue", "grid-row": "summer-2019 / fall-2019"}}/>
               {/* TREL */}
               <div id="TREL" className="timeline-text right" style={{"grid-row-start": "item-1"}}>
                 <h2 className="text-teal-100 text-xl hover:text-teal-200"><a className="hyperlink-teal" href="https://www.texasrocketlab.com/" target="_blank" rel="noopener noreferrer">Texas Rocket Engineering Lab<br/>(TREL)</a></h2>
+                <i className="text-gray-400 md:hidden">Fall 2021 - Present</i>
                 <h2 className="text-xl">COPV Technical Engineer</h2>
                 <p className="text-gray-300">Responsible for helium pressure vessel analysis. 
                   Optimizing Ansys ACP process to estimate carbon composite overwrap strain more quickly and accurately.</p>
               </div>
               <div id="TREL" className="timeline-block right" style={{background: "black", "grid-row": "fall-2021 / current"}} />
+              {/* Jacobi Motors 2 */}
+              <div id="J2" className="timeline-text left" style={{"grid-row-start": "item-2"}}>
+                <h2 className="text-teal-100 text-xl">Jacobi Motors</h2>
+                <i className="text-gray-400 md:hidden">Summer 2021</i>
+                <h2 className="text-xl">Mechanical Engineering Intern</h2>
+                <p className="text-gray-300">Design, manufacture, and implementation of a carbon filament winding tensioner for wrapping high-speed automotive rotors. 
+                  Fabricated custom electronics enclosures.</p>
+              </div>
+              <div id="J2" className="timeline-block left" style={{background: "royalblue", "grid-row": "summer-2021 / fall-2021"}} />
               {/* CMS */}
               <div id="CMS" className="timeline-text right" style={{"grid-row-start": "item-2"}}>
                 <h2 className="text-teal-100 text-xl hover:text-teal-200"><a className="hyperlink-teal" href="https://www.custommedshields.com/" target="_blank" rel="noopener noreferrer">Custom Medical Shields</a></h2>
-                <h2 className="text-xl">Founder</h2>
+                <i className="text-gray-400 md:hidden">Spring 2020 - Spring 2021</i><h2 className="text-xl">Founder</h2>
                 <p className="text-gray-300">Provided custom face shields for professionals with specialized eyewear during the pandemic. 
                   Managed design, manufacture (CNC routing), and quality control of shields distributed to customers in six states.
                 </p>
               </div>
               <div id="CMS" className="timeline-block right" style={{background: "white", "grid-row": "summer-2020 / summer-2021"}} />
+              {/* Jacobi Motors 1 */}
+              <div id="J1" className="timeline-text left" style={{"grid-row-start": "item-3"}}>
+                <h2 className="text-teal-100 text-xl">Jacobi Motors</h2>
+                <i className="text-gray-400 md:hidden">Summer 2019</i>
+                <h2 className="text-xl">Test Engineering Intern</h2>
+                <p className="text-gray-300">Conducted dynamometer testing of a prototype variable flux memory motor. Debugged and documented vehicle telemetry data graphical user interface.</p>
+              </div>          
+              <div id="J1" className="timeline-block left" style={{background: "royalblue", "grid-row": "summer-2019 / fall-2019"}}/>
               {/* FTC */}
               <div id="FTC" className="timeline-text right" style={{"grid-row-start": "item-3"}}>
                 <h2 className="text-teal-100 text-xl">FIRST Tech Challenge<br/>Team 9048: <i>The Philobots</i></h2>
+                <i className="text-gray-400 md:hidden">Fall 2017 - Spring 2020</i>
                 <h2 className="text-xl">Team Lead</h2>
                 <p className="text-gray-300">Led the technical training, team leadership, and robot systems integration on the eleven-student team. Design and manufacture of robot deposit system each year.</p>
               </div>
@@ -170,15 +170,13 @@ const IndexPage = () => {
       <Fade>
         <section className="bg-midnight-200">
           <div className="max-w-screen-xl mx-auto py-20">
-
             <div className="mb-16 mx-4 text-center">
                   <h1 className="mb-6 text-teal-100 text-5xl">Certifications</h1> 
                   <h2 className="text-xl">I am dedicated to applying and improving my design software skills.</h2>
             </div>
-
-            <div className = "mx-12 grid grid-cols-2 grid-auto-rows gap-3 md:h-auto md:grid-cols-7 md:grid-rows-2 md:place-items-stretch place-items-start">
-              <div className ="w-56 md:w-auto col-span-2 row-span-1 mx-auto md:w-auto md:mx-2 md:col-span-2 md:row-span-2 md:my-auto">
-                <a aria-label="CSWE" href="https://www.credly.com/badges/9001baf8-d0aa-4e08-9c30-8bfec61c5f06?source=linked_in_profile" className="hover:scale-[1.01] duration-150 ease-in-out" target="_blank" rel="noopener noreferrer">
+            <div className = "max-w-[480px] mx-auto px-4 grid grid-cols-2 grid-auto-rows gap-3 md:max-w-full md:h-auto md:px-16 md:grid-cols-7 md:grid-rows-2 md:place-items-stretch place-items-start">
+              <div className ="w-56 md:w-auto col-span-2 row-span-1 mx-auto md:w-auto md:mx-2 md:col-span-2 md:row-span-2 md:my-auto hover:scale-[1.01] duration-150 ease-in-out">
+                <a aria-label="CSWE" href="https://www.credly.com/badges/9001baf8-d0aa-4e08-9c30-8bfec61c5f06?source=linked_in_profile" target="_blank" rel="noopener noreferrer">
                   <StaticImage objectFit="contain" src="../img/CSWE.png"/>
                 </a>
               </div>
@@ -199,7 +197,6 @@ const IndexPage = () => {
                   <StaticImage objectFit="contain" src="../img/CSWPDT.png"/>
                 </a>
               </div>
-              
               <div className="md:w-full mx-auto flex flex-col md:flex-row gap-2 md:col-span-2">
                 <a aria-label="CSWA" href="https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-XAAABWJ6S6" className="hover:scale-[1.02] duration-150 ease-in-out" target="_blank" rel="noopener noreferrer">
                   <StaticImage objectFit="contain" src="../img/CSWA.png"/>
@@ -214,46 +211,44 @@ const IndexPage = () => {
       </Fade>
 
       <Fade>
-        <>
-          <section>
-            <div className="max-w-screen-xl mx-auto pt-28 pb-20 sm:pb-40">
-              <div className="mb-16 text-center">
-                <h1 className="text-teal-100 text-5xl">Skills</h1>
-              </div>
-              <div className="mx-12 flex flex-col content-center gap-12 lg:grid lg:grid-cols-5 lg:grid-rows-1 lg:gap-8">
-                <div className="flex flex-col gap-12 sm:grid sm:grid-cols-3 sm:gap-8 lg:col-span-3">
-                  <div className="flex flex-col gap-2 text-center items-center gap-4">
-                    <FontAwesomeIcon color="#57a19a" size="4x" icon={faShapes} />
-                    <h2 className="text-xl">3D Printing</h2>
-                    <p className="text-gray-300">Adept at maintaining, running, and designing for SLA and FDM 3D printers.</p>
-                  </div>
-                  <div className="flex flex-col gap-2 text-center items-center gap-4">
-                    <FontAwesomeIcon color="#57a19a" size="4x" icon={faRulerCombined} />
-                    <h2 className="text-xl">Machining</h2>
-                    <p className="text-gray-300">Experienced with DFM, GD&T, hand-programming G-code, and Fusion 360 and HSMWorks CAM.</p>
-                  </div>
-                  <div className="flex flex-col gap-2 text-center items-center gap-4">
-                    <FontAwesomeIcon color="#57a19a" size="4x" icon={faCogs} />
-                    <h2 className="text-xl">CAD Design</h2>
-                    <p className="text-gray-300">Proficient in Solidworks, familiar with Fusion 360. Capable of resilient modeling strategy for capturing design intent and working in teams.</p>
-                  </div>
+        <section>
+          <div className="max-w-screen-xl mx-auto pt-28 pb-20 sm:pb-40">
+            <div className="mb-16 text-center">
+              <h1 className="text-teal-100 text-5xl">Skills</h1>
+            </div>
+            <div className="mx-12 flex flex-col content-center gap-12 lg:grid lg:grid-cols-5 lg:grid-rows-1 lg:gap-8">
+              <div className="flex flex-col gap-12 sm:grid sm:grid-cols-3 sm:gap-8 lg:col-span-3">
+                <div className="flex flex-col gap-2 text-center items-center gap-4">
+                  <FontAwesomeIcon color="#57a19a" size="4x" icon={faShapes} />
+                  <h2 className="text-xl">3D Printing</h2>
+                  <p className="text-gray-300">Adept at maintaining, running, and designing for SLA and FDM 3D printers.</p>
                 </div>
-                <div className="flex flex-col gap-12 sm:grid sm:grid-cols-2 sm:gap-8 sm:col-span-2 sm:w-2/3 mx-auto lg:w-auto">
-                  <div className="flex flex-col gap-2 text-center items-center gap-4">
-                    <FontAwesomeIcon color="#57a19a" size="4x" icon={faCube}/>
-                    <h2 className="text-xl">Rendering</h2>
-                    <p className="text-gray-300">Skilled in photorealistic model rendering and animation in Keyshot.</p>
-                  </div>
-                  <div className="flex flex-col gap-2 text-center items-center gap-4">
-                    <FontAwesomeIcon color="#57a19a" size="4x" icon={faMicrochip} />
-                    <h2 className="text-xl">Circuit Design</h2>
-                    <p className="text-gray-300">Working knowledge in KiCAD for power electronics design.</p>
-                  </div>
+                <div className="flex flex-col gap-2 text-center items-center gap-4">
+                  <FontAwesomeIcon color="#57a19a" size="4x" icon={faRulerCombined} />
+                  <h2 className="text-xl">Machining</h2>
+                  <p className="text-gray-300">Experienced with DFM, GD&T, hand-programming G-code, and Fusion 360 and HSMWorks CAM.</p>
+                </div>
+                <div className="flex flex-col gap-2 text-center items-center gap-4">
+                  <FontAwesomeIcon color="#57a19a" size="4x" icon={faCogs} />
+                  <h2 className="text-xl">CAD Design</h2>
+                  <p className="text-gray-300">Proficient in Solidworks, familiar with Fusion 360. Capable of resilient modeling strategy for capturing design intent and working in teams.</p>
+                </div>
+              </div>
+              <div className="flex flex-col gap-12 sm:grid sm:grid-cols-2 sm:gap-8 sm:col-span-2 sm:w-2/3 mx-auto lg:w-auto">
+                <div className="flex flex-col gap-2 text-center items-center gap-4">
+                  <FontAwesomeIcon color="#57a19a" size="4x" icon={faCube}/>
+                  <h2 className="text-xl">Rendering</h2>
+                  <p className="text-gray-300">Skilled in photorealistic model rendering and animation in Keyshot.</p>
+                </div>
+                <div className="flex flex-col gap-2 text-center items-center gap-4">
+                  <FontAwesomeIcon color="#57a19a" size="4x" icon={faMicrochip} />
+                  <h2 className="text-xl">Circuit Design</h2>
+                  <p className="text-gray-300">Working knowledge in KiCAD for power electronics design.</p>
                 </div>
               </div>
             </div>
-          </section>
-        </>
+          </div>
+        </section>
       </Fade>
 
       <Fade>

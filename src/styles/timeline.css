@@ -47,6 +47,7 @@
 .timeline-text {
   grid-row: item-1 / item-4; /* inheriting row to not shift main grid */
   height: 100%;
+  width: 100%;
   align-self: start;
 
   display: flex;
@@ -151,4 +152,26 @@ line.timelineBar {
 }
 #FTC:hover ~ #FTC {
   opacity: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .timeline-year-text, .dot, .timeline-diag, .timeline-segment, .timeline-block, .centerline {
+    display: none;
+  }
+
+  .timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .timeline-text {
+    align-items: left !important;
+    text-align: left !important;
+    
+    background-color: #1f2937;
+    padding: 1.5rem;
+
+    border-radius: 0.75rem;
+  }
 }
