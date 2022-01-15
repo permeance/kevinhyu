@@ -16,7 +16,7 @@ const ContactPage = () => {
       <Layout>
         <section className="max-w-screen-xl mt-40 px-8 sm:px-20 mx-auto">
           <h1 className="my-10 text-5xl text-teal-100">Contact</h1>
-          <p className="text-1xl text-white">
+          <p className="text-lg text-white">
             Please send me a message at{" "}
             <a className="underline hover:text-teal-100" href="mailto:khy@utexas.edu" target="_blank" rel="noopener noreferrer">khy@utexas.edu</a>
               {" "}or connect with me on{" "}

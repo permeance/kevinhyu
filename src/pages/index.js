@@ -1,6 +1,6 @@
 import React from "react";
 import { Fade } from "react-reveal";
-import {Helmet} from "react-helmet";
+import { Helmet } from "react-helmet";
 
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
@@ -55,16 +55,19 @@ const IndexPage = () => {
       <div id="experience">
         <div className="pt-10 -mt-10" />
       </div>
+
       <section className="bg-gradient-to-b from-midnight-200 to-midnight-100">
         <Fade>
-          <div className="max-w-screen-xl mx-auto pt-20 pb-24">
+          <div className="max-w-screen-xl mx-auto pt-20 pb-40">
             <div className="mb-24 mx-4 text-center">
                   <h1 className="mb-6 text-teal-100 text-5xl">Experience</h1>
                   <h2 className="text-xl">I have had the privilege of working with many extraordinary design teams.</h2>
             </div>
-            <div className="w-full h-auto md:h-[1480px] mx-auto px-6 timeline">
+            <div className="w-full h-auto md:h-[1200px] mx-auto px-6 timeline">
               <hr className="centerline" />
               {/* Year markers */}
+              <p class = "timeline-year-text" style={{"grid-row-end": "spring-2022"}}>2022</p>
+              <div class = "dot bg-teal-100 z-10" style={{"grid-row-end": "spring-2022"}} />
               <p class = "timeline-year-text" style={{"grid-row-end": "spring-2021"}}>2021</p>
               <div class = "dot bg-teal-100 z-10" style={{"grid-row-end": "spring-2021"}} />
               <p class = "timeline-year-text" style={{"grid-row-end": "spring-2020"}}>2020</p>
@@ -75,11 +78,11 @@ const IndexPage = () => {
               <div class = "dot bg-teal-100 z-10" style={{"grid-row-end": "spring-2018"}} />
               {/* Line segments */}
               {/* LHR */}
-              <svg className="timeline-diag left" style={{"grid-row": "item-1 / midfall-2021"}} >
+              <svg className="timeline-diag left" style={{"grid-row": "item-1 / spring-2022"}} >
                   <line className= "timelineBar" x1="100%" y1="100%" x2="0" y2="0"/>
               </svg>
               <hr className="timeline-segment left-left" style={{"grid-row-start": "item-1"}}/>
-              <hr className="timeline-segment left-right" style={{"grid-row-start": "midfall-2021"}}/>
+              <hr className="timeline-segment left-right" style={{"grid-row-start": "spring-2022"}}/>
               {/* Jacobi Motors 2 */}
               <svg className="timeline-diag left" style={{"grid-row": "item-2 / midsummer-2021"}} >
                   <line className= "timelineBar" x1="0" y1="100%" x2="100%" y2="0"/>
@@ -93,11 +96,11 @@ const IndexPage = () => {
               <hr className="timeline-segment left-left" style={{"grid-row-start": "item-3"}}/>
               <hr className="timeline-segment left-right" style={{"grid-row-start": "midsummer-2019"}}/>
               {/* TREL */}
-              <svg className="timeline-diag right" style={{"grid-row": "item-1 / midfall-2021"}} >
+              <svg className="timeline-diag right" style={{"grid-row": "item-1 / spring-2022"}} >
                   <line className= "timelineBar" x1="0" y1="100%" x2="100%" y2="0"/>
               </svg> 
               <hr className="timeline-segment right-right" style={{"grid-row-start": "item-1"}}/>
-              <hr className="timeline-segment right-left" style={{"grid-row-start": "midfall-2021"}}/>
+              <hr className="timeline-segment right-left" style={{"grid-row-start": "spring-2022"}}/>
               {/* CMS */}
               <svg className="timeline-diag right" style={{"grid-row": "item-2 / midfall-2020"}} >
                   <line className= "timelineBar" x1="100%" y1="100%" x2="0" y2="0"/>
@@ -106,7 +109,7 @@ const IndexPage = () => {
               <hr className="timeline-segment right-left" style={{"grid-row-start": "midfall-2020"}}/>
               {/* FTC */}
               <svg className="timeline-diag right" style={{"grid-row": "item-3 / spring-2019"}} >
-                  <line className= "timelineBar" x1="0" y1="100%" x2="100%" y2="0"/>
+                  <line className= "timelineBar" x1="100%" y1="100%" x2="0" y2="0"/>
               </svg>
               <hr className="timeline-segment right-right" style={{"grid-row-start": "item-3"}}/>
               <hr className="timeline-segment right-left" style={{"grid-row-start": "spring-2019"}}/>
@@ -158,7 +161,7 @@ const IndexPage = () => {
               <div id="FTC" className="timeline-text right" style={{"grid-row-start": "item-3"}}>
                 <h2 className="text-teal-100 text-xl">FIRST Tech Challenge<br/>Team 9048: <i>The Philobots</i></h2>
                 <i className="text-gray-400 md:hidden">Fall 2017 - Spring 2020</i>
-                <h2 className="text-xl">Team Lead</h2>
+                <h2 className="text-lg">Team Lead (2020), Subsystem Designer</h2>
                 <p className="text-gray-300">Led the technical training, team leadership, and robot systems integration on the eleven-student team. Design and manufacture of robot deposit system each year.</p>
               </div>
               <div id="FTC" className="timeline-block right" style={{background: "red", "grid-row": "summer-2020 / fall-2017"}} />

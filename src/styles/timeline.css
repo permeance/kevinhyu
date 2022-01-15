@@ -6,16 +6,16 @@
     [left-text-left] 1fr [left-text-right]
     2% [seg-1] 3% [seg-2] 5% [seg-3] 3% [seg-4] 2%
     [left-block-left] 3% [left-block-right]
-    6% [middle-line] 6%
+    4% [middle-line] 4%
     [right-block-left] 3% [right-block-right]
     2% [seg-5] 3% [seg-6] 5% [seg-7] 3% [seg-8] 2%
     [right-text-left] 1fr [right-text-right];
   grid-template-rows:
-    [current spring-2022 item-1] 0.5fr [midfall-2021] 0.5fr
+    [current summer-2022 item-1] 1fr [spring-2022] 0.5fr [midfall-2021] 0.5fr
     [fall-2021] 0.5fr [midsummer-2021] 0.5fr [summer-2021] 1fr [spring-2021] 0.5fr [midfall-2020] 0.5fr
-    [fall-2020 item-2] 0.5fr [midsummer-2020] 0.5fr [summer-2020] 1fr [spring-2020] 1fr
-    [fall-2019] 0.5fr [midsummer-2019] 0.5fr [summer-2019 item-3] 1fr [spring-2019] 1fr
-    [fall-2018] 0.5fr [midsummer-2018] 0.5fr [summer-2018] 1fr [spring-2018 item-4] 1fr
+    [fall-2020] 0.5fr [midsummer-2020 item-2] 0.5fr [summer-2020] 1fr [spring-2020] 1fr
+    [fall-2019] 0.5fr [midsummer-2019] 0.5fr [summer-2019] 1fr [spring-2019] 1fr
+    [fall-2018 item-3] 0.5fr [midsummer-2018] 0.5fr [summer-2018] 1fr [spring-2018] 1fr
     [fall-2017];
 }
 
