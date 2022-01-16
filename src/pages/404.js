@@ -15,7 +15,7 @@ const NotFoundPage = () => {
 
       <section className= "mx-20 my-20">
         <h1 className="my-8 text-5xl text-teal-100">Page not found</h1>
-        <p className="my-2 text-1xl text-white">
+        <p className="my-2 text-xl text-white">
           Sorry{" "}
           <span role="img" aria-label="Pensive emoji">
             😔

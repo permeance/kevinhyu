@@ -3,6 +3,7 @@ import { Link } from "gatsby";
 
 import "../styles/global.css";
 import "../styles/timeline.css";
+import "../styles/modals.css";
 
 import LogoHex from "/static/logoHex.inline.svg";
 

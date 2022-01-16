@@ -24,8 +24,8 @@ body {
   position: absolute;
 
   font-family: Exo;
-  color: var(--color-text);
-  background-color: var(--color-background);
+  color: white;
+  background-color: #0b141f;
 }
 
 html {

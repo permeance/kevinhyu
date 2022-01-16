@@ -14,7 +14,7 @@ const ContactPage = () => {
       </Helmet>
       
       <Layout>
-        <section className="max-w-screen-xl mt-40 px-8 sm:px-20 mx-auto">
+        <section className="max-w-screen-xl mx-auto mt-40 px-8 sm:px-20">
           <h1 className="my-10 text-5xl text-teal-100">Contact</h1>
           <p className="text-lg text-white">
             Please send me a message at{" "}
