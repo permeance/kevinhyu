@@ -19,11 +19,15 @@ class ProjectModals extends React.Component {
   handleOpenModal(val) {
     this.setState({ activeModal: val });
     this.setState({ showModal: true });
+
+    document.body.style.overflow = "hidden";
   }
 
   handleCloseModal() {
     this.setState({ showModal: false });
     this.setState({ showModal: "" });
+
+    document.body.style.overflow = "scroll";
   }
 
   render() {
@@ -58,31 +62,25 @@ class ProjectModals extends React.Component {
           contentLabel="website modal"
           ariaHideApp={false}
         >
-          <FontAwesomeIcon
-            color="#81e5d9"
-            size="6x"
-            icon={faTimes}
-            className="modalExit"
-            onClick={this.handleCloseModal}
-          />
+          <div className="modalExit" 
+          onClick={this.handleCloseModal}
+          onKeyDown={this.handleClick}
+          role="button"
+          tabIndex={0}>
+            <FontAwesomeIcon
+              size="5x"
+              icon={faTimes}
+              className="modalExitIcon"
+            />
+          </div>
+          
           <div className="modalContent">
-            <h1 className="text-5xl text-teal-100 text-center">Website</h1>
+            <h1 className="text-4xl text-teal-100 text-center">Website</h1>
             <h2 className="text-xl text-white text-center">Stuff</h2>
-            <p>Text</p>
+            <p>Text
+           </p>
           </div>
         </Modal>
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -114,15 +112,19 @@ class ProjectModals extends React.Component {
           contentLabel="lv modal"
           ariaHideApp={false}
         >
-          <FontAwesomeIcon
-            color="#81e5d9"
-            size="6x"
-            icon={faTimes}
-            className="modalExit"
-            onClick={this.handleCloseModal}
-          />
+          <div className="modalExit" 
+          onClick={this.handleCloseModal}
+          onKeyDown={this.handleClick}
+          role="button"
+          tabIndex={0}>
+            <FontAwesomeIcon
+              size="5x"
+              icon={faTimes}
+              className="modalExitIcon"
+            />
+          </div>
           <div className="modalContent">
-            <h1 className="text-5xl text-teal-100 text-center">
+            <h1 className="text-4xl text-teal-100 text-center">
               Battery Management System PCB
             </h1>
             <h2 className="text-xl text-white text-center">Stuff</h2>
@@ -156,15 +158,19 @@ class ProjectModals extends React.Component {
           contentLabel="winder modal"
           ariaHideApp={false}
         >
-          <FontAwesomeIcon
-            color="#81e5d9"
-            size="6x"
-            icon={faTimes}
-            className="modalExit"
-            onClick={this.handleCloseModal}
-          />
+          <div className="modalExit" 
+          onClick={this.handleCloseModal}
+          onKeyDown={this.handleClick}
+          role="button"
+          tabIndex={0}>
+            <FontAwesomeIcon
+              size="5x"
+              icon={faTimes}
+              className="modalExitIcon"
+            />
+          </div>
           <div className="modalContent">
-            <h1 className="text-5xl text-teal-100 text-center">
+            <h1 className="text-4xl text-teal-100 text-center">
               Carbon Filament Winder
             </h1>
             <h2 className="text-xl text-white text-center">Stuff</h2>
@@ -198,15 +204,19 @@ class ProjectModals extends React.Component {
           contentLabel="keyboard modal"
           ariaHideApp={false}
         >
-          <FontAwesomeIcon
-            color="#81e5d9"
-            size="6x"
-            icon={faTimes}
-            className="modalExit"
-            onClick={this.handleCloseModal}
-          />
+          <div className="modalExit" 
+          onClick={this.handleCloseModal}
+          onKeyDown={this.handleClick}
+          role="button"
+          tabIndex={0}>
+            <FontAwesomeIcon
+              size="5x"
+              icon={faTimes}
+              className="modalExitIcon"
+            />
+          </div>
           <div className="modalContent">
-            <h1 className="text-5xl text-teal-100 text-center">
+            <h1 className="text-4xl text-teal-100 text-center">
               Mechanical Keyboard
             </h1>
             <h2 className="text-xl text-white text-center">Stuff</h2>
@@ -241,15 +251,19 @@ class ProjectModals extends React.Component {
           contentLabel="cms modal"
           ariaHideApp={false}
         >
-          <FontAwesomeIcon
-            color="#81e5d9"
-            size="6x"
-            icon={faTimes}
-            className="modalExit"
-            onClick={this.handleCloseModal}
-          />
+          <div className="modalExit" 
+          onClick={this.handleCloseModal}
+          onKeyDown={this.handleClick}
+          role="button"
+          tabIndex={0}>
+            <FontAwesomeIcon
+              size="5x"
+              icon={faTimes}
+              className="modalExitIcon"
+            />
+          </div>
           <div className="modalContent">
-            <h1 className="text-5xl text-teal-100 text-center">
+            <h1 className="text-4xl text-teal-100 text-center">
               Custom Medical Shields
             </h1>
             <h2 className="text-xl text-white text-center">Stuff</h2>
@@ -284,15 +298,19 @@ class ProjectModals extends React.Component {
           contentLabel="cnc modal"
           ariaHideApp={false}
         >
-          <FontAwesomeIcon
-            color="#81e5d9"
-            size="6x"
-            icon={faTimes}
-            className="modalExit"
-            onClick={this.handleCloseModal}
-          />
+          <div className="modalExit" 
+          onClick={this.handleCloseModal}
+          onKeyDown={this.handleClick}
+          role="button"
+          tabIndex={0}>
+            <FontAwesomeIcon
+              size="5x"
+              icon={faTimes}
+              className="modalExitIcon"
+            />
+          </div>
           <div className="modalContent">
-            <h1 className="text-5xl text-teal-100 text-center">CNC Router</h1>
+            <h1 className="text-4xl text-teal-100 text-center">CNC Router</h1>
             <h2 className="text-xl text-white text-center">Stuff</h2>
             <p>Text</p>
           </div>
@@ -324,15 +342,19 @@ class ProjectModals extends React.Component {
           contentLabel="f4 modal"
           ariaHideApp={false}
         >
-          <FontAwesomeIcon
-            color="#81e5d9"
-            size="6x"
-            icon={faTimes}
-            className="modalExit"
-            onClick={this.handleCloseModal}
-          />
+          <div className="modalExit" 
+          onClick={this.handleCloseModal}
+          onKeyDown={this.handleClick}
+          role="button"
+          tabIndex={0}>
+            <FontAwesomeIcon
+              size="5x"
+              icon={faTimes}
+              className="modalExitIcon"
+            />
+          </div>
           <div className="modalContent">
-            <h1 className="text-5xl text-teal-100 text-center">F4 Cadathon</h1>
+            <h1 className="text-4xl text-teal-100 text-center">F4 Cadathon</h1>
             <h2 className="text-xl text-white text-center">Stuff</h2>
             <p>Text</p>
           </div>
@@ -365,15 +387,19 @@ class ProjectModals extends React.Component {
           contentLabel="printer modal"
           ariaHideApp={false}
         >
-          <FontAwesomeIcon
-            color="#81e5d9"
-            size="6x"
-            icon={faTimes}
-            className="modalExit"
-            onClick={this.handleCloseModal}
-          />
+          <div className="modalExit" 
+          onClick={this.handleCloseModal}
+          onKeyDown={this.handleClick}
+          role="button"
+          tabIndex={0}>
+            <FontAwesomeIcon
+              size="5x"
+              icon={faTimes}
+              className="modalExitIcon"
+            />
+          </div>
           <div className="modalContent">
-            <h1 className="text-5xl text-teal-100 text-center">Printer</h1>
+            <h1 className="text-4xl text-teal-100 text-center">Printer</h1>
             <h2 className="text-xl text-white text-center">Stuff</h2>
             <p>Text</p>
           </div>
@@ -408,15 +434,19 @@ class ProjectModals extends React.Component {
           contentLabel="skystone modal"
           ariaHideApp={false}
         >
-          <FontAwesomeIcon
-            color="#81e5d9"
-            size="6x"
-            icon={faTimes}
-            className="modalExit"
-            onClick={this.handleCloseModal}
-          />
+          <div className="modalExit" 
+          onClick={this.handleCloseModal}
+          onKeyDown={this.handleClick}
+          role="button"
+          tabIndex={0}>
+            <FontAwesomeIcon
+              size="5x"
+              icon={faTimes}
+              className="modalExitIcon"
+            />
+          </div>
           <div className="modalContent">
-            <h1 className="text-5xl text-teal-100 text-center">Skystone</h1>
+            <h1 className="text-4xl text-teal-100 text-center">Skystone</h1>
             <h2 className="text-xl text-white text-center">Stuff</h2>
             <p>Text</p>
           </div>
@@ -450,15 +480,19 @@ class ProjectModals extends React.Component {
           contentLabel="mecanum modal"
           ariaHideApp={false}
         >
-          <FontAwesomeIcon
-            color="#81e5d9"
-            size="6x"
-            icon={faTimes}
-            className="modalExit"
-            onClick={this.handleCloseModal}
-          />
+          <div className="modalExit" 
+          onClick={this.handleCloseModal}
+          onKeyDown={this.handleClick}
+          role="button"
+          tabIndex={0}>
+            <FontAwesomeIcon
+              size="5x"
+              icon={faTimes}
+              className="modalExitIcon"
+            />
+          </div>
           <div className="modalContent">
-            <h1 className="text-5xl text-teal-100 text-center">Mecanum</h1>
+            <h1 className="text-4xl text-teal-100 text-center">Mecanum</h1>
             <h2 className="text-xl text-white text-center">Stuff</h2>
             <p>Text</p>
           </div>
@@ -493,15 +527,19 @@ class ProjectModals extends React.Component {
           contentLabel="rover modal"
           ariaHideApp={false}
         >
-          <FontAwesomeIcon
-            color="#81e5d9"
-            size="6x"
-            icon={faTimes}
-            className="modalExit"
-            onClick={this.handleCloseModal}
-          />
+          <div className="modalExit" 
+          onClick={this.handleCloseModal}
+          onKeyDown={this.handleClick}
+          role="button"
+          tabIndex={0}>
+            <FontAwesomeIcon
+              size="5x"
+              icon={faTimes}
+              className="modalExitIcon"
+            />
+          </div>
           <div className="modalContent">
-            <h1 className="text-5xl text-teal-100 text-center">Rover Ruckus</h1>
+            <h1 className="text-4xl text-teal-100 text-center">Rover Ruckus</h1>
             <h2 className="text-xl text-white text-center">Stuff</h2>
             <p>Text</p>
           </div>
@@ -536,15 +574,19 @@ class ProjectModals extends React.Component {
           contentLabel="quadcopter modal"
           ariaHideApp={false}
         >
-          <FontAwesomeIcon
-            color="#81e5d9"
-            size="6x"
-            icon={faTimes}
-            className="modalExit"
-            onClick={this.handleCloseModal}
-          />
+          <div className="modalExit" 
+          onClick={this.handleCloseModal}
+          onKeyDown={this.handleClick}
+          role="button"
+          tabIndex={0}>
+            <FontAwesomeIcon
+              size="5x"
+              icon={faTimes}
+              className="modalExitIcon"
+            />
+          </div>
           <div className="modalContent">
-            <h1 className="text-5xl text-teal-100 text-center">Quadcopter</h1>
+            <h1 className="text-4xl text-teal-100 text-center">Quadcopter</h1>
             <h2 className="text-xl text-white text-center">Stuff</h2>
             <p>Text</p>
           </div>
@@ -579,15 +621,19 @@ class ProjectModals extends React.Component {
           contentLabel="pathfinder modal"
           ariaHideApp={false}
         >
-          <FontAwesomeIcon
-            color="#81e5d9"
-            size="6x"
-            icon={faTimes}
-            className="modalExit"
-            onClick={this.handleCloseModal}
-          />
+          <div className="modalExit" 
+          onClick={this.handleCloseModal}
+          onKeyDown={this.handleClick}
+          role="button"
+          tabIndex={0}>
+            <FontAwesomeIcon
+              size="5x"
+              icon={faTimes}
+              className="modalExitIcon"
+            />
+          </div>
           <div className="modalContent">
-            <h1 className="text-5xl text-teal-100 text-center">
+            <h1 className="text-4xl text-teal-100 text-center">
               Robot Pathfinder
             </h1>
             <h2 className="text-xl text-white text-center">Stuff</h2>
@@ -624,15 +670,19 @@ class ProjectModals extends React.Component {
           contentLabel="relic modal"
           ariaHideApp={false}
         >
-          <FontAwesomeIcon
-            color="#81e5d9"
-            size="6x"
-            icon={faTimes}
-            className="modalExit"
-            onClick={this.handleCloseModal}
-          />
+          <div className="modalExit" 
+          onClick={this.handleCloseModal}
+          onKeyDown={this.handleClick}
+          role="button"
+          tabIndex={0}>
+            <FontAwesomeIcon
+              size="5x"
+              icon={faTimes}
+              className="modalExitIcon"
+            />
+          </div>
           <div className="modalContent">
-            <h1 className="text-5xl text-teal-100 text-center">
+            <h1 className="text-4xl text-teal-100 text-center">
               Relic Recovery
             </h1>
             <h2 className="text-xl text-white text-center">Stuff</h2>
@@ -667,15 +717,19 @@ class ProjectModals extends React.Component {
           contentLabel="fusor modal"
           ariaHideApp={false}
         >
-          <FontAwesomeIcon
-            color="#81e5d9"
-            size="6x"
-            icon={faTimes}
-            className="modalExit"
-            onClick={this.handleCloseModal}
-          />
+          <div className="modalExit" 
+          onClick={this.handleCloseModal}
+          onKeyDown={this.handleClick}
+          role="button"
+          tabIndex={0}>
+            <FontAwesomeIcon
+              size="5x"
+              icon={faTimes}
+              className="modalExitIcon"
+            />
+          </div>
           <div className="modalContent">
-            <h1 className="text-5xl text-teal-100 text-center">
+            <h1 className="text-4xl text-teal-100 text-center">
               Farnsworth-Hirsch Fusor
             </h1>
             <h2 className="text-xl text-white text-center">Stuff</h2>
