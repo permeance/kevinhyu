@@ -26,7 +26,7 @@ const IndexPage = () => {
       </Helmet>
 
       <section className="">
-        <div className="h-[1180px] md:max-w-screen-xl md:h-screen mx-auto">
+        <div className="h-[1180px] min-h-[1050px] md:max-w-screen-xl md:h-screen mx-auto">
           <div className="my-36 mx-6 flex flex-col justify-start gap-20 md:flex-row md:gap-10 md:mx-12">
             <div className="mx-auto my-auto md:ml-0">
               <h1 className="mb-10 text-5xl text-teal-100 font-bold animate-floating">Hey, I'm Kevin.</h1>
@@ -50,7 +50,7 @@ const IndexPage = () => {
           </div>
         </div>
         <div className="-mt-72 mb-20 text-center -z-20 hidden md:block">
-          <a className="animate-appear" href="#experience" aria-label="Experience timeline">
+          <a className="animate-appear height-limited" href="#experience" aria-label="Experience timeline">
             <FontAwesomeIcon color="#81e5d9" size="4x" icon={faArrowCircleDown} className="hover:text-white" />
           </a>
         </div>

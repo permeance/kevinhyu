@@ -21,3 +21,9 @@ body {
 ::-webkit-scrollbar {
   width: 0;
 }
+
+@media only screen and (max-height: 1100px) {
+  .height-limited {
+    display: none;
+  }
+}
