@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
 
 import websiteResize from "../../projects/media/website-resize.gif";
+import keyboardAnimation from "../../projects/media/keyboard-animation.gif";
 
 class ProjectModals extends React.Component {
   constructor(props) {
@@ -85,21 +86,21 @@ class ProjectModals extends React.Component {
             </h2>
             <p>
               <i>Hello World!</i>
-              <br />
-              <br />
+            </p>
+            <p>
               This website has been a major ambition for me—I have always wanted
               to get into frontend design and create a great visual portfolio
               for displaying my projects. Over the winter break, I finally
               committed to learning JSX, HTML, and CSS to design this website.
-              <br />
-              <br />
+            </p>
+            <p>
               Introducing:{" "}
               <Link className="text-teal-100 hover:text-teal-200" to="/">
                 www.kevinhyu.com
               </Link>
               .
-              <br />
-              <br />
+            </p>
+            <p>
               It's built and deployed with{" "}
               <a
                 className="text-teal-100 hover:text-teal-200"
@@ -153,15 +154,16 @@ class ProjectModals extends React.Component {
               developed this hybrid approach because Tailwind offers
               significantly easier responsive design while semantic CSS classes
               offer faster inherited site-wide changes.
-              <br />
-              <br />
+            </p>
+            <p>
               That way, if I want to change all the 10+ project tiles, I can
               change a single custom CSS class. At the same time, Tailwind
               allows me to change a single header class for this page and not
               cascade changes to every header.
-              <br />
-              <br />I also spent a lot of time making my website mobile-friendly
-              (AKA responsive). Many websites often neglect mobile-first design,
+            </p>
+            <p>
+              I also spent a lot of time making my website mobile-friendly (AKA
+              responsive). Many websites often neglect mobile-first design,
               opting instead to force the website to zoom out and become
               unreadable. In fact, I had to completely re-do the website’s
               styling for mobile resolutions. Some changes were quite
@@ -177,11 +179,9 @@ class ProjectModals extends React.Component {
             <p>
               And although my site probably doesn’t need mobile-first design nor
               require blazing-fast load times, it is cool to make an overkill
-              engineering portfolio, and I’m proud of it. And best of all, I
-              don't have to pay for website design subscriptions or site
-              hosting!
-              <br />
-              <br />
+              engineering portfolio, and I’m proud of it.
+            </p>
+            <p>
               If you would like to check out my website source code, please
               check out my{" "}
               <a
@@ -259,8 +259,8 @@ class ProjectModals extends React.Component {
               racecar, the fans, logic, and contactors are powered from a large
               DC-DC buck converter from our main 400V battery pack to prevent
               the need for a secondary dedicated lower-voltage battery pack.
-              <br />
-              <br />
+            </p>
+            <p>
               However, for the main battery to be connected to the tractive
               system, two large contactors must be initially powered from their
               normally-open configuration when activating the car. This requires
@@ -268,8 +268,8 @@ class ProjectModals extends React.Component {
               lightweight and small as possible. The pack should also be stable
               at 12V, be able to provide up to 12A peak current, and have a
               capacity of over 5Ah.
-              <br />
-              <br />
+            </p>
+            <p>
               In the past, the team has used a commercial off-the-shelf{" "}
               <a
                 className="text-teal-100 hover:text-teal-200"
@@ -313,14 +313,15 @@ class ProjectModals extends React.Component {
               capacitor inrush current (up to 12A) and no idle current. However,
               in the event of battery shutoff, the fans and logic must be
               powered on the smaller battery for safety.
-              <br />
-              <br />I was particularly nervous about soldering the buck
-              converter QFN chip, since all of the pads were underneath the
-              chip. Initially, I made a few mistakes with overheating the boards
-              with a hot-air gun. Since I was using non-leaded solder, the
-              melting temperature required had to be very precisely controlled.
-              However, the Texas Inventionworks laboratory had a proper reflow
-              oven that worked great for soldering the entire second PCB.
+            </p>
+            <p>
+              I was particularly nervous about soldering the buck converter QFN
+              chip, since all of the pads were underneath the chip. Initially, I
+              made a few mistakes with overheating the boards with a hot-air
+              gun. Since I was using non-leaded solder, the melting temperature
+              required had to be very precisely controlled. However, the Texas
+              Inventionworks laboratory had a proper reflow oven that worked
+              great for soldering the entire second PCB.
             </p>
             <StaticImage
               className="modalImage"
@@ -442,15 +443,15 @@ class ProjectModals extends React.Component {
               </a>
               ) to preload the fibers from within. Of course, autofrettage is
               not an option for a motor rotor.
-              <br />
-              <br />
+            </p>
+            <p>
               The central problem was figuring out a way to tension the carbon
               filament (both dry and prepreg) without cause fraying in the
               strand. Dry filament easily frayed on even the slightest angled
               roller, while prepreg filament adhered itself to every pulley,
               making accurate tension control difficult.
-              <br />
-              <br />
+            </p>
+            <p>
               I first considered tensioning the carbon fiber spool itself.
               However, most of the spools were made of cardboard and had very
               different inner bores. I wanted to have the option of directly
@@ -458,8 +459,9 @@ class ProjectModals extends React.Component {
               the spool made it difficult. Plus, the spool’s large radius would
               have required a huge braking torque to pull any tension in the
               line.
-              <br />
-              <br />I settled for a capstan drive that directly contacted the
+            </p>
+            <p>
+              I settled for a capstan drive that directly contacted the
               filament. According to my calculations and empirical static
               friction measurements, to pull 50 lbf, I could use an aluminum
               capstan pulley wound with a single revolution. With a 1-inch
@@ -488,13 +490,13 @@ class ProjectModals extends React.Component {
               <i>
                 <b>Not quite.</b>
               </i>
-              <br />
-              <br />
+            </p>
+            <p>
               The full 360-degree revolution around the capstan caused the tow
               to shift sideways after a few rotations. The tow would begin
               rubbing, fraying, and eventually snap at the high tension.
-              <br />
-              <br />
+            </p>
+            <p>
               In the final weeks of my internship, I began the redesign process
               to make the tensioner as good as I could make it. Instead of
               wrapping the tow around the aluminum pulley a full revolution, I
@@ -511,8 +513,8 @@ class ProjectModals extends React.Component {
               direction and milled the parts on my CNC on the same day. I also
               redesigned the spool holders to mount on the effector for a
               straighter wind path.
-              <br />
-              <br />
+            </p>
+            <p>
               Additionally, I added an electronics control panel that used an
               Arduino, MOSFET, and load cell for precise closed-loop PID tension
               control. I upgraded the winder’s control system with a dedicated
@@ -540,8 +542,8 @@ class ProjectModals extends React.Component {
               The final winder was able to accurately pull up to 30 lbf of
               tension, which exceeds the project requirements for about a
               magnitude cheaper than other commercial high-tension winders.
-              <br />
-              <br />
+            </p>
+            <p>
               Beyond 30 lbf may be achievable with dry 12K carbon fiber tow, but
               might require multiple capstans and a complicated feedforward
               braking control scheme to prevent sudden impacts and fraying.
@@ -600,8 +602,108 @@ class ProjectModals extends React.Component {
             <h1 className="text-4xl text-teal-100 text-center">
               Mechanical Keyboard
             </h1>
-            <h2 className="text-lg text-gray-300 text-center">Stuff</h2>
-            <p>Text</p>
+            <h2 className="text-lg text-gray-300 text-center">
+              Custom CNC milled aluminum chassis with hand-wired switches and
+              microcontroller.
+            </h2>
+            <p>
+              The{" "}
+              <a
+                className="text-teal-100 hover:text-teal-200"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.reddit.com/r/MechanicalKeyboards/"
+              >
+                mechanical keyboard community
+              </a>{" "}
+              is … interesting. First, there’s the consumer keyboard market for
+              mass-manufactured keyboards from big brands like Logitech and
+              Dell. For “keyboard enthusiasts,” there’s a smaller market for
+              custom keyboards at exorbitant prices.
+            </p>
+            <p>
+              Components of custom high-end keyboards, such as the keycaps,
+              switches, PCB, and frame, are typically made in limited
+              manufacturing runs that take months—or even years—to ship. To get
+              these highly sought-after parts, one might expect to pay double or
+              triple the part’s original price on the aftermarket.
+            </p>
+            <p>
+              Of course, I wanted to see what the hype was all about. However, I
+              didn’t have the budget nor the time to wait for preordering custom
+              parts. Instead, I wanted to use my own manufacturing capabilities
+              (CNC milling) and create the board with design-for-manufacturing
+              (DFM) in mind.
+            </p>
+            <img
+              className="modalImage"
+              src={keyboardAnimation}
+              alt="Keyboard exploded view animation"
+            />
+            <p className="text-gray-300 text-center">
+              <i>Got a bit carried away with Keyshot animations...</i>
+            </p>
+            <p>
+              My goal was to make the quietest mechanical keyboard possible. The
+              biggest factors in a keyboard’s typing sound are the damping of
+              the switch-mounting plate, the weight of the entire keyboard, and,
+              of course, the switches themselves.
+            </p>
+            <p>
+              I decided to use a FR4 plate for the switch plate because it was
+              the easiest and quickest to outsource—I simply designed and
+              exported the layout as a PCB. The square internal corners required
+              for the press-fit switches would’ve made milling the board very
+              difficult. The plate is sandwiched on top and bottom with
+              Sorbothane, a great damping foam. Essentially, the plate is
+              floating inside of the chassis to minimize any noise and rattle
+              transferred to the base.
+            </p>
+            <p>
+              Everything else--the polycarbonate midplate and the aluminum top
+              and base--were easily manufactured on my CNC router.
+            </p>
+            <p>
+              For the switches, I’m making two boards: one will be a gift, and
+              have tactile U4 Boba switches. The other will have a custom
+              frankenswitch (Aliaz switch housings combined with silent Cherry
+              Red linear stems).
+            </p>
+            <p>
+              Typically, keyboards are also made with custom PCBs to mount the
+              switches. However, since I spent so much time isolating the switch
+              plate from the base, a rigid PCB would have made the flexible
+              gasket-mounted design counterproductive. Instead I decided to wire
+              each switch individually with meticulously bent diodes and
+              segmented wire...
+            </p>
+            <StaticImage
+              className="modalImage"
+              src="../../projects/media/keyboard-plate.jpg"
+            />
+            <p>
+              ...and I didn't realize just how long that would take. Lubricating
+              every single switch, gluing them in place, and soldering the
+              matrix took well over 20 hours per board.
+            </p>
+            <p>
+              However, it really was all worth it. I just had to solder on the
+              Teensy 2.0 microcontroller, press-fit the USB-C adapter into my
+              milled IO port, and the board was good to go.
+            </p>
+            <StaticImage
+              className="modalImage"
+              src="../../projects/media/keyboard-wiring.jpg"
+            />
+            <p>
+              And even though the solid aluminum frame blocks the beautiful
+              wiring, the keyboard looks sleek and low profile. And it feels
+              great, nearly no noise at all!
+            </p>
+            <StaticImage
+              className="modalImage"
+              src="../../projects/media/keyboard-front.jpg"
+            />
           </div>
         </Modal>
 
@@ -620,8 +722,8 @@ class ProjectModals extends React.Component {
           <h1 className="text-lg text-teal-100">Custom Medical Shields</h1>
           <i className="text-gray-400">Spring 2020 - Summer 2021</i>
           <p className="text-gray-300">
-            Launched startup to address medical demand for solvent-resistant
-            tailored face shields.
+            Startup to address medical demand for solvent-resistant tailored
+            face shields.
           </p>
         </div>
 
@@ -649,8 +751,114 @@ class ProjectModals extends React.Component {
             <h1 className="text-4xl text-teal-100 text-center">
               Custom Medical Shields
             </h1>
-            <h2 className="text-lg text-gray-300 text-center">Stuff</h2>
-            <p>Text</p>
+            <h2 className="text-lg text-gray-300 text-center">
+              Startup to address medical demand for solvent-resistant tailored
+              face shields.
+            </h2>
+            <p>
+              I started{" "}
+              <a
+                className="text-teal-100 hover:text-teal-200"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.custommedshields.com/"
+              >
+                Custom Medical Shields
+              </a>{" "}
+              with my sister to address a need for longer-length shields for
+              professionals with specialized eyewear. Some of our customers are
+              dentists with magnifying loupes, radiologists with large radiation
+              glasses, and doctors that require shields that can stand up to
+              harsh disinfectant sprays.
+            </p>
+            <StaticImage
+              className="modalImage"
+              src="../../projects/media/cms-wearing.jpg"
+            />
+            <p className="text-gray-300 text-center">
+              <i>Two dentists from Frisco, Texas, wearing our shields</i>
+            </p>
+            <p>
+              Originally, I thought of creating a homemade face shield after
+              assessing current commercial shields for my dad (a periodontist)
+              to wear at his practice. Every available shield was laser-cut from
+              acrylic, which fogged up immediately when sprayed with a
+              disinfectant. Additionally, any magnifying loupes we tried were
+              too long to wear with off-the-shelf shields.
+            </p>
+            <p>
+              With a few revisions of feedback, I developed a good base design
+              for the shield. Some of the selling points for the shields were:
+            </p>
+            <p className="text-gray-200 flex flex-col gap-3">
+              <li>
+                100% polycarbonate construction (excellent durability and
+                chemical resistance)
+              </li>
+              <li>
+                Downward shield twist to provide closer shield protection lower,
+                while preserving a longer eye distance for specialized eyewear
+              </li>
+              <li>
+                Made-to-order production leveraging in-house CNC routing for the
+                shields and 3D printing for the bands.
+              </li>
+            </p>
+            <StaticImage
+              className="modalImage"
+              src="../../projects/media/cms-product.jpg"
+            />
+            <p>
+              We launched the company in April 2020 right after school moved to
+              virtual. Of course, at first, we did not have any orders. To pitch
+              our brand, we began sending free shields to dentists in Austin.
+              This began to pick up a lot of traffic on our site—within the
+              first couple of weeks, we hit over $1,000 in revenue. And over the
+              next few months, our operation expanded to sending shields to
+              dentists in different states: Arizona, Florida, California, New
+              York, and further.
+            </p>
+            <p>
+              Learning how to scale production was a big learning opportunity.
+              Some weeks we did not receive orders, and other weeks we would get
+              big orders—some as large as 40 shields.
+            </p>
+            <p>
+              Since our business model relied on made-to-order production, we
+              tried to streamline the manufacturing process. For example, all
+              our clear polycarbonate shields were standardized across all
+              models. This meant we could keep an inventory of a couple dozen
+              shields on standby. This also meant we could purchase
+              polycarbonate sheet in bulk from plastic suppliers.
+            </p>
+            <p>
+              Additionally, we worked to make our routing and printing process
+              as productive as possible. Two shields could be CNC routed in
+              under three minutes, and two bands could be printed in less than
+              an hour.
+            </p>
+            <StaticImage
+              className="modalImage"
+              src="../../projects/media/cms-routing.jpg"
+            />
+            <p>
+              We stopped our operation on May 2021 after seeing less interest in
+              face shields because of vaccinations and COVID cases declining.
+              Altogether, we sold over 300 shields and donated nearly 250
+              shields.
+            </p>
+            <p>
+              I wouldn't hesitate to call the company a complete success—we were
+              able to gain repeat customers, generate a profit, and donate to
+              clinics in need of PPEs.
+            </p>
+            <StaticImage
+              className="modalImage"
+              src="../../projects/media/cms-delivering.jpg"
+            />
+            <p className="text-gray-300 text-center">
+              <i>Arriving at Manos de Christo, a nonprofit dental clinic.</i>
+            </p>
           </div>
         </Modal>
 
@@ -696,8 +904,108 @@ class ProjectModals extends React.Component {
           </div>
           <div className="modalContent">
             <h1 className="text-4xl text-teal-100 text-center">CNC Router</h1>
-            <h2 className="text-lg text-gray-300 text-center">Stuff</h2>
-            <p>Text</p>
+            <h2 className="text-lg text-gray-300 text-center">
+              Custom enclosure, workholding, and control system for productive
+              aluminum routing.
+            </h2>
+            <p>It's hard to find a decent hobby-grade CNC router.</p>
+            <p>
+              Many popular CNC routers are belt or leadscrew-driven with
+              unsupported round rails, or, worse, extrusion roller guides. They
+              are impractical for holding practical tolerances on even plastics
+              or wood.
+            </p>
+            <p>
+              Before getting a CNC router, I did thorough research on the best
+              CNC configurations under $5,000. The most rigid seemed to be
+              Chinese 6040 gantry types which can be specified with proper
+              linear rails and wide extrusions. I decided to buy a used{" "}
+              <a
+                className="text-teal-100 hover:text-teal-200"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.omiocnc.com/products/x6-2200l-usb.html"
+              >
+                Omio X6 2200L
+              </a>{" "}
+              with 20mm rails and C7 ballscrew after hearing good things about
+              its performance in nonferrous metals.
+            </p>
+            <p>
+              The unit arrived in a dysfunctional state: unusable control
+              interface and measurable backlash on all axes. Plus, it lacked a
+              cooling loop for the water-cooled spindle and a proper enclosure.
+            </p>
+            <StaticImage
+              className="modalImage"
+              src="../../projects/media/cnc-before.jpg"
+            />
+            <p>I set out to fix that.</p>
+            <p>
+              First, I added oversized balls to the ballscrews; this removed the
+              small amount of travel backlash by preloading the nut against the
+              screw. However, since the rolled screws were only C7 rated, I
+              would expect to be out 0.002” of lead error over a foot of travel.
+              I wasn’t concerned about this since I would only really require
+              tight tolerances for interpolating bores less than about two
+              inches in diameter. However, if I did need tighter tolerances, I
+              could easily add a DRO glass linear scale to map the ballscrew.
+            </p>
+            <p>
+              Next, I designed the cooling loop with a simple bucket, aquarium
+              pump, and computer radiator sized for 750w of continuous heat
+              dissipation. I ran into quite a bit of issues with purging the air
+              from the system since the pump had very little static pressure.
+              When I submerged the pump in the bucket of water though, the pump
+              was able to successfully push water through the entire loop.
+            </p>
+            <p>
+              It turned out the entire Chinese control unit was unusable; I
+              decided to replace the unit with an open-source{" "}
+              <a
+                className="text-teal-100 hover:text-teal-200"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://buildbotics.com/"
+              >
+                Buildbotics controller
+              </a>
+              , 48V and 12V power supply, 2.2kW VFD, and compressed air
+              solenoid. The Buildbotics control runs on a custom fork of
+              LinuxCNC that uses a Raspberry Pi for fast microstepping.
+            </p>
+            <p>
+              Finally, the enclosure. I designed the enclosure in SOLIDWORKS to
+              be waterproof for brief flood cooling and chip collection. It is
+              constructed with extrusions, aluminum and HDPE walls, and PETG
+              windows. Every wall is sealed against the extrusion with a rubber
+              gasket to seal the enclosure.
+            </p>
+            <StaticImage
+              className="modalImage"
+              src="../../projects/media/cnc-enclosure.jpg"
+            />
+            <StaticImage
+              className="modalImage"
+              src="../../projects/media/cnc-dust.jpg"
+            />
+            <p className="text-gray-300 text-center">
+              <i>Foggy!</i>
+            </p>
+            <p>
+              With my upgrades, the CNC works reliably. I’ve been able to
+              manufacture my robotics parts, work parts, and prototypes with the
+              router. From Custom Medical Shields alone, it has already provided
+              a return on investment.
+            </p>
+            <p>
+              I’ve also learned a lot about machining, DFM, and CAM
+              strategy--skills that are invaluable as a mechanical engineer.
+            </p>
+            <StaticImage
+              className="modalImage"
+              src="../../projects/media/cnc-parts.jpg"
+            />
           </div>
         </Modal>
 
