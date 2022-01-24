@@ -8,6 +8,10 @@ import { faTimes } from "@fortawesome/free-solid-svg-icons";
 
 import websiteResize from "../../projects/media/website-resize.gif";
 import keyboardAnimation from "../../projects/media/keyboard-animation.gif";
+import printing from "../../projects/media/printer-printing.gif";
+import skystoneDeposit from "../../projects/media/skystone-deposit.gif";
+
+import Video from "../components/video";
 
 class ProjectModals extends React.Component {
   constructor(props) {
@@ -101,7 +105,7 @@ class ProjectModals extends React.Component {
               .
             </p>
             <p>
-              It's built and deployed with{" "}
+              It's built from scratch and deployed with{" "}
               <a
                 className="text-teal-100 hover:text-teal-200"
                 href="https://www.gatsbyjs.com/"
@@ -315,13 +319,21 @@ class ProjectModals extends React.Component {
               powered on the smaller battery for safety.
             </p>
             <p>
-              I was particularly nervous about soldering the buck converter QFN
-              chip, since all of the pads were underneath the chip. Initially, I
+              I was particularly nervous about soldering the buck converter{" "}
+              <a
+                className="text-teal-100 hover:text-teal-200"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.protoexpress.com/blog/what-are-qfn-packages/"
+              >
+                QFN chip
+              </a>
+              , since all of the pads were underneath the chip. Initially, I
               made a few mistakes with overheating the boards with a hot-air
-              gun. Since I was using non-leaded solder, the melting temperature
-              required had to be very precisely controlled. However, the Texas
-              Inventionworks laboratory had a proper reflow oven that worked
-              great for soldering the entire second PCB.
+              gun. Since I was using non-leaded solder paste, the melting
+              temperature required had to be very precisely controlled. However,
+              the Texas Inventionworks laboratory had a proper reflow oven that
+              worked great for soldering the entire second PCB.
             </p>
             <StaticImage
               className="modalImage"
@@ -479,17 +491,15 @@ class ProjectModals extends React.Component {
               fact, its braking torque is nearly linear with its input voltage!
               With a 15 lb-in magnetic particle brake with a 14:48 reduction, I
               was able to achieve 51 lb-in torque on the capstan drive. Add a
-              few pulleys to guide the spool into the end effector,{" "}
-              <i>and I was finished!</i>
+              few pulleys to guide the spool into the end effector, and I was
+              finished!
             </p>
             <StaticImage
               src="../../projects/media/winder-frayed.jpg"
               className="modalImage"
             />
             <p>
-              <i>
-                <b>Not quite.</b>
-              </i>
+              <i>Not quite.</i>
             </p>
             <p>
               The full 360-degree revolution around the capstan caused the tow
@@ -726,7 +736,6 @@ class ProjectModals extends React.Component {
             face shields.
           </p>
         </div>
-
         <Modal
           className="modalPortal"
           isOpen={this.state.showModal && this.state.activeModal === "cms"}
@@ -776,7 +785,7 @@ class ProjectModals extends React.Component {
               src="../../projects/media/cms-wearing.jpg"
             />
             <p className="text-gray-300 text-center">
-              <i>Two dentists from Frisco, Texas, wearing our shields</i>
+              <i>Two dentists from Frisco, Texas, wearing our shields.</i>
             </p>
             <p>
               Originally, I thought of creating a homemade face shield after
@@ -816,7 +825,9 @@ class ProjectModals extends React.Component {
               first couple of weeks, we hit over $1,000 in revenue. And over the
               next few months, our operation expanded to sending shields to
               dentists in different states: Arizona, Florida, California, New
-              York, and further.
+              York, and further. We even secured a deal with a local school
+              district, Lake Travis ISD, to provide thirty shields for their
+              in-person teachers!
             </p>
             <p>
               Learning how to scale production was a big learning opportunity.
@@ -842,10 +853,9 @@ class ProjectModals extends React.Component {
               src="../../projects/media/cms-routing.jpg"
             />
             <p>
-              We stopped our operation on May 2021 after seeing less interest in
-              face shields because of vaccinations and COVID cases declining.
-              Altogether, we sold over 300 shields and donated nearly 250
-              shields.
+              We stopped our operation in May 2021 because I had to move to
+              Houston for my second internship at Jacobi Motors. Altogether, we
+              sold over 300 shields and donated nearly 250 shields.
             </p>
             <p>
               I wouldn't hesitate to call the company a complete success—we were
@@ -881,7 +891,6 @@ class ProjectModals extends React.Component {
             aluminum routing.
           </p>
         </div>
-
         <Modal
           className="modalPortal"
           isOpen={this.state.showModal && this.state.activeModal === "cnc"}
@@ -940,7 +949,7 @@ class ProjectModals extends React.Component {
               className="modalImage"
               src="../../projects/media/cnc-before.jpg"
             />
-            <p>I set out to fix that.</p>
+            <p>I set out to fix it.</p>
             <p>
               First, I added oversized balls to the ballscrews; this removed the
               small amount of travel backlash by preloading the nut against the
@@ -990,7 +999,7 @@ class ProjectModals extends React.Component {
               src="../../projects/media/cnc-dust.jpg"
             />
             <p className="text-gray-300 text-center">
-              <i>Foggy!</i>
+              <i>MDF + light chipload and DOC = literally just fog</i>
             </p>
             <p>
               With my upgrades, the CNC works reliably. I’ve been able to
@@ -1006,6 +1015,16 @@ class ProjectModals extends React.Component {
               className="modalImage"
               src="../../projects/media/cnc-parts.jpg"
             />
+            <p className="text-center text-gray-300 flex flex-col gap-1">
+              <i>
+                Fixture plate is a 25mm grid of tapped M5 holes and 50mm grid of
+                10mm dowel pins.
+              </i>
+              <i>
+                With the plate and a sacrificial acrylic sheet, simple parts can
+                be milled in one setup.
+              </i>
+            </p>
           </div>
         </Modal>
 
@@ -1021,13 +1040,12 @@ class ProjectModals extends React.Component {
             className="modalThumbnail"
             src="../../projects/media/f4-top.jpg"
           />
-          <h1 className="text-lg text-teal-100">F4 Cadathon</h1>
+          <h1 className="text-lg text-teal-100">F4 CADathon</h1>
           <i className="text-gray-400">Spring 2020</i>
           <p className="text-gray-300">
             One week FIRST Robotics Competition full-robot CAD competition.
           </p>
         </div>
-
         <Modal
           className="modalPortal"
           isOpen={this.state.showModal && this.state.activeModal === "f4"}
@@ -1049,9 +1067,136 @@ class ProjectModals extends React.Component {
             />
           </div>
           <div className="modalContent">
-            <h1 className="text-4xl text-teal-100 text-center">F4 Cadathon</h1>
-            <h2 className="text-lg text-gray-300 text-center">Stuff</h2>
-            <p>Text</p>
+            <h1 className="text-4xl text-teal-100 text-center">F4 CADathon</h1>
+            <h2 className="text-lg text-gray-300 text-center">
+              One week FIRST Robotics Competition full-robot CAD competition.
+            </h2>{" "}
+            <p>
+              {" "}
+              <a
+                className="text-teal-100 hover:text-teal-200"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.chiefdelphi.com/t/2020-spring-special-f4-cadathon-results-posted/383527"
+              >
+                F4 CADathon
+              </a>{" "}
+              is a biannual CAD competition for FIRST Robotics Competition (FRC)
+              students to practice designing a robot prior to build season. The
+              rules were simple: design a robot in seven days that could compete
+              in a new game created by the judges.
+            </p>
+            <p>
+              Despite having never competed in FRC, I joined up with two friends
+              to attempt the CADathon. We were up against the odds; the
+              competition had over 100 teams vying to win, and we had zero
+              experience in FRC robot design.
+            </p>
+            <p>
+              Nevertheless, we were determined to win the final cash prize and
+              put our CAD skills to the test. At the time, I was pursuing the{" "}
+              <a
+                className="text-teal-100 hover:text-teal-200"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.credly.com/badges/9001baf8-d0aa-4e08-9c30-8bfec61c5f06?source=linked_in_profile"
+              >
+                Certified SOLIDWORKS Expert
+              </a>{" "}
+              certification, so I was eager for any CAD practice that could
+              prepare me for the certification exam.
+            </p>
+            <StaticImage
+              className="h-72 w-72 mx-auto"
+              src="../../projects/media/f4-gameday.jpg"
+            />
+            <p>
+              The game, <i>Gameday</i>, has three components:
+            </p>
+            <p className="text-gray-200 flex flex-col gap-3">
+              <li>
+                Robots can shoot standard-sized footballs into a slot on the
+                other side of the field.
+              </li>
+              <li>
+                To score additional points, robots can pick up weight-plates
+                (olympic discs) and place them on a center pole
+              </li>
+              <li>
+                Finally, to traverse the field, robots should be under 27" to
+                clear the center bar.
+              </li>
+            </p>
+            <p>
+              Over the next 7 days, we would put in over <b>150</b> manhours,
+              push <b>32</b> revisions of the main assembly, design <b>6</b>{" "}
+              subsystems, and place over <b>3000</b> parts.
+            </p>
+            <StaticImage
+              className="modalImage"
+              src="../../projects/media/f4-side.jpg"
+            />
+            <p className="text-center text-gray-300">
+              <i>Cloud rendered with Fusion 360.</i>
+            </p>
+            <p>
+              The final robot includes a six-wheel tank drive, a
+              linkage-deployed horizontal roller intake, heavy-duty boxtube
+              lift, weight-plate suction gripper, roller funnelling transfer,
+              cycloidal-gearbox turret, and an off-axis rotating shooter. I
+              designed the shooter / transfer subassemblies and worked on the
+              overall robot packaging.
+            </p>
+            <p>
+              Every component fits neatly into the 30”x30”x27” maximum size and
+              folds outwards for optimal shooting and lifting performance. Every
+              part is custom designed using SOLIDWORKS and created with DFM in
+              mind. Additionally, every single bolt and nut is placed into the
+              assembly with space allocations for wire bends and management.
+            </p>
+            <p>
+              If we were to fabricate this robot for real, we would not have any
+              trouble manufacturing every part with conventional sheet metal and
+              CNC milling.
+            </p>
+            <StaticImage
+              className="modalImage"
+              src="../../projects/media/f4-back.jpg"
+            />
+            <p className="text-center text-gray-300">
+              <i>
+                And yes, we did name our team "Hot Poket" because we spent a lot
+                of time pocketing lightening holes.
+              </i>
+            </p>
+            <p>
+              I’m honestly surprised with how much progress we made in seven
+              days. In just a week, we were able to diagnose all the packaging
+              decisions, create a simple yet capable robot, and even give the
+              robot a distinct aesthetic.
+            </p>
+            <p>
+              All in all, we earned{" "}
+              <a
+                className="text-teal-100 hover:text-teal-200"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://youtu.be/jJ2vtXRY18M?t=1400"
+              >
+                10th place
+              </a>{" "}
+              out of over 100 teams, the highest placing FRC rookies. I learned
+              a ton through this experience: creating reusable CAD models,
+              driving assemblies with reference sketches for rapid adjustments,
+              and thinking ahead for potential changes.
+            </p>
+            <p>
+              Looking back, learning how to <i>really</i> use CAD really
+              requires putting in hundreds of hours struggling with the software
+              and diagnosing part errors. These seven days in the CADathon were
+              very frustrating and slow, but simultaneously productive for my
+              growth as a CAD engineer.
+            </p>
           </div>
         </Modal>
 
@@ -1074,7 +1219,6 @@ class ProjectModals extends React.Component {
             printer.
           </p>
         </div>
-
         <Modal
           className="modalPortal"
           isOpen={this.state.showModal && this.state.activeModal === "printer"}
@@ -1096,9 +1240,93 @@ class ProjectModals extends React.Component {
             />
           </div>
           <div className="modalContent">
-            <h1 className="text-4xl text-teal-100 text-center">Printer</h1>
-            <h2 className="text-lg text-gray-300 text-center">Stuff</h2>
-            <p>Text</p>
+            <h1 className="text-4xl text-teal-100 text-center">
+              3D Printer Toolhead
+            </h1>
+            <h2 className="text-lg text-gray-300 text-center">
+              High temperature dual-extrusion hot-swap toolhead for a Lulzbot 3D
+              printer.
+            </h2>
+            <p>
+              In an FDM 3D printer, the printhead is the big factor in print
+              reliability and quality. A poorly tuned extruder can cause failed
+              prints from under or overextrusion, a bad heatbreak and heatsink
+              can cause heat creep and filament jamming, and an improperly
+              specified heatblock can cause thermal runaway issues or prevent
+              the printer from reaching temperature.
+            </p>
+            <p>
+              I use my 3D printer for production and occasional prototyping, so
+              print reliability and repeatability is very important.
+            </p>
+            <p>
+              I have recently had a lot of issues with the stock Lulzbot Taz
+              printhead. First, filament would always stick to the block and
+              cake onto the thermistor, often causing its thin wire to break.
+              Also, the stock printhead was very poorly mounted—it could bend
+              over a millimeter if caught on the edge of a part. Lastly, it only
+              accepted 2.85mm filament, which is becoming harder and more
+              expensive to source.
+            </p>
+            <StaticImage
+              className="modalImage"
+              src="../../projects/media/printer-old.jpg"
+            />
+            <p>
+              I decided to solve this problem by designing my own printhead that
+              could reliably handle a variety of plastics. I used a dual
+              extruder from Bondtech, Chimera hotend from E3D, titanium
+              heatbreaks, nickel-coated heatblocks, and tool steel nozzles.
+              Additionally, I included high-temperature PT100 thermistors and a
+              bed-levelling BLTouch sensor.
+            </p>
+            <p>
+              I designed the printhead mounts and fan ducts using my knowledge
+              of the stock printhead’s shortcomings: its poor rigidity, cooling
+              performance, and lack of bed levelling options.
+            </p>
+            <p>My custom printhead features:</p>
+            <p className="text-gray-200 flex flex-col gap-3">
+              <li>
+                Dual extrusion (one nozzle for 500C and one for 300C to prevent
+                plastic burnout)
+              </li>
+              <li>
+                Non-stick heatblocks and abrasive-resistant nozzles for standard
+                1.75mm filament
+              </li>
+              <li>Compact print cooling fan ducts</li>
+              <li>
+                Titanium heatbreak and oversized hotend fan to prevent high-temp
+                heat creep
+              </li>
+              <li>BLTouch bed levelling</li>
+              <li>Stiff polycarbonate mount located close to linear rods</li>
+            </p>
+            <StaticImage
+              className="h-[80%] sm:max-w-[60%] sm:m-4 sm:mx-auto text-center rounded-lg "
+              src="../../projects/media/printer-head.jpg"
+            />
+            <p>
+              I had to revise the main extruder mount twice to maximize the
+              printhead rigidity. Between revisions, I pushed the extruder body
+              forward and ribbed the mount plate for greater stiffness.
+            </p>
+            <p>
+              After I finished assembling the successful printhead, I swapped it
+              on my printer and resumed production.
+            </p>
+            <p>
+              So far, the printhead hasn’t failed running over 20 kilograms of
+              high-temperature polycarbonate. It has already provided a return
+              on investment from the increased print reliability avoiding wasted
+              filament and scrapped parts.
+            </p>
+            <img
+              className="modalImage"
+              src={printing}
+              alt="3D printing polycarbonate"
+            />
           </div>
         </Modal>
 
@@ -1123,7 +1351,6 @@ class ProjectModals extends React.Component {
             four-bar lift, and planar 3 DoF SCARA.
           </p>
         </div>
-
         <Modal
           className="modalPortal"
           isOpen={this.state.showModal && this.state.activeModal === "skystone"}
@@ -1146,8 +1373,172 @@ class ProjectModals extends React.Component {
           </div>
           <div className="modalContent">
             <h1 className="text-4xl text-teal-100 text-center">Skystone</h1>
-            <h2 className="text-lg text-gray-300 text-center">Stuff</h2>
-            <p>Text</p>
+            <h2 className="text-lg text-gray-300 text-center">
+              Block-stacking robot with differential swerve drive,
+              double-reverse four-bar lift, and planar 3 DoF SCARA.
+            </h2>
+            <p>
+              <a
+                className="text-teal-100 hover:text-teal-200"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.youtube.com/watch?v=XiGB_8Ppnbs"
+              >
+                Skystone
+              </a>{" "}
+              was my favorite year in FIRST Tech Challenge.
+            </p>
+            <p>
+              The game involves making robots stack 4”x8” stones in a skyscraper
+              without toppling. Robots that could accomplish tall stacks had to
+              be extraordinarily nimble and precise, and many of the most
+              successful robots featured unique innovations.
+            </p>
+            <p>
+              I led my eleven-person team to create not only the most successful
+              competition robot in my robotics career so far, but also a robot
+              that featured three unique subsystems never seen before in
+              high-school competitive robotics.
+            </p>
+            <p>
+              But first, here’s a quick cinematic video of our finished robot –
+            </p>
+            <div className="aspect-video md:w-[60%] md:m-4 md:mx-auto text-center rounded-lg ">
+              <Video videoSrc="https://www.youtube.com/embed/43uAq9UHA_A" />
+            </div>
+            <p>We went all-out with the robot subsystem innovation:</p>
+            <p className="text-gray-200 flex flex-col gap-3">
+              <li>
+                3 degree-of-freedom planar serial{" "}
+                <a
+                  className="text-teal-100 hover:text-teal-200"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://en.wikipedia.org/wiki/SCARA"
+                >
+                  SCARA
+                </a>{" "}
+                to manipulate stones outside the robot with precision
+              </li>
+              <li>
+                Double reverse four-bar lift driven by a custom ring-rack gear
+                for compactness, larger lift stroke, and higher torque
+              </li>
+              <li>
+                Differential swerve drivebase allowing true holonomic driving
+                and 100% pushing power in every direction
+              </li>
+            </p>
+            <p>
+              All three main subsystems were valuable to our competition
+              performance. Our swerve drive allowed the robot to pursue defense
+              and push the skyscraper foundation with ease. The SCARA allowed us
+              to fine-tune and automate stone placement. The double-reverse
+              four-bar lift helped with compact packaging and allowed us to lift
+              the SCARA up to eight stones tall.
+            </p>
+            <StaticImage
+              className="modalImage"
+              src="../../projects/media/skystone-render.jpg"
+            />
+            <p className="text-center text-gray-300">
+              <i>SOLIDWORKS motion study + Keyshot 8</i>
+            </p>
+            <p>
+              In addition to doing systems integration on the robot, I spent my
+              time designing, manufacturing, and programming the deposit
+              subsystem (SCARA and claw systems).
+            </p>
+            <p>
+              First, getting the SCARA to work reliably was very difficult.
+              Originally, I didn’t know how to make revolute joints stiff
+              without precision-machined components. The first prototype had
+              floppy joints because of the lack of axial preload. In the final
+              prototype, I ended up doubling the axle support distance and
+              shimming the thrust washers until the joint was sufficiently
+              preloaded for the claw weight. This worked well, but introduced
+              another issue:
+            </p>
+            <p>
+              Parasitic joint motion. Because each of the three DoF were
+              serially actuated but belted coaxially through other joints, any
+              large torque in another axis would cause its coaxial joint to move
+              slightly within the servo’s backlash. Because I had to implement
+              joint preload, essentially increasing the static friction of each
+              joint, this quickly became an issue with precisely manipulating
+              the SCARA.
+            </p>
+            <p>
+              After chasing down multiple conceptual solutions for this control
+              issue, I eventually greased the pivots and tightened the backlash
+              by adjusting the gear and belt center distances. This removed a
+              significant amount of parasitic joint motion. Now that the
+              physical hardware was reliable enough, the control system needed
+              to be quick and precise for the SCARA to work properly. A big
+              concern I had was the reliability of the SCARA passthrough:
+            </p>
+            <img className="modalImage" src={skystoneDeposit} alt="Passthrough and gripper positioning with SCARA"/>
+            <p>
+              There is a 6” gap between the lift that the 4” stone must
+              traverse. This meant that all three axes must be perfectly dialed
+              in for the pass-through to be successful.
+            </p>
+            <p>
+              Working with my robotics coach, we implemented backlash
+              compensation for every servo joint and mapped every interval of
+              the passthrough. To activate the passthrough, the controller would
+              step through every interval sending a command to the servos and
+              wait a specified time delay.
+            </p>
+            <p>
+              We automated the passthrough this way because our robot’s
+              controller relied on sending open-loop signals to the servos,
+              which completed the operation with a closed-loop PID controller.
+              However, the controller had no idea if the servos arrived at
+              position or not. In the past, we have tried running a separate
+              closed loop off the servo with velocity commands and an external
+              encoder, but the encoder latency and PID plant refresh rate was
+              too slow to be usable. The position mapping was reliable enough
+              for competition.
+            </p>
+            <p>
+              On the driver-controlled delivery side, we implemented inverse
+              kinematics for the 3 DoF system. On our controller, one joystick
+              controls the XY velocity of the gripper, which is transformed into
+              two linkage velocity commands. The other joystick controls the
+              rotation of the gripper for horizontally-placed stones. Since the
+              linkages were serially actuated, the kinematics were quite simple
+              and there were zero singularities along its travel. We just had to
+              check that the bounds of the position command were within the
+              SCARA’s physical travel.
+            </p>
+            <p>
+              The final competition-ready SCARA was just as quick as any robot’s
+              passthrough mechanism but added the flexibility to adjust a stone
+              inside of a cylindrical bounding box. Before the SCARA deposit, we
+              were toppling skyscrapers nearly every match because of driver
+              placement errors. However, with the adjustable deposit mechanism,
+              we didn’t topple a stack — ever.
+            </p>
+            <StaticImage
+              className="md:w-[60%] md:m-4 md:mx-auto text-center rounded-lg"
+              src="../../projects/media/skystone-scara.jpg"
+            />
+            <p className="text-center text-gray-300">
+              <i>Early season prototype of the SCARA and claw.</i>
+            </p>
+            <p>
+              I loved designing the deposit system on this robot. It was so fun
+              researching control theory and learning about industrial robots to
+              apply concepts to our competition robot.
+            </p>
+            <p>
+              I have to admit – I thought it was ambitious to pursue a multi-DoF
+              arm to stack stones for this game challenge. However, this project
+              turned out to be a huge success and a big performance boost for our
+              robot. The SCARA was one of the three innovations that
+              made our robot stand out.
+            </p>
           </div>
         </Modal>
 
@@ -1171,7 +1562,6 @@ class ProjectModals extends React.Component {
             Low-profile holonomic robot drivetrain.
           </p>
         </div>
-
         <Modal
           className="modalPortal"
           isOpen={this.state.showModal && this.state.activeModal === "mecanum"}
@@ -1193,9 +1583,13 @@ class ProjectModals extends React.Component {
             />
           </div>
           <div className="modalContent">
-            <h1 className="text-4xl text-teal-100 text-center">Mecanum</h1>
-            <h2 className="text-lg text-gray-300 text-center">Stuff</h2>
-            <p>Text</p>
+            <h1 className="text-4xl text-teal-100 text-center">
+              Eight-Wheel Mecanum Drivetrain
+            </h1>
+            <h2 className="text-lg text-gray-300 text-center">
+              Low-profile holonomic robot drivetrain.
+            </h2>
+            <p>Please check back later!</p>
           </div>
         </Modal>
 
@@ -1218,7 +1612,6 @@ class ProjectModals extends React.Component {
             robot between programmed waypoints
           </p>
         </div>
-
         <Modal
           className="modalPortal"
           isOpen={
@@ -1245,8 +1638,11 @@ class ProjectModals extends React.Component {
             <h1 className="text-4xl text-teal-100 text-center">
               Robot Pathfinder
             </h1>
-            <h2 className="text-lg text-gray-300 text-center">Stuff</h2>
-            <p>Text</p>
+            <h2 className="text-lg text-gray-300 text-center">
+              Program to autonomously pathfind, avoid preset obstacles, and
+              drive robot between programmed waypoints
+            </h2>
+            <p>Please check back later!</p>
           </div>
         </Modal>
 
@@ -1294,8 +1690,11 @@ class ProjectModals extends React.Component {
           </div>
           <div className="modalContent">
             <h1 className="text-4xl text-teal-100 text-center">Rover Ruckus</h1>
-            <h2 className="text-lg text-gray-300 text-center">Stuff</h2>
-            <p>Text</p>
+            <h2 className="text-lg text-gray-300 text-center">
+              Cube and ball transport robot with extending intake and prototype
+              rotary spring launcher.
+            </h2>
+            <p>Please check back later!</p>
           </div>
         </Modal>
 
@@ -1342,9 +1741,14 @@ class ProjectModals extends React.Component {
             />
           </div>
           <div className="modalContent">
-            <h1 className="text-4xl text-teal-100 text-center">Quadcopter</h1>
-            <h2 className="text-lg text-gray-300 text-center">Stuff</h2>
-            <p>Text</p>
+            <h1 className="text-4xl text-teal-100 text-center">
+              Racing Quadcopter
+            </h1>
+            <h2 className="text-lg text-gray-300 text-center">
+              Ultra-lightweight 250mm quadcopter built with custom CNC-milled
+              chassis
+            </h2>
+            <p>Please check back later!</p>
           </div>
         </Modal>
 
@@ -1369,7 +1773,6 @@ class ProjectModals extends React.Component {
             linkage claw deposit.
           </p>
         </div>
-
         <Modal
           className="modalPortal"
           isOpen={this.state.showModal && this.state.activeModal === "relic"}
@@ -1394,8 +1797,11 @@ class ProjectModals extends React.Component {
             <h1 className="text-4xl text-teal-100 text-center">
               Relic Recovery
             </h1>
-            <h2 className="text-lg text-gray-300 text-center">Stuff</h2>
-            <p>Text</p>
+            <h2 className="text-lg text-gray-300 text-center">
+              Cube-stacking robot with cam-actuated 2 DoF roller intake and
+              linkage claw deposit.
+            </h2>
+            <p>Please check back later!</p>
           </div>
         </Modal>
 
@@ -1418,7 +1824,6 @@ class ProjectModals extends React.Component {
             fusion-like conditions for a school exhibition.
           </p>
         </div>
-
         <Modal
           className="modalPortal"
           isOpen={this.state.showModal && this.state.activeModal === "fusor"}
@@ -1443,8 +1848,11 @@ class ProjectModals extends React.Component {
             <h1 className="text-4xl text-teal-100 text-center">
               Farnsworth-Hirsch Fusor
             </h1>
-            <h2 className="text-lg text-gray-300 text-center">Stuff</h2>
-            <p>Text</p>
+            <h2 className="text-lg text-gray-300 text-center">
+              Rudimentary demonstration of inertial confinement to produce
+              fusion-like conditions for a school exhibition.
+            </h2>
+            <p>Please check back later!</p>
           </div>
         </Modal>
       </>

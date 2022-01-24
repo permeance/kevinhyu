@@ -238,7 +238,7 @@ const IndexPage = () => {
                 <div className="flex flex-col gap-2 text-center items-center gap-4">
                   <FontAwesomeIcon color="#57a19a" size="4x" icon={faCogs} />
                   <h2 className="text-xl">CAD Design</h2>
-                  <p className="text-gray-300">Proficient in Solidworks, familiar with Fusion 360. Capable of resilient modeling strategy for capturing design intent and working in teams.</p>
+                  <p className="text-gray-300">Proficient in Solidworks, familiar with Fusion 360. Experienced with making reusable, future-proof CAD models.</p>
                 </div>
               </div>
               <div className="flex flex-col gap-12 sm:grid sm:grid-cols-2 sm:gap-8 sm:col-span-2 sm:w-2/3 mx-auto lg:w-auto">
@@ -250,7 +250,7 @@ const IndexPage = () => {
                 <div className="flex flex-col gap-2 text-center items-center gap-4">
                   <FontAwesomeIcon color="#57a19a" size="4x" icon={faMicrochip} />
                   <h2 className="text-xl">Circuit Design</h2>
-                  <p className="text-gray-300">Working knowledge in KiCAD for power electronics design.</p>
+                  <p className="text-gray-300">Working knowledge in KiCad for power electronics design.</p>
                 </div>
               </div>
             </div>
