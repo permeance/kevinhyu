@@ -20,6 +20,7 @@ body {
 
 ::-webkit-scrollbar {
   width: 0;
+  height: 0;
 }
 
 @media only screen and (max-height: 1100px) {

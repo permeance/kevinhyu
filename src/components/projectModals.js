@@ -10,6 +10,9 @@ import websiteResize from "../../projects/media/website-resize.gif";
 import keyboardAnimation from "../../projects/media/keyboard-animation.gif";
 import printing from "../../projects/media/printer-printing.gif";
 import skystoneDeposit from "../../projects/media/skystone-deposit.gif";
+import mecanumPractice from "../../projects/media/mecanum-practice.gif";
+import pathfinderOld from "../../projects/media/pathfinder-old.gif";
+import pathfinderPursuit from "../../projects/media/pathfinder-pursuit.gif";
 
 import Video from "../components/video";
 
@@ -347,18 +350,19 @@ class ProjectModals extends React.Component {
             </p>
             <p>
               After doing a rudimentary test with a multimeter, the board works
-              as intended! However, unfortunately, it will likely not be used
-              for this year's electric racecar because of the lack of time to
-              rigorously test as a alternative for the time-tested LFP battery.
-              Additionally, the board poses uncertainties with backflowing
-              current, as it is in parallel with the DC/DC converter on the main
-              battery.
+              as intended! However, it will likely not be used for this year's
+              electric racecar because of the lack of time to rigorously test as
+              a alternative to our time-tested LFP battery. Additionally, the
+              board poses uncertainties with backflowing current, as it is in
+              parallel with the DC/DC converter on the main battery.
             </p>
             <p>
               All in all, though, this project was a success and I learned a lot
               about power electronics design and soldering QFN chips. It was my
               first high-current board and I’m glad I taught myself thermal
-              considerations when constructing and testing the PCB.
+              considerations when constructing and testing the PCB. I will
+              definitely be using this board in the future to monitor and
+              regular Li-ion packs.
             </p>
           </div>
         </Modal>
@@ -439,6 +443,12 @@ class ProjectModals extends React.Component {
               className="modalImage"
               src="../../projects/media/winder-hoop.jpg"
             />
+            <p className="text-center text-gray-300">
+              <i>
+                All information and photos reproduced with permission.
+                Intellectual property of Jacobi Motors LLC.
+              </i>
+            </p>
             <p>
               However, figuring out a way to preload carbon tow is significantly
               more difficult than it appears. In fact, commercial carbon winding
@@ -707,8 +717,8 @@ class ProjectModals extends React.Component {
             />
             <p>
               And even though the solid aluminum frame blocks the beautiful
-              wiring, the keyboard looks sleek and low profile. And it feels
-              great, nearly no noise at all!
+              wiring, the keyboard looks sleek and low profile. It feels great
+              and makes nearly no noise at all!
             </p>
             <StaticImage
               className="modalImage"
@@ -817,6 +827,10 @@ class ProjectModals extends React.Component {
               className="modalImage"
               src="../../projects/media/cms-product.jpg"
             />
+            <StaticImage
+              className="modalImage"
+              src="../../projects/media/cms-loupe.jpg"
+            />
             <p>
               We launched the company in April 2020 right after school moved to
               virtual. Of course, at first, we did not have any orders. To pitch
@@ -834,6 +848,10 @@ class ProjectModals extends React.Component {
               Some weeks we did not receive orders, and other weeks we would get
               big orders—some as large as 40 shields.
             </p>
+            <StaticImage
+              className="modalImage"
+              src="../../projects/media/cms-shields.jpg"
+            />
             <p>
               Since our business model relied on made-to-order production, we
               tried to streamline the manufacturing process. For example, all
@@ -853,7 +871,7 @@ class ProjectModals extends React.Component {
               src="../../projects/media/cms-routing.jpg"
             />
             <p>
-              We stopped our operation in May 2021 because I had to move to
+              We paused our operation in May 2021 because I had to move to
               Houston for my second internship at Jacobi Motors. Altogether, we
               sold over 300 shields and donated nearly 250 shields.
             </p>
@@ -1304,7 +1322,7 @@ class ProjectModals extends React.Component {
               <li>Stiff polycarbonate mount located close to linear rods</li>
             </p>
             <StaticImage
-              className="h-[80%] sm:max-w-[60%] sm:m-4 sm:mx-auto text-center rounded-lg "
+              className="h-[80%] sm:max-w-[60%] sm:m-4 sm:mx-auto text-center rounded-lg"
               src="../../projects/media/printer-head.jpg"
             />
             <p>
@@ -1401,7 +1419,8 @@ class ProjectModals extends React.Component {
               high-school competitive robotics.
             </p>
             <p>
-              But first, here’s a quick cinematic video of our finished robot –
+              But before I dive into the design, here’s a quick cinematic video
+              of our finished robot –
             </p>
             <div className="aspect-video md:w-[60%] md:m-4 md:mx-auto text-center rounded-lg ">
               <Video videoSrc="https://www.youtube.com/embed/43uAq9UHA_A" />
@@ -1477,7 +1496,11 @@ class ProjectModals extends React.Component {
               to be quick and precise for the SCARA to work properly. A big
               concern I had was the reliability of the SCARA passthrough:
             </p>
-            <img className="modalImage" src={skystoneDeposit} alt="Passthrough and gripper positioning with SCARA"/>
+            <img
+              className="modalImage"
+              src={skystoneDeposit}
+              alt="Passthrough and gripper positioning with SCARA"
+            />
             <p>
               There is a 6” gap between the lift that the 4” stone must
               traverse. This meant that all three axes must be perfectly dialed
@@ -1535,9 +1558,9 @@ class ProjectModals extends React.Component {
             <p>
               I have to admit – I thought it was ambitious to pursue a multi-DoF
               arm to stack stones for this game challenge. However, this project
-              turned out to be a huge success and a big performance boost for our
-              robot. The SCARA was one of the three innovations that
-              made our robot stand out.
+              turned out to be a huge success and a big performance boost for
+              our robot. The SCARA was one of the three innovations that made
+              our robot stand out.
             </p>
           </div>
         </Modal>
@@ -1589,7 +1612,104 @@ class ProjectModals extends React.Component {
             <h2 className="text-lg text-gray-300 text-center">
               Low-profile holonomic robot drivetrain.
             </h2>
-            <p>Please check back later!</p>
+            <p>
+              In FIRST Tech Challenge, all robots must fit within an 18” sizing
+              cube. In some recent games, to complete optional points or to have
+              better field mobility, robots also need to clear a low bar,
+              imposing a height restriction.
+            </p>
+            <p>
+              Since packaging and size limitations will always be a crucial
+              factor in designing an FTC robot, I decided to build the absolute
+              shortest holonomic drivetrain possible.
+            </p>
+            <p>
+              As far as holonomic drivebases go, I had a few choices: x-drive,
+              mecanum drive, h-drive, or swerve drive. Our team has experience
+              with all four, so I decided to choose a mecanum drive because it
+              was the most space-efficient and versatile drivebase for a variety
+              of game challenges.
+            </p>
+            <p>
+              I decided to use 60mm mecanum wheels originally marketed as
+              vectored intake wheels. These wheels are constructed with thin
+              aluminum plates, so making a traditional four-wheel drivetrain
+              cannot hold an entire 40lb robot. Therefore, to increase the
+              load-bearing capacity but retain the low-profile stature, I added
+              four more wheels – an eight-wheel mecanum!
+            </p>
+            <StaticImage
+              className="modalImage"
+              src="../../projects/media/mecanum-render.jpg"
+            />
+            <p>
+              My design also includes a few novel drivetrain concepts. All eight
+              wheels are “dead-axled,” which means that there is stationary bolt
+              providing both compressive structural support for the driverails,
+              and load-bearing support for each wheel. This reduces the need for
+              additional spacers clamping the driverails. Additionally, I
+              decided to experiment with SLA printed pillow blocks and spacers
+              for the chassis. Typically, FDM prints tend to delaminate along
+              the layer lines when printed parallel to the driverails from
+              collisions with other robots. The SLA prints are more isotropic
+              and should better withstand side collisions.
+            </p>
+            <p>
+              Since this drivebase is going to be exotic, I upped the gearing
+              ratio to produce a maximum theoretical speed of 442 feet/min,
+              instead of the highly used 328 feet/min. This will give the
+              drivebase a faster top speed but less acceleration. I was
+              predicting that any robot using this drivetrain will be very
+              compact, lightweight, and nimble.
+            </p>
+            <p>
+              Overall, the drivebase comes in at just under 3 inches tall. This
+              leaves over 15 inches of room for subsystems. For comparison, most
+              off-the-shelf mecanum wheels are 4 inches or larger in diameter!
+              Additionally, because of the small wheel size, the drive rails are
+              very thin and the electronics bay is compact as possible, giving
+              an front intake a lot of room for packaging.
+            </p>
+            <StaticImage
+              className="modalImage"
+              src="../../projects/media/mecanum-top.jpg"
+            />
+            <p>
+              We used this drivebase for extensive testing when identifying the
+              ideal drivetrain for competition. It performed great – even
+              against heavy defense, it zipped around our other drivebases with
+              ease!
+            </p>
+            <img
+              className="modalImage"
+              src={mecanumPractice}
+              alt="Drive practice with four prototype drivebases"
+            />
+            <p className="text-center text-gray-300">
+              <i>
+                A little bit of drive practice with the swerve drive, tank
+                drive, four-wheel mecanum, and eight-wheel mecanum.
+              </i>
+            </p>
+            <p>
+              Additionally -- as I had suspected, the additional four wheels do
+              add scrub when turning the wheelbase. However, curiously, this has
+              actually been beneficial for handling – the drive tends to have
+              greater forwards-backwards bias because of the wheel-locking
+              effect.
+            </p>
+            <p>
+              The wheel-locking effect can explain the full-power forwards and
+              backwards phenomenon of mecanum drivetrains. Conceptually, a
+              mecanum drive should accelerate equally well strafing as forwards
+              and backwards. However, because of the static friction in the
+              mecanum rollers, they act as solid wheels when not in motion,
+              causing the robot to fully accelerating driving forwards rather
+              that the sqrt(2)/2 acceleration seen while strafing. The
+              additional scrub of the eight wheels broadens the angular range in
+              which roller stiction occurs, allowing the drive to be even
+              further biased forwards and backwards.
+            </p>
           </div>
         </Modal>
 
@@ -1642,7 +1762,189 @@ class ProjectModals extends React.Component {
               Program to autonomously pathfind, avoid preset obstacles, and
               drive robot between programmed waypoints
             </h2>
-            <p>Please check back later!</p>
+            <p>
+              The fun thing about control theory is that systems can always be
+              optimized further with more complex control schemes.
+            </p>
+            <p>
+              In the case of high-school FIRST Tech Challenge, control theory
+              can play a big part in a robot’s competition performance. In every
+              match, a robot can complete tasks in a 30-second autonomous period
+              for big points. Therefore, if a robot can manuever quickly and
+              precisely during this period, it can accrue a significant portion
+              of the points in the entire match.
+            </p>
+            <p>
+              Most high-school robots use simple point-to-point driving control
+              using motor encoders. While it’s simple to program, straight lines
+              are not optimal routes and motor encoder control is far from ideal
+              due to wheel slippage errors.
+            </p>
+            <img
+              className="modalImage"
+              src={pathfinderOld}
+              alt="Robot driving point to point paths"
+            />
+            <p className="text-center text-gray-300">
+              <i>Our 2019 robot completing basic autonomous tasks.</i>
+            </p>
+            <p>
+              That’s why I decided to research and write a controller to learn
+              more about optimal pathfinding and control theory. I wrote the
+              code from scratch and it contains three parts: a path router with
+              obstacle avoidance, a realtime pure-pursuit controller, and a
+              visualizer.
+            </p>
+            <p>
+              The realm of holonomic drive control is very complicated, and
+              there are often multiple solutions with tradeoffs. When
+              researching different pathfinding solutions, the most common being{" "}
+              <a
+                className="text-teal-100 hover:text-teal-200"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.sciencedirect.com/science/article/pii/S1474667015310041"
+              >
+                hermite splines
+              </a>{" "}
+              or{" "}
+              <a
+                className="text-teal-100 hover:text-teal-200"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://brilliant.org/wiki/dijkstras-short-path-finder/"
+              >
+                Dijkstra’s algorithm
+              </a>{" "}
+              superimposed on a grid, the biggest consideration was time
+              complexity, given our robot’s underpowered controller. Even though
+              the autonomous pathfinding would likely be computed offboard, I
+              wanted to figure out a solution for the robot to contruct paths on
+              the fly for driver-assistance.
+            </p>
+            <p>
+              I decided to pursue an{" "}
+              <a
+                className="text-teal-100 hover:text-teal-200"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.geeksforgeeks.org/a-search-algorithm/"
+              >
+                A* search algorithm
+              </a>{" "}
+              to produce paths. A* is a slight variation of Dijkstra’s search
+              algorithm, using heuristics (a weighted node graph) to find paths
+              with less time complexity. Using a weighted graph also allows for
+              some neat things – for example, edges can be marked with higher
+              cost so the robot will not get close to the walls unless it has
+              to.
+            </p>
+            <p>
+              This is a visual example of a node graph generated automatically
+              by my field obstacle script. Each number describes the cost of
+              traveling to that node. Notice that the left side of the field
+              (the opponent’s side) is completely blocked off by untraversable
+              nodes.
+            </p>
+            <StaticImage
+              className="modalImage"
+              src="../../projects/media/pathfinder-graph.jpg"
+            />
+            <p>
+              Next, I wrote a simple A* algorithm that connects multiple nodes
+              together with shortest path. Each middle node is meant to redirect
+              the robot’s path and doesn’t serve as a hard point for the robot
+              to follow. Though the path is quite jagged due to the discrete
+              graph size, the real-time controller will smooth over the route.
+            </p>
+            <StaticImage
+              className="sm:max-h-[24rem] aspect-square sm:m-4 sm:mx-auto text-center rounded-lg"
+              src="../../projects/media/pathfinder-astar.jpg"
+            />
+            <p className="text-center text-gray-300">
+              <i>
+                Field drawn with Adobe Illustrator and painted with{" "}
+                <a
+                  className="text-teal-100 hover:text-teal-200"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://openjfx.io/"
+                >
+                  JavaFX
+                </a>
+                .
+              </i>
+            </p>
+            <p>
+              However, contructing paths is only a part of the puzzle. The real
+              challenge was figuring out a robust controller to follow the path
+              accurately. For this part, I researched many controllers:{" "}
+              <a
+                className="text-teal-100 hover:text-teal-200"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="http://underactuated.mit.edu/lqr.html"
+              >
+                linear quadratic regulators
+              </a>
+              ,{" "}
+              <a
+                className="text-teal-100 hover:text-teal-200"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://docs.wpilib.org/en/stable/docs/software/advanced-controls/trajectories/ramsete.html"
+              >
+                Ramsete
+              </a>
+              ,{" "}
+              <a
+                className="text-teal-100 hover:text-teal-200"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.ri.cmu.edu/pub_files/pub3/coulter_r_craig_1992_1/coulter_r_craig_1992_1.pdf"
+              >
+                pure pursuit
+              </a>
+              , and even pathfinding with a vector field. I was looking for a
+              controller that was robust that did not require extreme
+              fine-tuning to work in every scenario.
+            </p>
+            <p>
+              I decided to stick with a simple solution: pure pursuit. This
+              strategy involves projecting a circle around the robot and change
+              the heading to follow the circle’s intersection with the path.
+              This controller is very robust because there is no way for the
+              robot to track off-course in the event of small path
+              discontinuities or sharp points if the search radius is large
+              enough. In addition, this scheme also automatically smooths the
+              path and can be driven closed-loop with field localization
+              (encoders, odometry, IMU, etc.) However, pure pursuit is not the
+              most accurate pathfollower and the true path can vary between
+              attempts.
+            </p>
+            <img
+              className="sm:max-h-[24rem] aspect-square sm:m-4 sm:mx-auto text-center rounded-lg"
+              src={pathfinderPursuit}
+              alt="Virtual robot pathfinding"
+            />
+            <p>
+              I am pretty impressed how this controls project turned out. For a
+              summer side-project while I did my first internship with Jacobi
+              Motors, I am happy how much I learned researching and building
+              this project. It really taught me a lot and prepared me for making
+              mechanical systems designed for effective control.
+            </p>
+            <p>
+              There’s still a lot to do with this project. First, it does not
+              take advantage of holonomic drivetrains; pure pursuit is a
+              differential drive controller. Second, we did not have the
+              opportunity to test this controller in the real world, despite
+              simulating real-world tracking disturbances. Finally, we have not
+              mastered an effective form of localization for this level of
+              precision yet. However, many other teams have successfully
+              employed a three-wheel odometry system to separate drive-wheel
+              slippage from field localization.
+            </p>
           </div>
         </Modal>
 
@@ -1667,7 +1969,6 @@ class ProjectModals extends React.Component {
             rotary spring launcher.
           </p>
         </div>
-
         <Modal
           className="modalPortal"
           isOpen={this.state.showModal && this.state.activeModal === "rover"}
@@ -1695,6 +1996,10 @@ class ProjectModals extends React.Component {
               rotary spring launcher.
             </h2>
             <p>Please check back later!</p>
+            <StaticImage
+              className="modalImage"
+              src="../../projects/media/rover-render.jpg"
+            />
           </div>
         </Modal>
 
@@ -1717,7 +2022,6 @@ class ProjectModals extends React.Component {
             chassis
           </p>
         </div>
-
         <Modal
           className="modalPortal"
           isOpen={
@@ -1748,7 +2052,81 @@ class ProjectModals extends React.Component {
               Ultra-lightweight 250mm quadcopter built with custom CNC-milled
               chassis
             </h2>
-            <p>Please check back later!</p>
+            <p>
+              I’ve always been fascinated by multirotors and electromechanical
+              systems that make them work. For this project, I wanted to create
+              an ultralight 250mm quadcopter that is durable enough to get
+              started and learn first-person-view (FPV) drone piloting.
+            </p>
+            <p>
+              I started by ordering the electronics. In the past, I have
+              experimented with Arduino-based quadcopter control, but modern
+              dedicated multirotor controllers have significantly higher clock
+              speeds, resulting in more responsive tuning and control.
+              Therefore, I got a STM32 F4 control board, four decentralized BLDC
+              ESCs, a FPV camera and signal board, a transmitter board, a couple
+              of 4S LiPo batteries, and, of course, four BLDCs.
+            </p>
+            <p>
+              By ordering the electronics first, I could be sure that everything
+              worked so that I could design a frame around the components. This
+              meant that the design would be purpose-built to these specific
+              components, saving weight and reducing volume.
+            </p>
+            <StaticImage
+              className="modalImage"
+              src="../../projects/media/quadcopter-wiring.jpg"
+            />
+            <p>
+              The frame itself is built with sandwiched thin CNC milled aluminum
+              sheets that provide protection for the boards and mounting points
+              for the swappable arms. The antenna and camera shrouds are 3D
+              printed out of impact-resistance polycarbonate. Because I knew the
+              mass and location of every part (unlike in off-the-shelf frames),
+              I could position the center of mass directly at the propeller
+              plane. That’s why the battery is nearly completely centered with
+              the propellers, and it seriously improves the quadcopter’s
+              handling!
+            </p>
+            <StaticImage
+              className="modalImage"
+              src="../../projects/media/quadcopter-side.jpg"
+            />
+            <p>
+              The quadcopter arms must be stiff and lightweight – that’s why I
+              originally made a few of sets out of a carbon fiber layup with a
+              printed polycarbonate core. I was experimenting with different
+              carbon fiber layups, and I wanted to figure out a way of producing
+              composite plugs and cores with printed material. These arms were
+              extremely rigid and lightweight, but they were very brittle.
+            </p>
+            <p>
+              After a few test flights, I realized my quadcopter arms needed to
+              be consumable. I was breaking arms with every crash and it would
+              be difficult to replace every arm with a composite layup every
+              time. I went ahead and CNC milled a bunch of polycarbonate arms,
+              and while they weren’t as rigid, they held up to crashes much
+              better!
+            </p>
+            <StaticImage
+              className="modalImage"
+              src="../../projects/media/quadcopter-assembled.jpg"
+            />
+            <p className="text-center text-gray-300">
+              <i>Quadcopter equipped with carbon-composite arms.</i>
+            </p>
+            <p>
+              This quadcopter really rips through the air. It’s super quick,
+              responsive, and feels massless at the controls. It’s everything I
+              designed it for, and I’m happy how it turned out.
+            </p>
+            <p>
+              However, because of its extremely small volume, I can’t put a
+              GoPro or high-resolution camera on it. I have to pilot the
+              quadcopter off the low-resolution FPV camera. In the future, I
+              hope to make a slighly heavier free-style quadcopter to carry a
+              better camera.
+            </p>
           </div>
         </Modal>
 
@@ -1802,6 +2180,10 @@ class ProjectModals extends React.Component {
               linkage claw deposit.
             </h2>
             <p>Please check back later!</p>
+            <StaticImage
+              className="modalImage"
+              src="../../projects/media/relic-render.jpg"
+            />
           </div>
         </Modal>
 
@@ -1821,7 +2203,7 @@ class ProjectModals extends React.Component {
           <i className="text-gray-400">Spring 2017</i>
           <p className="text-gray-300">
             Rudimentary demonstration of inertial confinement to produce
-            fusion-like conditions for a school exhibition.
+            fusion-like conditions.
           </p>
         </div>
         <Modal
@@ -1850,9 +2232,112 @@ class ProjectModals extends React.Component {
             </h1>
             <h2 className="text-lg text-gray-300 text-center">
               Rudimentary demonstration of inertial confinement to produce
-              fusion-like conditions for a school exhibition.
+              fusion-like conditions.
             </h2>
-            <p>Please check back later!</p>
+            <p>
+              For a school science exhibition, I set out to make a nuclear
+              fusion reactor, or fusor, using a{" "}
+              <a
+                className="text-teal-100 hover:text-teal-200"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="http://www.belljar.net/634fusor.pdf"
+              >
+                Farnsworth-Hirsch reactor
+              </a>{" "}
+              design. With a high vacuum chamber and two concentric grids with a
+              high voltage difference, inertial confinement can be achieved to
+              fuse deuterium isotopes into helium and tritium.
+            </p>
+            <p>
+              This fusor is designed for demonstration and research purposes.
+              Since I would be constructing a{" "}
+              <a
+                className="text-teal-100 hover:text-teal-200"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.vacuumscienceworld.com/rough-medium-vacuum"
+              >
+                medium-vacuum
+              </a>{" "}
+              fusor because of budget and safety reasons, I would not be able to
+              achieve perfect fusion conditions. Therefore, in its current form,
+              the fusor succeeds in only ionizing the remaining gas particles in
+              the medium-vacuum environment.
+            </p>
+            <StaticImage
+              className="modalImage"
+              src="../../projects/media/fusor-ionized.jpg"
+            />
+            <p>
+              The fusor consists of two parts: a vacuum chamber and a
+              high-voltage grid.
+            </p>
+            <p>
+              For the vacuum system, I used a rotary vane pump plumbed to the
+              chamber. It’s capable of pulling up to 0.03 mmHg vacuum, which
+              falls under the “medium-vacuum” class.
+            </p>
+            <p>
+              The vacuum chamber itself is constructed with two 0.5” aluminum
+              billets sandwiching a borosilicate glass tube. All plumbing
+              connections are drilled and NPT-tapped to seal the chamber.
+            </p>
+            <p>
+              I originally had a lot of issues with sealing the NPT connections,
+              and after weeks of rewrapping Teflon tape and dripping soapy
+              water, it turned out that I just tapped the tapered threads too
+              deep.
+            </p>
+            <StaticImage
+              className="modalImage"
+              src="../../projects/media/fusor-depowered.jpg"
+            />
+            <p>
+              Making the fusor grid was challenging, and I still haven’t
+              mastered the best way to construct it. The grid should be
+              constructed with a high-temperature, low-resistance wire assembled
+              with either soldering or brazing to avoid sharp edges and arcing.
+              In the end, I ended up using soldered copper wire bent into a
+              sphere. This wasn’t ideal because the copper would warp with the
+              heat and produce uneven ionization across its surface.
+            </p>
+            <StaticImage
+              className="md:w-[50%] aspect-square md:m-4 md:mx-auto text-center rounded-lg"
+              src="../../projects/media/fusor-grid.jpg"
+            />
+            <p>
+              On the electrical side, I used a variac AC power supply with a
+              high voltage neon sign transformer. Boosting the AC voltage
+              directly from mains was much easier than trying to rectify the AC
+              voltage first and using a DC boost converter. The high voltage AC
+              then goes into a homemade microwave diode rectifier that provides
+              the 14kV DC voltage potential between the grounded vacuum chamber
+              and the fusor grid.
+            </p>
+            <StaticImage
+              className="md:w-[30%] md:m-4 md:mx-auto text-center rounded-lg"
+              src="../../projects/media/fusor-setup.jpg"
+            />
+            <p>
+              All in all, I succeeded in making a good model for demonstrating
+              inertial electrostatic confinement fusion. This project was one of
+              my first big projects, and I learned a lot about electricity,
+              mechanical vacuum systems, and physics when researching and
+              designing this project.
+            </p>
+            <p>
+              I think that with my knowledge now and a larger budget, I could
+              make a higher-performance fusor and perhaps even look into
+              sourcing deuterium to truly achieve fusion.
+            </p>
+            <p>
+              The major upgrades for this fusor would likely be replacing all of
+              the components with non-outgassing materials, adding a
+              second-stage diffusion or turbomolecular pump, and welding
+              together a proper tantalum-tungsten grid. Plus, making the whole
+              thing a lot safer.
+            </p>
           </div>
         </Modal>
       </>

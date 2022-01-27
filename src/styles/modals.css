@@ -113,6 +113,7 @@
 
 .ReactModal__Overlay {
   z-index: 30;
+  height: calc(100vh + 50px);
 
   transform: translateY(-50px);
   transition: all 0.2s ease-in-out;
@@ -121,7 +122,6 @@
 
 .ReactModal__Overlay--after-open {
   transform: translateX(0px);
-
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
 }
