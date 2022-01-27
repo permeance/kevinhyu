@@ -2124,7 +2124,7 @@ class ProjectModals extends React.Component {
               However, because of its extremely small volume, I can’t put a
               GoPro or high-resolution camera on it. I have to pilot the
               quadcopter off the low-resolution FPV camera. In the future, I
-              hope to make a slighly heavier free-style quadcopter to carry a
+              hope to make a slighly heavier freestyle quadcopter to carry a
               better camera.
             </p>
           </div>
