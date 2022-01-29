@@ -2262,8 +2262,7 @@ class ProjectModals extends React.Component {
               </a>{" "}
               fusor because of budget and safety reasons, I would not be able to
               achieve perfect fusion conditions. Therefore, in its current form,
-              the fusor succeeds in only ionizing the remaining gas particles in
-              the medium-vacuum environment.
+              the fusor effectively ionizes the few remaining gas particles.
             </p>
             <StaticImage
               className="modalImage"
@@ -2335,8 +2334,8 @@ class ProjectModals extends React.Component {
               The major upgrades for this fusor would likely be replacing all of
               the components with non-outgassing materials, adding a
               second-stage diffusion or turbomolecular pump, and welding
-              together a proper tantalum-tungsten grid. Plus, making the whole
-              thing a lot safer.
+              together a proper tantalum-tungsten grid. Plus, I'd like to make
+              the whole thing a lot safer.
             </p>
           </div>
         </Modal>

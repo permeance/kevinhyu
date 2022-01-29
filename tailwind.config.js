@@ -1,3 +1,5 @@
+// 1b314d, 152538
+
 module.exports = {
   theme: {
     colors: {
@@ -6,7 +8,7 @@ module.exports = {
       'white': '#fff',
       'midnight': {
         100: '#0b141f',
-        200: '#152538',
+        200: '#101e2e',
       },
       'teal': {
         100: '#81e5d9',

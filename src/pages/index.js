@@ -10,7 +10,7 @@ import { config } from '@fortawesome/fontawesome-svg-core';
 config.autoAddCss = false; /* eslint-disable import/first */
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowCircleDown, faCogs, faRulerCombined, faShapes, faMicrochip, faCube } from "@fortawesome/free-solid-svg-icons";
+import { faArrowCircleDown, faCogs, faRulerCombined, faShapes, faMicrochip, faCube, faTools, faCubes } from "@fortawesome/free-solid-svg-icons";
 
 import Layout from "../components/layout";
 
@@ -64,7 +64,7 @@ const IndexPage = () => {
         <Fade>
           <div className="max-w-screen-xl mx-auto pt-20 pb-40">
             <div className="mb-24 mx-4 text-center">
-                  <h1 className="mb-6 text-teal-100 text-5xl">Experience</h1>
+                  <h1 className="mb-6 text-teal-100 font-bold text-5xl">Experience</h1>
                   <h2 className="text-xl">I have had the privilege of working with many extraordinary design teams.</h2>
             </div>
             <div className="w-full h-auto md:h-[1200px] mx-auto px-6 timeline">
@@ -178,7 +178,7 @@ const IndexPage = () => {
         <section className="bg-midnight-200">
           <div className="max-w-screen-xl mx-auto py-20">
             <div className="mb-16 mx-4 text-center">
-                  <h1 className="mb-6 text-teal-100 text-5xl">Certifications</h1> 
+                  <h1 className="mb-6 text-teal-100 font-bold text-5xl">Certifications</h1> 
                   <h2 className="text-xl">I am dedicated to applying and improving my design software skills.</h2>
             </div>
             <div className = "max-w-[480px] mx-auto px-4 grid grid-cols-2 grid-auto-rows gap-3 md:max-w-full md:h-auto md:px-16 md:grid-cols-7 md:grid-rows-2 md:place-items-stretch place-items-start">
@@ -221,36 +221,64 @@ const IndexPage = () => {
         <section>
           <div className="max-w-screen-xl mx-auto pt-28 pb-20 sm:pb-40">
             <div className="mb-16 text-center">
-              <h1 className="text-teal-100 text-5xl">Skills</h1>
+              <h1 className="text-teal-100 font-bold text-5xl">Software Experience</h1>
             </div>
-            <div className="mx-12 flex flex-col content-center gap-12 lg:grid lg:grid-cols-5 lg:grid-rows-1 lg:gap-8">
-              <div className="flex flex-col gap-12 sm:grid sm:grid-cols-3 sm:gap-8 lg:col-span-3">
+            <div className="mx-12 flex flex-col content-center gap-12 lg:grid lg:grid-cols-4 lg:grid-rows-1 lg:gap-8">
+              <div className="flex flex-col gap-12 sm:grid sm:grid-cols-2 sm:gap-8 lg:col-span-2">
                 <div className="flex flex-col gap-2 text-center items-center gap-4">
-                  <FontAwesomeIcon color="#57a19a" size="4x" icon={faShapes} />
-                  <h2 className="text-xl">3D Printing</h2>
-                  <p className="text-gray-300">Adept at maintaining, running, and designing for SLA and FDM 3D printers.</p>
-                </div>
-                <div className="flex flex-col gap-2 text-center items-center gap-4">
-                  <FontAwesomeIcon color="#57a19a" size="4x" icon={faRulerCombined} />
-                  <h2 className="text-xl">Machining</h2>
-                  <p className="text-gray-300">Experienced with DFM, GD&T, hand-programming G-code, and Fusion 360 and HSMWorks CAM.</p>
+                  <FontAwesomeIcon color="#57a19a" size="4x" icon={faCube}/>
+                  <h2 className="text-xl">Rendering</h2>
+                  <p className="text-gray-300">Skilled in photorealistic model rendering and animation with <font className="text-teal-100">Keyshot Pro</font> and <font className="text-teal-100">PhotoView 360</font>.</p>
                 </div>
                 <div className="flex flex-col gap-2 text-center items-center gap-4">
                   <FontAwesomeIcon color="#57a19a" size="4x" icon={faCogs} />
                   <h2 className="text-xl">CAD Design</h2>
-                  <p className="text-gray-300">Proficient in Solidworks, familiar with Fusion 360. Experienced with making reusable, future-proof CAD models.</p>
+                  <p className="text-gray-300">Proficient in <font className="text-teal-100">SOLIDWORKS</font>, familiar with <font className="text-teal-100">Fusion 360</font> and <font className="text-teal-100">Inventor</font>. Experienced with making reusable, future-proof CAD models.</p>
                 </div>
               </div>
-              <div className="flex flex-col gap-12 sm:grid sm:grid-cols-2 sm:gap-8 sm:col-span-2 sm:w-2/3 mx-auto lg:w-auto">
+              <div className="flex flex-col gap-12 sm:grid sm:grid-cols-2 sm:gap-8 sm:col-span-2 sm:w-auto mx-auto">
                 <div className="flex flex-col gap-2 text-center items-center gap-4">
-                  <FontAwesomeIcon color="#57a19a" size="4x" icon={faCube}/>
-                  <h2 className="text-xl">Rendering</h2>
-                  <p className="text-gray-300">Skilled in photorealistic model rendering and animation in Keyshot.</p>
+                  <FontAwesomeIcon color="#57a19a" size="4x" icon={faCubes} />
+                  <h2 className="text-xl">Analysis</h2>
+                  <p className="text-gray-300">Practical FEA experience with <font className="text-teal-100">Ansys Mechanical</font> and composites analysis with <font className="text-teal-100">Ansys ACP</font>.</p>
                 </div>
                 <div className="flex flex-col gap-2 text-center items-center gap-4">
                   <FontAwesomeIcon color="#57a19a" size="4x" icon={faMicrochip} />
                   <h2 className="text-xl">Circuit Design</h2>
-                  <p className="text-gray-300">Working knowledge in KiCad for power electronics design.</p>
+                  <p className="text-gray-300">Working knowledge in <font className="text-teal-100">KiCad</font> for PCB design.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </Fade>
+
+
+      <Fade>
+        <section>
+          <hr className="h-0.5 bg-gray-800 w-full border-transparent"/>
+          <div className="max-w-screen-xl mx-auto pt-28 pb-20 sm:pb-40">
+            <div className="mb-16 text-center">
+              <h1 className="text-teal-100 font-bold text-5xl">Practical Skills</h1>
+            </div>
+            <div className="mx-12 flex flex-col content-center gap-12 sm:grid sm:grid-cols-2 sm:grid-rows-2 lg:grid-cols-3 lg:grid-rows-1">
+              <div className="flex flex-col gap-12 sm:col-span-2 sm:grid sm:grid-cols-2">
+                <div className="flex flex-col gap-2 text-center items-center gap-4">
+                  <FontAwesomeIcon color="#57a19a" size="4x" icon={faShapes} />
+                  <h2 className="text-xl">3D Printing</h2>
+                  <p className="text-gray-300">Software experience with <font className="text-teal-100">Preform</font>, <font className="text-teal-100">Simplify3D</font>, and <font className="text-teal-100">Cura</font> slicers. Extensive experience running, maintaining, and diagnosing SLA and FDM prints.  </p>
+                </div>
+                <div className="flex flex-col gap-2 text-center items-center gap-4">
+                  <FontAwesomeIcon color="#57a19a" size="4x" icon={faRulerCombined} />
+                  <h2 className="text-xl">Machining</h2>
+                  <p className="text-gray-300">Skilled in DFM, GD&T, hand-programming g-code, and <font className="text-teal-100">HSMWorks</font> and <font className="text-teal-100">Fusion360</font> CAM. Practical experience with <font className="text-teal-100">LinuxCNC</font>, <font className="text-teal-100">Mach3</font>, and <font className="text-teal-100">Haas Control</font> for CNC milling.</p>
+                </div>
+              </div>
+              <div className="sm:col-span-2 sm:w-1/2 sm:mx-auto lg:col-span-1 lg:w-auto">
+                <div className="flex flex-col gap-2 text-center items-center gap-4">
+                  <FontAwesomeIcon color="#57a19a" size="4x" icon={faTools} />
+                  <h2 className="text-xl">Shop Tools</h2>
+                  <p className="text-gray-300">Experienced with basic shop tools: manual mills, lathes, bandsaws, drop saws, grinders, drill presses.</p>
                 </div>
               </div>
             </div>

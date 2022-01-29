@@ -3,7 +3,7 @@
   padding: 1rem;
   background: #1f2937;
 
-  border: #4b5563 solid 1px;
+  border: 1px solid transparent;
   border-radius: 0.75rem;
 
   text-align: center;
@@ -41,7 +41,6 @@
   margin-bottom: 1rem;
   height: 15rem;
 
-  border: #4b5563 solid 1px;
   border-radius: 0.375rem;
 }
 
@@ -84,7 +83,7 @@
     top: auto !important;
     right: auto !important;
     
-    bottom: 1rem;
+    bottom: calc(1rem + 50px);
     left: 2rem;
     width: calc(100vw - 4rem);
 
