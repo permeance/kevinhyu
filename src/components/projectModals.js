@@ -1461,7 +1461,7 @@ class ProjectModals extends React.Component {
               src="../../projects/media/skystone-render.jpg"
             />
             <p className="text-center text-gray-300">
-              <i>SOLIDWORKS motion study + Keyshot 8</i>
+              <i>SOLIDWORKS + Keyshot 9</i>
             </p>
             <p>
               In addition to doing systems integration on the robot, I spent my
@@ -2179,11 +2179,37 @@ class ProjectModals extends React.Component {
               Cube-stacking robot with cam-actuated 2 DoF roller intake and
               linkage claw deposit.
             </h2>
-            <p>Please check back later!</p>
+            <p>
+              <a
+                className="text-teal-100 hover:text-teal-200"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.youtube.com/watch?v=nRsu7bRFhx4"
+              >
+                Relic Recovery
+              </a>{" "}
+              was my fourth year in robotics and first year in FIRST Tech
+              Challenge. It was the first chance I had to fully design the robot
+              in CAD prior to manufacturing and testing. When I joined FTC
+              #9048, I joined a team of experienced high schoolers that inspired
+              my passion for mechanical engineering and robotics.
+            </p>
+            <p>
+              The game was simple: build a robot that could stack 6” cubes
+              vertically and pick up, extend, and deposit a plastic “relic” four
+              feet away.
+            </p>
             <StaticImage
               className="modalImage"
               src="../../projects/media/relic-render.jpg"
             />
+            <p className="text-center text-gray-300">
+              <i>SOLIDWORKS + Keyshot 8</i>
+            </p>
+            <p>
+              I had the opportunity to build two subsystems on my first robot:
+              the vertical cube cascade lift and the relic claw wrist.
+            </p>
           </div>
         </Modal>
 

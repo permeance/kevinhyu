@@ -3,24 +3,20 @@ import {Helmet} from "react-helmet";
 
 import { Link } from "gatsby";
 
-const NotFoundPage = () => {
+const thanksPage = () => {
   return (
     <>
       <Helmet>
-        <title>Error 404 (Not Found)</title>
-        <meta name="description" content="Page Not Found"/>
+        <title>Form Submission</title>
+        <meta name="description" content="Thank you for submitting"/>
         <meta name="robots" content="none" />
         <html lang="en" />
       </Helmet>
 
       <section className= "max-w-screen-xl mx-auto px-20 my-20">
-        <h1 className="my-8 text-5xl text-teal-100">Page not found</h1>
+        <h1 className="my-8 text-5xl text-teal-100">Thank you!</h1>
         <p className="my-2 text-xl text-white">
-          Sorry{" "}
-          <span role="img" aria-label="Pensive emoji">
-            😔
-          </span>{" "}
-          we couldn’t find what you were looking for.
+          The form was submitted successfully.
           <br />
           <br />
           <Link to="/" class="underline hover:text-teal-100">
@@ -33,4 +29,4 @@ const NotFoundPage = () => {
   );
 };
 
-export default NotFoundPage;
+export default thanksPage;
