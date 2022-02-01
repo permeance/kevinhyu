@@ -14,6 +14,7 @@ import mecanumPractice from "../../projects/media/mecanum-practice.gif";
 import pathfinderOld from "../../projects/media/pathfinder-old.gif";
 import pathfinderPursuit from "../../projects/media/pathfinder-pursuit.gif";
 import relicPlacing from "../../projects/media/relic-placing.gif";
+import roverLauncher from "../../projects/media/rover-launcher.gif";
 
 import Video from "../components/video";
 
@@ -1563,6 +1564,17 @@ class ProjectModals extends React.Component {
               our robot. The SCARA was one of the three innovations that made
               our robot stand out.
             </p>
+            <p className="mt-12 text-gray-300 text-center">
+              <i>
+                <b>Bonus</b>: my overengineered 12-linkage claw that
+                over-centers for a powerful passive grip. CNC milled out of
+                delrin and billet aluminum.
+              </i>
+            </p>
+            <StaticImage
+              className="sm:max-w-[60%] aspect-square sm:m-4 sm:mx-auto text-center rounded-lg"
+              src="../../projects/media/skystone-claw.jpg"
+            />
           </div>
         </Modal>
 
@@ -1996,11 +2008,108 @@ class ProjectModals extends React.Component {
               Cube and ball transport robot with extending intake and prototype
               rotary spring launcher.
             </h2>
-            <p>Please check back later!</p>
+            <p>
+              Rover Ruckus was a year I learned all about time management,
+              deadlines, and the long and arduous testing cycle.
+            </p>
+            <p>
+              The challenge was deceptively easy: take “minerals” from a corner
+              pit and deposit them into a lifted “lander” in the center of the
+              field.
+            </p>
+            <p>
+              We started out the season with a simple angled linear slide
+              transfer mechanism. The intake would serve double duty pulling in
+              minerals and pushing them into the center lander. However, I
+              theorized that a spring cannon might be more efficient at the
+              transfer process, as the robot wouldn’t have to move between
+              deliveries.
+            </p>
             <StaticImage
               className="modalImage"
               src="../../projects/media/rover-render.jpg"
             />
+            <p className="text-center text-gray-300">
+              <i>SOLIDWORKS + Keyshot 9</i>
+            </p>
+            <p>
+              Around the middle of the season, we began redesigning the robot to
+              accommodate these future changes: the slides would widen around
+              the center turret and the intake would delivery directly to a
+              hopper on the launcher.
+            </p>
+            <p>
+              I began work on the launcher. I calculated out the force needed to
+              propel the minerals up a long polycarbonate tube. Empirically, it
+              required almost 100 lbf of spring compression. I incorporated this
+              into the design by putting the springs into compression with a
+              constant-force cam driven by a rotary motor.
+            </p>
+            <img
+              className="modalImage"
+              src={roverLauncher}
+              alt="Firing minerals from spring launcher"
+            />
+            <p>
+              At this point, the launcher looked promising; we had a
+              proof-of-concept and it appeared that the robot could easily
+              launch the minerals across the tube!
+            </p>
+            <p>
+              However, there were a lot of packaging issues that were not
+              accounted for, and the tournament was approaching. We still hadn’t
+              fully tested and resolved the two-axis servo-driven gimbaling
+              mechanism for guiding the tubes, and the large ring bearing barely
+              fit within the linear slides.
+            </p>
+            <p>
+              Furthermore, the launcher itself had issues. First, the 6mm steel
+              axle would bend and the cam-follower bearing races would split
+              with each shot. I eventually upgraded the axle and bearings sizes
+              to withstand the shock load.
+            </p>
+            <p>
+              By the time the issues were resolved, our regionals competition
+              was quickly approaching. Despite a final push to put the launcher
+              on the robot, it could not be done, and we went to the tournament
+              without it.
+            </p>
+            <StaticImage
+              className="modalImage"
+              src="../../projects/media/rover-front.jpg"
+            />
+            <p>
+              Even though the season was drawing to a close and we wouldn’t have
+              the chance to play competitively, I still wanted to finish what I
+              started. I began spending dozens of hours redesigning parts to
+              work togethers, using the rapid prototyping of 3D printed parts.
+            </p>
+            <StaticImage
+              className="modalImage"
+              src="../../projects/media/rover-mounted.jpg"
+            />
+            <p>
+              In the end, I was able to pull together the robot by the end of
+              the school year. Even though we didn’t get to see the robot
+              compete with the mineral launcher, seeing it fully assembled was
+              worth the long hours.
+            </p>
+            <StaticImage
+              className="modalImage"
+              src="../../projects/media/rover-dark.jpg"
+            />
+            <p className="text-center text-gray-300">
+              <i>
+                Playing around with electroluminescence (EL) panels for onboard
+                number lighting.
+              </i>
+            </p>
+            <p>
+              I learned a valuable lesson this season. I think I committed
+              myself to more than I could reasonable get done within the
+              timespan of the competition. However, I’m proud that I was still
+              able to finish this ambitious project to completion.
+            </p>
           </div>
         </Modal>
 
@@ -2148,8 +2257,8 @@ class ProjectModals extends React.Component {
           </h1>
           <i className="text-gray-400">Fall 2017 - Spring 2018</i>
           <p className="text-gray-300">
-            Cube-stacking robot with cam-actuated 2 DoF roller intake and
-            linkage claw deposit.
+            Cube-stacking robot with cam-actuated roller intake and linkage claw
+            deposit.
           </p>
         </div>
         <Modal
@@ -2177,8 +2286,8 @@ class ProjectModals extends React.Component {
               Relic Recovery
             </h1>
             <h2 className="text-lg text-gray-300 text-center">
-              Cube-stacking robot with cam-actuated 2 DoF roller intake and
-              linkage claw deposit.
+              Cube-stacking robot with cam-actuated roller intake and linkage
+              claw deposit.
             </h2>
             <p>
               <a
