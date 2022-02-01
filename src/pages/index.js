@@ -123,7 +123,7 @@ const IndexPage = () => {
                 <h2 className="text-teal-100 text-xl hover:text-teal-200"><a className="hyperlink-teal" href="https://www.longhornracing.org/electric-vehicle" target="_blank" rel="noopener noreferrer">Longhorn Racing Electric<br/>(Formula SAE)</a></h2>
                 <i className="text-gray-400 md:hidden">Fall 2021 - Present</i>
                 <h2 className="text-xl">Battery Engineer</h2>
-                <p className="text-gray-300">Design of structural six-segment battery case and high voltage electronics enclosure. Mechanical and electrical design of vehicle low-voltage battery system.</p>
+                <p className="text-gray-300">Design of structural six-segment battery case and high voltage electronics enclosure. Electrical prototyping of low-voltage battery.</p>
               </div>
               <div id="LHR" className="timeline-block left" style={{background: "#BF5700", "grid-row": "fall-2021 / current"}} />
               {/* TREL */}
@@ -228,24 +228,24 @@ const IndexPage = () => {
                 <div className="flex flex-col gap-2 text-center items-center gap-4">
                   <FontAwesomeIcon color="#57a19a" size="4x" icon={faCube}/>
                   <h2 className="text-xl">Rendering</h2>
-                  <p className="text-gray-300">Skilled in photorealistic model rendering and animation with <font className="text-teal-100">Keyshot Pro</font> and <font className="text-teal-100">PhotoView 360</font>.</p>
+                  <p className="text-gray-300">Skilled in photorealistic model rendering and animation with <a className="text-teal-100 hover:text-teal-200" href="https://www.keyshot.com/" target="_blank" rel="noopener noreferrer">Keyshot Pro</a> and <a className="text-teal-100 hover:text-teal-200" href="https://www.javelin-tech.com/3d/photoview-360/" target="_blank" rel="noopener noreferrer">PhotoView 360</a>.</p>
                 </div>
                 <div className="flex flex-col gap-2 text-center items-center gap-4">
                   <FontAwesomeIcon color="#57a19a" size="4x" icon={faCogs} />
                   <h2 className="text-xl">CAD Design</h2>
-                  <p className="text-gray-300">Proficient in <font className="text-teal-100">SOLIDWORKS</font>, familiar with <font className="text-teal-100">Fusion 360</font> and <font className="text-teal-100">Inventor</font>. Experienced with making reusable, future-proof CAD models.</p>
+                  <p className="text-gray-300">Proficient in <a className="text-teal-100 hover:text-teal-200" href="https://www.solidworks.com/" target="_blank" rel="noopener noreferrer">SOLIDWORKS</a>, familiar with <a className="text-teal-100 hover:text-teal-200" href="https://www.autodesk.com/products/fusion-360/overview" target="_blank" rel="noopener noreferrer">Fusion 360</a> and <a className="text-teal-100 hover:text-teal-200" href="https://www.autodesk.com/products/inventor/" target="_blank" rel="noopener noreferrer">Inventor</a>. Experienced with making reusable, future-proof CAD models.</p>
                 </div>
               </div>
               <div className="flex flex-col gap-12 sm:grid sm:grid-cols-2 sm:gap-8 sm:col-span-2 sm:w-auto mx-auto">
                 <div className="flex flex-col gap-2 text-center items-center gap-4">
                   <FontAwesomeIcon color="#57a19a" size="4x" icon={faCubes} />
                   <h2 className="text-xl">Analysis</h2>
-                  <p className="text-gray-300">Practical FEA experience with <font className="text-teal-100">Ansys Mechanical</font> and composites analysis with <font className="text-teal-100">Ansys ACP</font>.</p>
+                  <p className="text-gray-300">Practical FEA experience with <a className="text-teal-100 hover:text-teal-200" href="https://www.ansys.com/products/structures/ansys-mechanical" target="_blank" rel="noopener noreferrer">Ansys Mechanical</a> and composites analysis with <a className="text-teal-100 hover:text-teal-200" href="https://www.ansys.com/training-center/course-catalog/structures/introduction-to-ansys-composite-preppost" target="_blank" rel="noopener noreferrer">Ansys ACP</a>.</p>
                 </div>
                 <div className="flex flex-col gap-2 text-center items-center gap-4">
                   <FontAwesomeIcon color="#57a19a" size="4x" icon={faMicrochip} />
                   <h2 className="text-xl">Circuit Design</h2>
-                  <p className="text-gray-300">Working knowledge in <font className="text-teal-100">KiCad</font> for PCB design.</p>
+                  <p className="text-gray-300">Working knowledge in <a className="text-teal-100 hover:text-teal-200" href="https://www.kicad.org/" target="_blank" rel="noopener noreferrer">KiCad</a> for PCB design.</p>
                 </div>
               </div>
             </div>
@@ -266,12 +266,12 @@ const IndexPage = () => {
                 <div className="flex flex-col gap-2 text-center items-center gap-4">
                   <FontAwesomeIcon color="#57a19a" size="4x" icon={faShapes} />
                   <h2 className="text-xl">3D Printing</h2>
-                  <p className="text-gray-300">Software experience with <font className="text-teal-100">Preform</font>, <font className="text-teal-100">Simplify3D</font>, and <font className="text-teal-100">Cura</font> slicers. Extensive experience running, maintaining, and diagnosing SLA and FDM prints.  </p>
+                  <p className="text-gray-300">Software experience with <a className="text-teal-100 hover:text-teal-200" href="https://formlabs.com/software/" target="_blank" rel="noopener noreferrer">Preform</a>, <a className="text-teal-100 hover:text-teal-200" href="https://www.simplify3d.com/" target="_blank" rel="noopener noreferrer">Simplify3D</a>, and <a className="text-teal-100 hover:text-teal-200" href="https://ultimaker.com/software/ultimaker-cura" target="_blank" rel="noopener noreferrer">Cura</a> slicers. Extensive experience running, maintaining, and diagnosing SLA and FDM prints.  </p>
                 </div>
                 <div className="flex flex-col gap-2 text-center items-center gap-4">
                   <FontAwesomeIcon color="#57a19a" size="4x" icon={faRulerCombined} />
                   <h2 className="text-xl">Machining</h2>
-                  <p className="text-gray-300">Skilled in DFM, GD&T, hand-programming g-code, and <font className="text-teal-100">HSMWorks</font> and <font className="text-teal-100">Fusion360</font> CAM. Practical experience with <font className="text-teal-100">LinuxCNC</font>, <font className="text-teal-100">Mach3</font>, and <font className="text-teal-100">Haas Control</font> for CNC milling.</p>
+                  <p className="text-gray-300">Skilled in DFM, GD&T, hand-programming g-code, and <a className="text-teal-100 hover:text-teal-200" href="https://www.autodesk.com/products/hsmworks/overview" target="_blank" rel="noopener noreferrer">HSMWorks</a> and <a className="text-teal-100 hover:text-teal-200" href="https://www.autodesk.com/products/fusion-360/overview" target="_blank" rel="noopener noreferrer">Fusion360</a> CAM. Practical experience with <a className="text-teal-100 hover:text-teal-200" href="http://linuxcnc.org/" target="_blank" rel="noopener noreferrer">LinuxCNC</a>, <a className="text-teal-100 hover:text-teal-200" href="https://www.machsupport.com/software/mach3/" target="_blank" rel="noopener noreferrer">Mach3</a>, and <a className="text-teal-100 hover:text-teal-200" href="https://www.haascnc.com/productivity/control.html" target="_blank" rel="noopener noreferrer">Haas Control</a> for CNC milling.</p>
                 </div>
               </div>
               <div className="sm:col-span-2 sm:w-1/2 sm:mx-auto lg:col-span-1 lg:w-auto">
