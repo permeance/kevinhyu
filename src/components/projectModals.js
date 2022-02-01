@@ -13,6 +13,7 @@ import skystoneDeposit from "../../projects/media/skystone-deposit.gif";
 import mecanumPractice from "../../projects/media/mecanum-practice.gif";
 import pathfinderOld from "../../projects/media/pathfinder-old.gif";
 import pathfinderPursuit from "../../projects/media/pathfinder-pursuit.gif";
+import relicPlacing from "../../projects/media/relic-placing.gif";
 
 import Video from "../components/video";
 
@@ -1148,7 +1149,7 @@ class ProjectModals extends React.Component {
             <p>
               Over the next 7 days, we would put in over <b>150</b> manhours,
               push <b>32</b> revisions of the main assembly, design <b>6</b>{" "}
-              subsystems, and place over <b>3000</b> parts.
+              subsystems, and place over <b>2,400</b> parts.
             </p>
             <StaticImage
               className="modalImage"
@@ -1929,10 +1930,10 @@ class ProjectModals extends React.Component {
             />
             <p>
               I am pretty impressed how this controls project turned out. For a
-              summer side-project while I did my first internship with Jacobi
-              Motors, I am happy how much I learned researching and building
-              this project. It really taught me a lot and prepared me for making
-              mechanical systems designed for effective control.
+              simple summer side-project, I am happy how much I learned
+              researching and building this project. It really taught me a lot
+              and prepared me for making mechanical systems designed for
+              effective control.
             </p>
             <p>
               There’s still a lot to do with this project. First, it does not
@@ -2207,8 +2208,51 @@ class ProjectModals extends React.Component {
               <i>SOLIDWORKS + Keyshot 8</i>
             </p>
             <p>
-              I had the opportunity to build two subsystems on my first robot:
-              the vertical cube cascade lift and the relic claw wrist.
+              I had the opportunity to build two subsystems on the robot: the
+              vertical cube cascade lift and the relic deposite. In this project
+              summary, I’ll write a little bit about the relic claw wrist and
+              its unique design.
+            </p>
+            <p>
+              The challenge in designing a relic deposit and transfer was
+              figuring how to precisely place the relic standing up, yet still
+              be able to elevate the relic over the field walls.
+            </p>
+            <p>
+              Knowing that a four-bar linkage would be ideal for placing the
+              relic directly vertically (preventing any angling in the claw), I
+              adjusted the linkage in CAD to produce a slightly modified wrist:
+            </p>
+            <StaticImage
+              className="modalImage"
+              src="../../projects/media/relic-linkage.jpg"
+            />
+            <p className="text-center text-gray-300">
+              <i>SOLIDWORKS PhotoView 360 composited with Adobe Photoshop</i>
+            </p>
+            <p>
+              This is an variation of a standard four-bar linkage. It retains
+              the vertical placement properties of a four-bar linkage, but
+              allows the claw to fully retract into the robot and hold the claw
+              horizontally for transportation. These three possible states gave
+              our robot more versatility with picking up, transferring, and
+              depositing the relic.
+            </p>
+            <img
+              className="modalImage"
+              src={relicPlacing}
+              alt="Robot scoring relic"
+            />
+            <p>
+              At competition, we were one of the most reliable relic-scoring
+              robots on the playing field. Our unique claw and wrist design
+              allowed us to pickup, transfer, and place with ease.
+            </p>
+            <p>
+              I couldn’t have designed this system without first designing and
+              simulating the linkage in CAD. This was truly the first project
+              that relied heavily on virtually designing everything prior to
+              manufacturing.
             </p>
           </div>
         </Modal>

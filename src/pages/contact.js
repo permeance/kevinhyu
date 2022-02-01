@@ -38,7 +38,7 @@ const ContactPage = () => {
                   name="name"
                   id="full-name"
                   placeholder="First and Last"
-                  required=""
+                  required
                 />
               </label>
 
@@ -47,10 +47,10 @@ const ContactPage = () => {
                 <input
                   className="p-2 bg-gray-800 rounded-md outline-0"
                   type="email"
-                  name="_replyto"
+                  name="email"
                   id="email-address"
                   placeholder="email@domain.tld"
-                  required=""
+                  required
                 />
               </label>
 
@@ -62,7 +62,7 @@ const ContactPage = () => {
                   name="message"
                   id="message"
                   placeholder="Type your message here"
-                  required=""
+                  required
                 />
               </label>
             </fieldset>
