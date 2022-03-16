@@ -39,7 +39,7 @@ const IndexPage = () => {
                 {" "}with a specialization in mechatronics.
               </h2>
             </div>
-            <StaticImage className="mx-auto ml-auto rounded-3xl md:mr-0" src="../img/pfp.png" />
+            <StaticImage className="mx-auto ml-auto max-w-[512px] rounded-3xl md:mr-0" src="../img/pfp.png" />
           </div>
           <div className="">
             <hr className="my-12 mx-auto w-8/12 h-px border-teal-100 animate-stretch"/>
