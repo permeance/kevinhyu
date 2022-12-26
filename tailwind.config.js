@@ -1,6 +1,7 @@
 // 1b314d, 152538
 
 module.exports = {
+  important: true,
   theme: {
     colors: {
       transparent: 'transparent',

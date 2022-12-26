@@ -28,3 +28,7 @@ body {
     display: none;
   }
 }
+
+iframe {
+  margin: -1px 0px 0px -2px;
+}
