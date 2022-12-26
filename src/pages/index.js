@@ -1,6 +1,7 @@
 import React from "react";
 import { Fade } from "react-reveal";
 import { Helmet } from "react-helmet";
+import { OutboundLink } from "gatsby-plugin-google-gtag"
 
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
@@ -33,9 +34,9 @@ const IndexPage = () => {
               <h2 className="text-xl max-w-xl">
                 I'm a {age} year old mechanical engineering student at
                 the{" "}
-                <a className="text-teal-100 hover:text-teal-200" href="https://cockrell.utexas.edu/" target="_blank" rel="noopener noreferrer">
+                <OutboundLink className="text-teal-100 hover:text-teal-200" href="https://cockrell.utexas.edu/" target="_blank" rel="noopener noreferrer">
                   University of Texas
-                </a>
+                </OutboundLink>
                 {" "}with a specialization in mechatronics.
               </h2>
             </div>
@@ -50,9 +51,9 @@ const IndexPage = () => {
           </div>
         </div>
         <div className="-mt-72 mb-20 text-center -z-20 hidden md:block">
-          <a className="animate-appear height-limited" href="#experience" aria-label="Experience timeline">
+          <OutboundLink className="animate-appear height-limited" href="#experience" aria-label="Experience timeline">
             <FontAwesomeIcon color="#81e5d9" size="4x" icon={faArrowCircleDown} className="hover:text-white" />
-          </a>
+          </OutboundLink>
         </div>
       </section>
 
@@ -120,7 +121,7 @@ const IndexPage = () => {
               {/* Blocks and Text */}
               {/* LHR */}
               <div id="LHR" className="timeline-text left" style={{"grid-row-start": "item-1"}}>
-                <h2 className="text-teal-100 text-xl hover:text-teal-200"><a className="hyperlink-teal" href="https://www.longhornracing.org/electric-vehicle" target="_blank" rel="noopener noreferrer">Longhorn Racing Electric<br/>(Formula SAE)</a></h2>
+                <h2 className="text-teal-100 text-xl hover:text-teal-200"><OutboundLink className="hyperlink-teal" href="https://www.longhornracing.org/electric-vehicle" target="_blank" rel="noopener noreferrer">Longhorn Racing Electric<br/>(Formula SAE)</OutboundLink></h2>
                 <i className="text-gray-400 md:hidden">Fall 2021 - Present</i>
                 <h2 className="text-xl">Battery Engineer</h2>
                 <p className="text-gray-300">Design of structural six-segment battery case and high voltage electronics enclosure. Electrical prototyping of low-voltage battery.</p>
@@ -128,7 +129,7 @@ const IndexPage = () => {
               <div id="LHR" className="timeline-block left" style={{background: "#BF5700", "grid-row": "fall-2021 / current"}} />
               {/* TREL */}
               <div id="TREL" className="timeline-text right" style={{"grid-row-start": "item-1"}}>
-                <h2 className="text-teal-100 text-xl hover:text-teal-200"><a className="hyperlink-teal" href="https://www.texasrocketlab.com/" target="_blank" rel="noopener noreferrer">Texas Rocket Engineering Lab<br/>(TREL)</a></h2>
+                <h2 className="text-teal-100 text-xl hover:text-teal-200"><OutboundLink className="hyperlink-teal" href="https://www.texasrocketlab.com/" target="_blank" rel="noopener noreferrer">Texas Rocket Engineering Lab<br/>(TREL)</OutboundLink></h2>
                 <i className="text-gray-400 md:hidden">Fall 2021 - Present</i>
                 <h2 className="text-xl">COPV Technical Engineer</h2>
                 <p className="text-gray-300">Responsible for helium pressure vessel analysis. 
@@ -146,7 +147,7 @@ const IndexPage = () => {
               <div id="J2" className="timeline-block left" style={{background: "royalblue", "grid-row": "summer-2021 / fall-2021"}} />
               {/* CMS */}
               <div id="CMS" className="timeline-text right" style={{"grid-row-start": "item-2"}}>
-                <h2 className="text-teal-100 text-xl hover:text-teal-200"><a className="hyperlink-teal" href="https://www.custommedshields.com/" target="_blank" rel="noopener noreferrer">Custom Medical Shields</a></h2>
+                <h2 className="text-teal-100 text-xl hover:text-teal-200"><OutboundLink className="hyperlink-teal" href="https://www.custommedshields.com/" target="_blank" rel="noopener noreferrer">Custom Medical Shields</OutboundLink></h2>
                 <i className="text-gray-400 md:hidden">Spring 2020 - Spring 2021</i><h2 className="text-xl">Founder</h2>
                 <p className="text-gray-300">Provided custom face shields for professionals with specialized eyewear during the pandemic. 
                   Managed design, manufacture (CNC routing), and quality control of shields distributed to customers in six states.
@@ -183,34 +184,34 @@ const IndexPage = () => {
             </div>
             <div className = "max-w-[480px] mx-auto px-4 grid grid-cols-2 grid-auto-rows gap-3 md:max-w-full md:h-auto md:px-16 md:grid-cols-7 md:grid-rows-2 md:place-items-stretch place-items-start">
               <div className ="w-56 md:w-auto col-span-2 row-span-1 mx-auto md:w-auto md:mx-2 md:col-span-2 md:row-span-2 md:my-auto hover:scale-[1.01] duration-150 ease-in-out">
-                <a aria-label="CSWE" href="https://www.credly.com/badges/9001baf8-d0aa-4e08-9c30-8bfec61c5f06?source=linked_in_profile" target="_blank" rel="noopener noreferrer">
+                <OutboundLink aria-label="CSWE" href="https://www.credly.com/badges/9001baf8-d0aa-4e08-9c30-8bfec61c5f06?source=linked_in_profile" target="_blank" rel="noopener noreferrer">
                   <StaticImage objectFit="contain" src="../img/CSWE.png"/>
-                </a>
+                </OutboundLink>
               </div>
               <div className="md:w-full flex flex-col mx-auto md:flex-row gap-2 md:col-span-5">
-                <a aria-label="CSWP" href="https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-MTASED3NUX" className="hover:scale-[1.02] duration-150 ease-in-out" target="_blank" rel="noopener noreferrer">
+                <OutboundLink aria-label="CSWP" href="https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-MTASED3NUX" className="hover:scale-[1.02] duration-150 ease-in-out" target="_blank" rel="noopener noreferrer">
                   <StaticImage objectFit="contain" src="../img/CSWP.png"/>
-                </a>
-                <a aria-label="CSWP-SU" href="https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-GMXN7F4LHU" className="hover:scale-[1.02] duration-150 ease-in-out" target="_blank" rel="noopener noreferrer">
+                </OutboundLink>
+                <OutboundLink aria-label="CSWP-SU" href="https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-GMXN7F4LHU" className="hover:scale-[1.02] duration-150 ease-in-out" target="_blank" rel="noopener noreferrer">
                   <StaticImage objectFit="contain" src="../img/CSWPSU.png"/>
-                </a>
-                <a aria-label="CSWP-WD" href="https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-EA3LZM2SHX" className="hover:scale-[1.02] duration-150 ease-in-out" target="_blank" rel="noopener noreferrer">
+                </OutboundLink>
+                <OutboundLink aria-label="CSWP-WD" href="https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-EA3LZM2SHX" className="hover:scale-[1.02] duration-150 ease-in-out" target="_blank" rel="noopener noreferrer">
                   <StaticImage objectFit="contain" src="../img/CSWPWD.png"/>
-                </a>
-                <a aria-label="CSWP-SM" href="https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-9X46YV7SGN" className="hover:scale-[1.02] duration-150 ease-in-out" target="_blank" rel="noopener noreferrer">
+                </OutboundLink>
+                <OutboundLink aria-label="CSWP-SM" href="https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-9X46YV7SGN" className="hover:scale-[1.02] duration-150 ease-in-out" target="_blank" rel="noopener noreferrer">
                   <StaticImage objectFit="contain" src="../img/CSWPSM.png"/>
-                </a>
-                <a aria-label="CSWP-DT" href="https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-HB4PUKCL3X" className="hover:scale-[1.02] duration-150 ease-in-out" target="_blank" rel="noopener noreferrer">
+                </OutboundLink>
+                <OutboundLink aria-label="CSWP-DT" href="https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-HB4PUKCL3X" className="hover:scale-[1.02] duration-150 ease-in-out" target="_blank" rel="noopener noreferrer">
                   <StaticImage objectFit="contain" src="../img/CSWPDT.png"/>
-                </a>
+                </OutboundLink>
               </div>
               <div className="md:w-full mx-auto flex flex-col md:flex-row gap-2 md:col-span-2">
-                <a aria-label="CSWA" href="https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-XAAABWJ6S6" className="hover:scale-[1.02] duration-150 ease-in-out" target="_blank" rel="noopener noreferrer">
+                <OutboundLink aria-label="CSWA" href="https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-XAAABWJ6S6" className="hover:scale-[1.02] duration-150 ease-in-out" target="_blank" rel="noopener noreferrer">
                   <StaticImage objectFit="contain" src="../img/CSWA.png"/>
-                </a>
-                <a aria-label="CSWA-AM" href="https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-GH5CQXA6S2" className="hover:scale-[1.02] duration-150 ease-in-out" target="_blank" rel="noopener noreferrer">
+                </OutboundLink>
+                <OutboundLink aria-label="CSWA-AM" href="https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-GH5CQXA6S2" className="hover:scale-[1.02] duration-150 ease-in-out" target="_blank" rel="noopener noreferrer">
                   <StaticImage objectFit="contain" src="../img/CSWAAM.png"/>
-                </a>
+                </OutboundLink>
               </div>
             </div>
           </div>
@@ -228,24 +229,24 @@ const IndexPage = () => {
                 <div className="flex flex-col gap-2 text-center items-center gap-4">
                   <FontAwesomeIcon color="#57a19a" size="4x" icon={faCube}/>
                   <h2 className="text-xl">Rendering</h2>
-                  <p className="text-gray-300">Skilled in photorealistic model rendering and animation with <a className="text-teal-100 hover:text-teal-200" href="https://www.keyshot.com/" target="_blank" rel="noopener noreferrer">Keyshot Pro</a> and <a className="text-teal-100 hover:text-teal-200" href="https://www.javelin-tech.com/3d/photoview-360/" target="_blank" rel="noopener noreferrer">PhotoView 360</a>.</p>
+                  <p className="text-gray-300">Skilled in photorealistic model rendering and animation with <OutboundLink className="text-teal-100 hover:text-teal-200" href="https://www.keyshot.com/" target="_blank" rel="noopener noreferrer">Keyshot Pro</OutboundLink> and <OutboundLink className="text-teal-100 hover:text-teal-200" href="https://www.javelin-tech.com/3d/photoview-360/" target="_blank" rel="noopener noreferrer">PhotoView 360</OutboundLink>.</p>
                 </div>
                 <div className="flex flex-col gap-2 text-center items-center gap-4">
                   <FontAwesomeIcon color="#57a19a" size="4x" icon={faCogs} />
                   <h2 className="text-xl">CAD Design</h2>
-                  <p className="text-gray-300">Proficient in <a className="text-teal-100 hover:text-teal-200" href="https://www.solidworks.com/" target="_blank" rel="noopener noreferrer">SOLIDWORKS</a>, familiar with <a className="text-teal-100 hover:text-teal-200" href="https://www.autodesk.com/products/fusion-360/overview" target="_blank" rel="noopener noreferrer">Fusion 360</a> and <a className="text-teal-100 hover:text-teal-200" href="https://www.autodesk.com/products/inventor/" target="_blank" rel="noopener noreferrer">Inventor</a>. Experienced with making reusable, future-proof CAD models.</p>
+                  <p className="text-gray-300">Proficient in <OutboundLink className="text-teal-100 hover:text-teal-200" href="https://www.solidworks.com/" target="_blank" rel="noopener noreferrer">SOLIDWORKS</OutboundLink>, familiar with <OutboundLink className="text-teal-100 hover:text-teal-200" href="https://www.autodesk.com/products/fusion-360/overview" target="_blank" rel="noopener noreferrer">Fusion 360</OutboundLink> and <OutboundLink className="text-teal-100 hover:text-teal-200" href="https://www.autodesk.com/products/inventor/" target="_blank" rel="noopener noreferrer">Inventor</OutboundLink>. Experienced with making reusable, future-proof CAD models.</p>
                 </div>
               </div>
               <div className="flex flex-col gap-12 sm:grid sm:grid-cols-2 sm:gap-8 sm:col-span-2 sm:w-auto mx-auto">
                 <div className="flex flex-col gap-2 text-center items-center gap-4">
                   <FontAwesomeIcon color="#57a19a" size="4x" icon={faCubes} />
                   <h2 className="text-xl">Analysis</h2>
-                  <p className="text-gray-300">Practical FEA experience with <a className="text-teal-100 hover:text-teal-200" href="https://www.ansys.com/products/structures/ansys-mechanical" target="_blank" rel="noopener noreferrer">Ansys Mechanical</a> and composites analysis with <a className="text-teal-100 hover:text-teal-200" href="https://www.ansys.com/training-center/course-catalog/structures/introduction-to-ansys-composite-preppost" target="_blank" rel="noopener noreferrer">Ansys ACP</a>.</p>
+                  <p className="text-gray-300">Practical FEA experience with <OutboundLink className="text-teal-100 hover:text-teal-200" href="https://www.ansys.com/products/structures/ansys-mechanical" target="_blank" rel="noopener noreferrer">Ansys Mechanical</OutboundLink> and composites analysis with <OutboundLink className="text-teal-100 hover:text-teal-200" href="https://www.ansys.com/training-center/course-catalog/structures/introduction-to-ansys-composite-preppost" target="_blank" rel="noopener noreferrer">Ansys ACP</OutboundLink>.</p>
                 </div>
                 <div className="flex flex-col gap-2 text-center items-center gap-4">
                   <FontAwesomeIcon color="#57a19a" size="4x" icon={faMicrochip} />
                   <h2 className="text-xl">Circuit Design</h2>
-                  <p className="text-gray-300">Working knowledge in <a className="text-teal-100 hover:text-teal-200" href="https://www.kicad.org/" target="_blank" rel="noopener noreferrer">KiCad</a> for PCB design.</p>
+                  <p className="text-gray-300">Working knowledge in <OutboundLink className="text-teal-100 hover:text-teal-200" href="https://www.kicad.org/" target="_blank" rel="noopener noreferrer">KiCad</OutboundLink> for PCB design.</p>
                 </div>
               </div>
             </div>
@@ -266,12 +267,12 @@ const IndexPage = () => {
                 <div className="flex flex-col gap-2 text-center items-center gap-4">
                   <FontAwesomeIcon color="#57a19a" size="4x" icon={faShapes} />
                   <h2 className="text-xl">3D Printing</h2>
-                  <p className="text-gray-300">Software experience with <a className="text-teal-100 hover:text-teal-200" href="https://formlabs.com/software/" target="_blank" rel="noopener noreferrer">Preform</a>, <a className="text-teal-100 hover:text-teal-200" href="https://www.simplify3d.com/" target="_blank" rel="noopener noreferrer">Simplify3D</a>, and <a className="text-teal-100 hover:text-teal-200" href="https://ultimaker.com/software/ultimaker-cura" target="_blank" rel="noopener noreferrer">Cura</a> slicers. Extensive experience running, maintaining, and diagnosing SLA and FDM prints.  </p>
+                  <p className="text-gray-300">Software experience with <OutboundLink className="text-teal-100 hover:text-teal-200" href="https://formlabs.com/software/" target="_blank" rel="noopener noreferrer">Preform</OutboundLink>, <OutboundLink className="text-teal-100 hover:text-teal-200" href="https://www.simplify3d.com/" target="_blank" rel="noopener noreferrer">Simplify3D</OutboundLink>, and <OutboundLink className="text-teal-100 hover:text-teal-200" href="https://ultimaker.com/software/ultimaker-cura" target="_blank" rel="noopener noreferrer">Cura</OutboundLink> slicers. Extensive experience running, maintaining, and diagnosing SLA and FDM prints.  </p>
                 </div>
                 <div className="flex flex-col gap-2 text-center items-center gap-4">
                   <FontAwesomeIcon color="#57a19a" size="4x" icon={faRulerCombined} />
                   <h2 className="text-xl">Machining</h2>
-                  <p className="text-gray-300">Skilled in DFM, GD&T, hand-programming g-code, and <a className="text-teal-100 hover:text-teal-200" href="https://www.autodesk.com/products/hsmworks/overview" target="_blank" rel="noopener noreferrer">HSMWorks</a> and <a className="text-teal-100 hover:text-teal-200" href="https://www.autodesk.com/products/fusion-360/overview" target="_blank" rel="noopener noreferrer">Fusion360</a> CAM. Practical experience with <a className="text-teal-100 hover:text-teal-200" href="http://linuxcnc.org/" target="_blank" rel="noopener noreferrer">LinuxCNC</a>, <a className="text-teal-100 hover:text-teal-200" href="https://www.machsupport.com/software/mach3/" target="_blank" rel="noopener noreferrer">Mach3</a>, and <a className="text-teal-100 hover:text-teal-200" href="https://www.haascnc.com/productivity/control.html" target="_blank" rel="noopener noreferrer">Haas Control</a> for CNC milling.</p>
+                  <p className="text-gray-300">Skilled in DFM, GD&T, hand-programming g-code, and <OutboundLink className="text-teal-100 hover:text-teal-200" href="https://www.autodesk.com/products/hsmworks/overview" target="_blank" rel="noopener noreferrer">HSMWorks</OutboundLink> and <OutboundLink className="text-teal-100 hover:text-teal-200" href="https://www.autodesk.com/products/fusion-360/overview" target="_blank" rel="noopener noreferrer">Fusion360</OutboundLink> CAM. Practical experience with <OutboundLink className="text-teal-100 hover:text-teal-200" href="http://linuxcnc.org/" target="_blank" rel="noopener noreferrer">LinuxCNC</OutboundLink>, <OutboundLink className="text-teal-100 hover:text-teal-200" href="https://www.machsupport.com/software/mach3/" target="_blank" rel="noopener noreferrer">Mach3</OutboundLink>, and <OutboundLink className="text-teal-100 hover:text-teal-200" href="https://www.haascnc.com/productivity/control.html" target="_blank" rel="noopener noreferrer">Haas Control</OutboundLink> for CNC milling.</p>
                 </div>
               </div>
               <div className="sm:col-span-2 sm:w-1/2 sm:mx-auto lg:col-span-1 lg:w-auto">

@@ -1,7 +1,6 @@
-import React, { useCallback, useRef, useState } from "react";
+import React, { useCallback, useState } from "react";
 import { Helmet } from "react-helmet";
 import HCaptcha from "@hcaptcha/react-hcaptcha";
-import ReCaptcha from "react-google-recaptcha";
 
 import Layout from "../components/layout";
 
@@ -76,7 +75,10 @@ const ContactPage = () => {
               <HCaptcha 
                 theme="dark"
                 sitekey="a1f257a6-c255-4ae2-ad47-9d14865717ff" 
-                onVerify={useCallback(() => isVerified(true))}
+                onVerify={useCallback(() => isVerified(true))}                 
+                onExpire={useCallback(() => isVerified(false))} 
+                onChalExpired={useCallback(() => isVerified(false))}
+                onError={useCallback(() => isVerified(false))}
               />
             </div>
             
