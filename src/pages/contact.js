@@ -11,6 +11,7 @@ const ContactPage = () => {
         <meta name="description" content="Contact information for Kevin Yu" />
         <meta name="robots" content="all" />
         <html lang="en" />
+        <script src="https://unpkg.com/@botpoison/browser" async></script>
       </Helmet>
 
       <Layout>
@@ -28,7 +29,7 @@ const ContactPage = () => {
             I'd be happy to provide a formal resume or technical information on request.</p>
         </section>
         <section className="max-w-screen-xl mx-auto mb-20 px-8 sm:px-20">
-          <form action="https://submit-form.com/IGF6avhh" method="POST">
+          <form action="https://submit-form.com/IGF6avhh" data-botpoison-public-key="pk_1d374382-1035-460b-93d6-08c9589d6c03" method="POST">
             <fieldset className="flex flex-col gap-8 mb-8 text-lg">
               <label className="flex flex-col gap-2" for="full-name">
                 Name

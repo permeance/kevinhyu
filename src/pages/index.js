@@ -31,7 +31,7 @@ const IndexPage = () => {
             <div className="mx-auto my-auto md:ml-0">
               <h1 className="mb-10 text-5xl text-teal-100 font-bold animate-floating">Hey, I'm Kevin.</h1>
               <h2 className="text-xl max-w-xl">
-                I'm an {age} year old mechanical engineering student at
+                I'm a {age} year old mechanical engineering student at
                 the{" "}
                 <a className="text-teal-100 hover:text-teal-200" href="https://cockrell.utexas.edu/" target="_blank" rel="noopener noreferrer">
                   University of Texas
