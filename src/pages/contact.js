@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useCallback, useRef, useState } from "react";
 import { Helmet } from "react-helmet";
+import HCaptcha from "@hcaptcha/react-hcaptcha";
+import ReCaptcha from "react-google-recaptcha";
 
 import Layout from "../components/layout";
 
 const ContactPage = () => {
+
+  const [activated, isVerified] = useState(false);
+
   return (
     <>
       <Helmet>
@@ -11,7 +16,6 @@ const ContactPage = () => {
         <meta name="description" content="Contact information for Kevin Yu" />
         <meta name="robots" content="all" />
         <html lang="en" />
-        <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
       </Helmet>
 
       <Layout>
@@ -50,7 +54,7 @@ const ContactPage = () => {
                   type="email"
                   name="email"
                   id="email-address"
-                  placeholder="email@domain.tld"
+                  placeholder="email@domain.com"
                   required
                 />
               </label>
@@ -67,21 +71,25 @@ const ContactPage = () => {
                 />
               </label>
             </fieldset>
-            <div className="mb-2 rounded h-captcha overflow-hidden w-[298px] h-[74px]" data-theme="dark" data-sitekey="a1f257a6-c255-4ae2-ad47-9d14865717ff"/>
-            
 
+            <div className="mb-4 rounded-md overflow-hidden w-[298px] h-[74px]">
+              <HCaptcha 
+                theme="dark"
+                sitekey="a1f257a6-c255-4ae2-ad47-9d14865717ff" 
+                onVerify={useCallback(() => isVerified(true))}
+              />
+            </div>
+            
             <input
               type="hidden"
               name="_redirect"
               value="https://kevinhyu.com/thanks"
-            />
-
-
-            
+            />            
             <input
-              className="py-3 px-5 bg-gray-800 tracking-wider font-bold rounded-lg cursor-pointer hover:bg-gray-700"
+              className={"py-3 px-5 bg-gray-800 tracking-wider font-bold rounded-lg hover:bg-gray-700 " + (activated ? "cursor-pointer" : "cursor-not-allowed")}
               type="submit"
               value="Submit"
+              disabled={!activated}
             />
           </form>
         </section>
