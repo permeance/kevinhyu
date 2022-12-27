@@ -5,17 +5,18 @@
   grid-template-columns:
     [left-text-left] 1fr [left-text-right]
     2% [seg-1] 3% [seg-2] 5% [seg-3] 3% [seg-4] 2%
-    [left-block-left] 3% [left-block-right]
+    [left-block-left] 3% [left-block-middle] 3% [left-block-right]
     4% [middle-line] 4%
-    [right-block-left] 3% [right-block-right]
+    [right-block-left] 3% [right-block-middle] 3% [right-block-right]
     2% [seg-5] 3% [seg-6] 5% [seg-7] 3% [seg-8] 2%
     [right-text-left] 1fr [right-text-right];
   grid-template-rows:
-    [current summer-2022 item-1] 1fr [spring-2022] 0.5fr [midfall-2021] 0.5fr
-    [fall-2021] 0.5fr [midsummer-2021] 0.5fr [summer-2021] 1fr [spring-2021] 0.5fr [midfall-2020] 0.5fr
-    [fall-2020] 0.5fr [midsummer-2020 item-2] 0.5fr [summer-2020] 1fr [spring-2020] 1fr
-    [fall-2019] 0.5fr [midsummer-2019] 0.5fr [summer-2019] 1fr [spring-2019] 1fr
-    [fall-2018 item-3] 0.5fr [midsummer-2018] 0.5fr [summer-2018] 1fr [spring-2018] 1fr
+    [current summer-2023] 1fr [spring-2023] 0.5fr [midfall-2022] 0.5fr
+    [fall-2022] 0.5fr [midsummer-2022] 0.5fr [summer-2022] 0.5fr [midspring-2022] 0.5fr [spring-2022] 0.5fr [midfall-2021] 0.5fr
+    [fall-2021] 0.5fr [midsummer-2021] 0.5fr [summer-2021] 0.5fr [midspring-2021] 0.5fr [spring-2021] 0.5fr [midfall-2020] 0.5fr
+    [fall-2020] 0.5fr [midsummer-2020] 0.5fr [summer-2020] 0.5fr [midspring-2020] 0.5fr [spring-2020] 0.5fr [midfall-2019] 0.5fr
+    [fall-2019] 0.5fr [midsummer-2019] 0.5fr [summer-2019] 0.5fr [midspring-2019] 0.5fr [spring-2019] 0.5fr [midfall-2018] 0.5fr
+    [fall-2018] 0.5fr [midsummer-2018] 0.5fr [summer-2018] 0.5fr [midspring-2018] 0.5fr [spring-2018] 0.5fr [midfall-2017] 0.5fr
     [fall-2017];
 }
 
@@ -45,7 +46,7 @@
 }
 
 .timeline-text {
-  grid-row: item-1 / item-4; /* inheriting row to not shift main grid */
+  grid-row: current / fall-2017; /* inheriting row to not shift main grid */
   height: 100%;
   width: 100%;
   align-self: start;
@@ -53,6 +54,12 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
+}
+
+.timeline-text.multi {
+  display: grid;
+  grid-template-rows: 50%;
+  gap: 0;
 }
 
 .timeline-text.left {
@@ -78,17 +85,26 @@
 .timeline-block {
   background-color: transparent;
   height: calc(100% - 0.25rem);
-  width: 100%;
+  width: calc(100% - 0.25rem);
+  margin: auto;
   border-radius: 5px;
   opacity: 0.5;
 }
 
-.timeline-block.left {
-  grid-column: left-block-left / left-block-right;
+.timeline-block.one {
+  grid-column: left-block-left / left-block-middle;
 }
 
-.timeline-block.right {
-  grid-column: right-block-left / right-block-right;
+.timeline-block.two {
+  grid-column: left-block-middle / left-block-right;
+}
+
+.timeline-block.three {
+  grid-column: right-block-left / right-block-middle;
+}
+
+.timeline-block.four {
+  grid-column: right-block-middle / right-block-right;
 }
 
 .timeline-diag {
@@ -116,6 +132,10 @@ hr.timeline-segment {
   opacity: 100%;
 }
 
+hr.timeline-segment.secondary {
+  background-color: #4fd1c5;
+}
+
 .timeline-segment.left-left {
   grid-column: seg-1 / seg-2;
 }
@@ -135,7 +155,11 @@ line.timelineBar {
   stroke-width: 1px;
 }
 
-#LHR:hover ~ #LHR {
+line.timelineBar.secondary {
+  stroke: #4fd1c5;
+}
+
+#LHR_text:hover ~ #LHR {
   opacity: 100%;
 }
 #J2:hover ~ #J2 {
@@ -144,13 +168,25 @@ line.timelineBar {
 #J1:hover ~ #J1 {
   opacity: 100%;
 }
-#TREL:hover ~ #TREL {
+#TREL_text:hover ~ #TREL {
   opacity: 100%;
 }
 #CMS:hover ~ #CMS {
   opacity: 100%;
 }
 #FTC:hover ~ #FTC {
+  opacity: 100%;
+}
+
+#Inventory:hover ~ #Inventory {
+  opacity: 100%;
+}
+
+#PMCL:hover ~ #PMCL {
+  opacity: 100%;
+}
+
+#Apptronik:hover ~ #Apptronik {
   opacity: 100%;
 }
 
@@ -173,5 +209,12 @@ line.timelineBar {
     padding: 1.5rem;
 
     border-radius: 0.75rem;
+  }
+
+
+  .timeline-text.multi {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
   }
 }

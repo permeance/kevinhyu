@@ -68,9 +68,11 @@ const IndexPage = () => {
                   <h1 className="mb-6 text-teal-100 font-bold text-5xl">Experience</h1>
                   <h2 className="text-xl">I have had the privilege of working with many extraordinary design teams.</h2>
             </div>
-            <div className="w-full h-auto md:h-[1200px] mx-auto px-6 timeline">
+            <div className="w-full h-auto md:h-[1800px] mx-auto px-6 timeline">
               <hr className="centerline" />
               {/* Year markers */}
+              <p class = "timeline-year-text" style={{"grid-row-end": "spring-2023"}}>2023</p>
+              <div class = "dot bg-teal-100 z-10" style={{"grid-row-end": "spring-2023"}} />
               <p class = "timeline-year-text" style={{"grid-row-end": "spring-2022"}}>2022</p>
               <div class = "dot bg-teal-100 z-10" style={{"grid-row-end": "spring-2022"}} />
               <p class = "timeline-year-text" style={{"grid-row-end": "spring-2021"}}>2021</p>
@@ -82,94 +84,159 @@ const IndexPage = () => {
               <p class = "timeline-year-text" style={{"grid-row-end": "spring-2018"}}>2018</p>
               <div class = "dot bg-teal-100 z-10" style={{"grid-row-end": "spring-2018"}} />
               {/* Line segments */}
+
+
               {/* LHR */}
-              <svg className="timeline-diag left" style={{"grid-row": "item-1 / spring-2022"}} >
-                  <line className= "timelineBar" x1="100%" y1="100%" x2="0" y2="0"/>
+              <svg className="timeline-diag left" style={{"grid-row": "summer-2023 / midfall-2022"}} >
+                  <line className= "timelineBar secondary" x1="100%" y1="100%" x2="0" y2="0"/>
               </svg>
-              <hr className="timeline-segment left-left" style={{"grid-row-start": "item-1"}}/>
-              <hr className="timeline-segment left-right" style={{"grid-row-start": "spring-2022"}}/>
-              {/* Jacobi Motors 2 */}
-              <svg className="timeline-diag left" style={{"grid-row": "item-2 / midsummer-2021"}} >
+              <hr className="timeline-segment left-left secondary" style={{"grid-row-start": "summer-2023"}}/>
+              <hr className="timeline-segment left-right secondary" style={{"grid-row-start": "midfall-2022"}}/>
+              <svg className="timeline-diag left" style={{"grid-row": "midsummer-2022 / spring-2022"}} >
+                  <line className= "timelineBar secondary" x1="100%" y1="100%" x2="0" y2="0"/>
+              </svg>
+              <hr className="timeline-segment left-left secondary" style={{"grid-row-start": "midsummer-2022"}}/>
+              <hr className="timeline-segment left-right secondary" style={{"grid-row-start": "spring-2022"}}/>              
+              {/* Apptronik */}
+              <svg className="timeline-diag left" style={{"grid-row": "midsummer-2021 / midsummer-2022"}} >
                   <line className= "timelineBar" x1="0" y1="100%" x2="100%" y2="0"/>
               </svg>
-              <hr className="timeline-segment left-left" style={{"grid-row-start": "item-2"}}/>
+              <hr className="timeline-segment left-left" style={{"grid-row-start": "midsummer-2021"}}/>
+              <hr className="timeline-segment left-right" style={{"grid-row-start": "midsummer-2022"}}/>
+              {/* Jacobi Motors 2 */}
+              <svg className="timeline-diag left" style={{"grid-row": "midspring-2020 / midsummer-2021"}} >
+                  <line className= "timelineBar" x1="0" y1="100%" x2="100%" y2="0"/>
+              </svg>
+              <hr className="timeline-segment left-left" style={{"grid-row-start": "midspring-2020"}}/>
               <hr className="timeline-segment left-right" style={{"grid-row-start": "midsummer-2021"}}/>
               {/* Jacobi Motors 1 */}
-              <svg className="timeline-diag left" style={{"grid-row": "item-3 / midsummer-2019"}} >
+              <svg className="timeline-diag left" style={{"grid-row": "midfall-2018 / midsummer-2019"}} >
                   <line className= "timelineBar" x1="0" y1="100%" x2="100%" y2="0"/>
               </svg>  
-              <hr className="timeline-segment left-left" style={{"grid-row-start": "item-3"}}/>
+              <hr className="timeline-segment left-left" style={{"grid-row-start": "midfall-2018"}}/>
               <hr className="timeline-segment left-right" style={{"grid-row-start": "midsummer-2019"}}/>
-              {/* TREL */}
-              <svg className="timeline-diag right" style={{"grid-row": "item-1 / spring-2022"}} >
+              {/* PMCL */}
+              <svg className="timeline-diag right" style={{"grid-row": "summer-2023 / spring-2023"}} >
                   <line className= "timelineBar" x1="0" y1="100%" x2="100%" y2="0"/>
               </svg> 
-              <hr className="timeline-segment right-right" style={{"grid-row-start": "item-1"}}/>
-              <hr className="timeline-segment right-left" style={{"grid-row-start": "spring-2022"}}/>
+              <hr className="timeline-segment right-right" style={{"grid-row-start": "summer-2023"}}/>
+              <hr className="timeline-segment right-left" style={{"grid-row-start": "spring-2023"}}/>
+              {/* TREL */}
+              <hr className="timeline-segment right-left secondary" style={{"grid-row-start": "midfall-2021"}}/>
+              <svg className="timeline-diag right" style={{"grid-row": "summer-2022 / fall-2022"}} >
+                  <line className= "timelineBar secondary" x1="100%" y1="100%" x2="0" y2="0"/>
+              </svg> 
+              <hr className="timeline-segment right-right secondary" style={{"grid-row-start": "summer-2022"}}/>
+              <hr className="timeline-segment right-left secondary" style={{"grid-row-start": "fall-2022"}}/>              
+              <svg className="timeline-diag right" style={{"grid-row": "midsummer-2021 / midfall-2021"}} >
+                  <line className= "timelineBar secondary" x1="100%" y1="100%" x2="0" y2="0"/>
+              </svg> 
+              <hr className="timeline-segment right-right secondary" style={{"grid-row-start": "midsummer-2021"}}/>
+              {/* Inventory */}
+              <svg className="timeline-diag right" style={{"grid-row": "summer-2022 / midsummer-2020"}} >
+                  <line className= "timelineBar" x1="100%" y1="100%" x2="0" y2="0"/>
+              </svg> 
+              <hr className="timeline-segment right-right" style={{"grid-row-start": "midsummer-2020"}}/>
+              <hr className="timeline-segment right-left" style={{"grid-row-start": "summer-2022"}}/>
               {/* CMS */}
-              <svg className="timeline-diag right" style={{"grid-row": "item-2 / midfall-2020"}} >
+              <svg className="timeline-diag right" style={{"grid-row": "midsummer-2019 / midfall-2020"}} >
                   <line className= "timelineBar" x1="100%" y1="100%" x2="0" y2="0"/>
               </svg>  
-              <hr className="timeline-segment right-right" style={{"grid-row-start": "item-2"}}/>
+              <hr className="timeline-segment right-right" style={{"grid-row-start": "midsummer-2019"}}/>
               <hr className="timeline-segment right-left" style={{"grid-row-start": "midfall-2020"}}/>
               {/* FTC */}
-              <svg className="timeline-diag right" style={{"grid-row": "item-3 / spring-2019"}} >
+              <svg className="timeline-diag right" style={{"grid-row": "midsummer-2018 / spring-2019"}} >
                   <line className= "timelineBar" x1="100%" y1="100%" x2="0" y2="0"/>
               </svg>
-              <hr className="timeline-segment right-right" style={{"grid-row-start": "item-3"}}/>
+              <hr className="timeline-segment right-right" style={{"grid-row-start": "midsummer-2018"}}/>
               <hr className="timeline-segment right-left" style={{"grid-row-start": "spring-2019"}}/>
               {/* Blocks and Text */}
               {/* LHR */}
-              <div id="LHR" className="timeline-text left" style={{"grid-row-start": "item-1"}}>
-                <h2 className="text-teal-100 text-xl hover:text-teal-200"><OutboundLink className="hyperlink-teal" href="https://www.longhornracing.org/electric-vehicle" target="_blank" rel="noopener noreferrer">Longhorn Racing Electric<br/>(Formula SAE)</OutboundLink></h2>
-                <i className="text-gray-400 md:hidden">Fall 2021 - Present</i>
-                <h2 className="text-xl">Battery Engineer</h2>
-                <p className="text-gray-300">Design of structural six-segment battery case and high voltage electronics enclosure. Electrical prototyping of low-voltage battery.</p>
+              <div id="LHR_text" className="timeline-text left multi" style={{"grid-row": "summer-2023 / fall-2021"}}>
+                <div>
+                  <h2 className="text-teal-100 text-xl mb-4 hover:text-teal-200"><OutboundLink className="hyperlink-teal" href="https://www.longhornracing.org/electric-vehicle" target="_blank" rel="noopener noreferrer">Longhorn Racing Electric<br/>(Formula SAE)</OutboundLink></h2>
+                  <i className="text-gray-400 md:hidden">Fall 2021 - Present</i>
+                  <h2 className="text-xl my-4">Powertrain Lead</h2>
+                  <p className="text-gray-300">Responsible for battery, cooling, drivetrain, and enclosures subsystems.</p>
+                </div>
+                <div>
+                  <h2 className="text-xl mb-4">Battery Engineer</h2>
+                  <p className="text-gray-300">Design of structural six-segment battery case and high voltage electronics enclosures.</p>
+                </div>
               </div>
-              <div id="LHR" className="timeline-block left" style={{background: "#BF5700", "grid-row": "fall-2021 / current"}} />
+              <div id="LHR" className="timeline-block two" style={{background: "#BF5700", "grid-row": "summer-2022 / current"}} />
+              <div id="LHR" className="timeline-block two" style={{background: "#BF5700", "grid-row": "fall-2021 / summer-2022"}} />
+              {/* PMCL */}
+              <div id="PMCL" className="timeline-text right" style={{"grid-row-start": "summer-2023"}}>
+                <h2 className="text-teal-100 text-xl hover:text-teal-200"><OutboundLink className="hyperlink-teal" href="http://sites.utexas.edu/pmcl/" target="_blank" rel="noopener noreferrer">Precision Mechatronics and Control Lab<br/>(PMCL)</OutboundLink></h2>
+                <i className="text-gray-400 md:hidden">Fall 2022 - Present</i>
+                <h2 className="text-xl">Undergraduate Researcher</h2>
+                <p className="text-gray-300">Research and implementation of a novel magnetically steerable cathether.</p>
+              </div>
+              <div id="PMCL" className="timeline-block four" style={{background: "#FFD700", "grid-row": "midfall-2022 / current"}} />
               {/* TREL */}
-              <div id="TREL" className="timeline-text right" style={{"grid-row-start": "item-1"}}>
-                <h2 className="text-teal-100 text-xl hover:text-teal-200"><OutboundLink className="hyperlink-teal" href="https://www.texasrocketlab.com/" target="_blank" rel="noopener noreferrer">Texas Rocket Engineering Lab<br/>(TREL)</OutboundLink></h2>
-                <i className="text-gray-400 md:hidden">Fall 2021 - Present</i>
-                <h2 className="text-xl">COPV Technical Engineer</h2>
-                <p className="text-gray-300">Responsible for helium pressure vessel analysis. 
-                  Optimizing Ansys ACP process to estimate carbon composite overwrap strain more quickly and accurately.</p>
+              <div id="TREL_text" className="timeline-text right multi" style={{"grid-row": "summer-2022 / fall-2020"}}>
+                <div>
+                  <h2 className="text-teal-100 text-xl mb-4 hover:text-teal-200"><OutboundLink className="hyperlink-teal" href="https://www.texasrocketlab.com/" target="_blank" rel="noopener noreferrer">Texas Rocket Engineering Lab<br/>(TREL)</OutboundLink></h2>
+                  <i className="text-gray-400 md:hidden">Fall 2021 - Present</i>
+                  <h2 className="text-xl my-4">System Integration Lead</h2>
+                  <p className="text-gray-300">Leading full rocket integration efforts through final design verification.</p>
+                </div>
+                <div>
+                  <h2 className="text-xl mb-4">COPV Engineer</h2>
+                  <p className="text-gray-300">Responsible for helium pressure vessel overwrap strain analysis.</p>
+                </div>
               </div>
-              <div id="TREL" className="timeline-block right" style={{background: "black", "grid-row": "fall-2021 / current"}} />
+              <div id="TREL" className="timeline-block three" style={{background: "black", "grid-row": "midspring-2022 / current"}} />
+              <div id="TREL" className="timeline-block three" style={{background: "black", "grid-row": "fall-2021 / midspring-2022"}} />
+              {/* Apptronik */}
+              <div id="Apptronik" className="timeline-text left" style={{"grid-row-start": "midsummer-2021"}}>
+                <h2 className="text-teal-100 text-xl hover:text-teal-200"><OutboundLink className="hyperlink-teal" href="https://apptronik.com/" target="_blank" rel="noopener noreferrer">Apptronik</OutboundLink></h2>
+                <i className="text-gray-400 md:hidden">Summer 2022</i>
+                <h2 className="text-xl">Mechanical Engineering Intern</h2>
+                <p className="text-gray-300">Design and fabrication of hand and foot end effectors for humanoid robot effort.</p>
+              </div>
+              <div id="Apptronik" className="timeline-block one" style={{background: "black", "grid-row": "summer-2022 / fall-2022"}} />
+              {/* Inventory */}
+              <div id="Inventory" className="timeline-text right" style={{"grid-row-start": "midsummer-2020"}}>
+                <h2 className="text-teal-100 text-xl hover:text-teal-200"><OutboundLink className="hyperlink-teal" href="https://apptronik.com/" target="_blank" rel="noopener noreferrer">Mechanical Engineering Department</OutboundLink></h2>
+                <i className="text-gray-400 md:hidden">Spring 2022 - Fall 2022</i>
+                <h2 className="text-xl">Inventory Control Technician</h2>
+                <p className="text-gray-300">Managing logistics of department item transfers, new orders, and surplusing.</p>
+              </div>
+              <div id="Inventory" className="timeline-block four" style={{background: "purple", "grid-row": "spring-2022 / midfall-2022"}} />
               {/* Jacobi Motors 2 */}
-              <div id="J2" className="timeline-text left" style={{"grid-row-start": "item-2"}}>
+              <div id="J2" className="timeline-text left" style={{"grid-row-start": "midspring-2020"}}>
                 <h2 className="text-teal-100 text-xl">Jacobi Motors</h2>
                 <i className="text-gray-400 md:hidden">Summer 2021</i>
                 <h2 className="text-xl">Mechanical Engineering Intern</h2>
-                <p className="text-gray-300">Design, manufacture, and implementation of a carbon filament winding tensioner for wrapping high-speed automotive rotors. 
-                  Fabricated custom electronics enclosures.</p>
+                <p className="text-gray-300">Design and implementation of a carbon filament winding tensioner for wrapping automotive rotors.</p>
               </div>
-              <div id="J2" className="timeline-block left" style={{background: "royalblue", "grid-row": "summer-2021 / fall-2021"}} />
+              <div id="J2" className="timeline-block two" style={{background: "royalblue", "grid-row": "summer-2021 / fall-2021"}} />
               {/* CMS */}
-              <div id="CMS" className="timeline-text right" style={{"grid-row-start": "item-2"}}>
+              <div id="CMS" className="timeline-text right" style={{"grid-row-start": "midsummer-2019"}}>
                 <h2 className="text-teal-100 text-xl hover:text-teal-200"><OutboundLink className="hyperlink-teal" href="https://www.custommedshields.com/" target="_blank" rel="noopener noreferrer">Custom Medical Shields</OutboundLink></h2>
                 <i className="text-gray-400 md:hidden">Spring 2020 - Spring 2021</i><h2 className="text-xl">Founder</h2>
-                <p className="text-gray-300">Provided custom face shields for professionals with specialized eyewear during the pandemic. 
-                  Managed design, manufacture (CNC routing), and quality control of shields distributed to customers in six states.
+                <p className="text-gray-300">Provided custom face shields for professionals with specialized eyewear during the pandemic.
                 </p>
               </div>
-              <div id="CMS" className="timeline-block right" style={{background: "white", "grid-row": "summer-2020 / summer-2021"}} />
+              <div id="CMS" className="timeline-block three" style={{background: "white", "grid-row": "summer-2020 / summer-2021"}} />
               {/* Jacobi Motors 1 */}
-              <div id="J1" className="timeline-text left" style={{"grid-row-start": "item-3"}}>
+              <div id="J1" className="timeline-text left" style={{"grid-row-start": "midfall-2018"}}>
                 <h2 className="text-teal-100 text-xl">Jacobi Motors</h2>
                 <i className="text-gray-400 md:hidden">Summer 2019</i>
                 <h2 className="text-xl">Test Engineering Intern</h2>
-                <p className="text-gray-300">Conducted dynamometer testing of a prototype variable flux memory motor. Debugged and documented vehicle telemetry data graphical user interface.</p>
+                <p className="text-gray-300">Conducted dynamometer testing of a prototype variable flux memory motor.</p>
               </div>          
-              <div id="J1" className="timeline-block left" style={{background: "royalblue", "grid-row": "summer-2019 / fall-2019"}}/>
+              <div id="J1" className="timeline-block two" style={{background: "royalblue", "grid-row": "summer-2019 / fall-2019"}}/>
               {/* FTC */}
-              <div id="FTC" className="timeline-text right" style={{"grid-row-start": "item-3"}}>
+              <div id="FTC" className="timeline-text right" style={{"grid-row-start": "midsummer-2018"}}>
                 <h2 className="text-teal-100 text-xl">FIRST Tech Challenge<br/>Team 9048: <i>The Philobots</i></h2>
                 <i className="text-gray-400 md:hidden">Fall 2017 - Spring 2020</i>
-                <h2 className="text-lg">Team Lead (2020), Subsystem Designer</h2>
-                <p className="text-gray-300">Led the technical training, team leadership, and robot systems integration on the eleven-student team. Design and manufacture of robot deposit system each year.</p>
+                <h2 className="text-lg">Team Lead</h2>
+                <p className="text-gray-300">Led the technical training, team leadership, and robot systems integration on the eleven-student team.</p>
               </div>
-              <div id="FTC" className="timeline-block right" style={{background: "red", "grid-row": "summer-2020 / fall-2017"}} />
+              <div id="FTC" className="timeline-block three" style={{background: "red", "grid-row": "summer-2020 / fall-2017"}} />
             </div>      
           </div>
         </Fade>
