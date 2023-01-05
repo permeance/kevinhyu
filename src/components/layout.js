@@ -12,7 +12,7 @@ const Layout = ({ children }) => {
   return (
     <div>
       <nav className="fixed w-full px-4 py-2 top-0 z-10 bg-midnight-100 bg-opacity-90">
-        <ul className="max-w-screen-xl mx-auto flex flex-row">
+        <ul className="max-w-screen-lg mx-auto flex flex-row">
           <li className="mx-2 my-1 hover:scale-[1.05] duration-150 ease-in-out">
             <Link to="/" aria-label="Home">
               <LogoHex width={63} height={70} />

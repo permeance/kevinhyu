@@ -19,9 +19,9 @@ const ContactPage = () => {
 
       <Layout>
         {/* prettier-ignore */}
-        <section className="max-w-screen-xl mx-auto mt-40 mb-20 px-8 sm:px-20">
-          <h1 className="my-10 font-bold text-5xl text-teal-100">Contact</h1>
-          <p className="text-lg text-white">
+        <section className="max-w-screen-lg mx-auto mt-40 mb-12 px-8 sm:px-20">
+          <h1 className="my-10 font-bold text-4xl text-teal-100">Contact</h1>
+          <p className="text-white">
             Please send me a message at{" "}
             <a className="underline hover:text-teal-100" href="mailto:khy@utexas.edu" target="_blank" rel="noopener noreferrer">khy@utexas.edu</a>
               {" "}or connect with me on{" "}
@@ -31,9 +31,9 @@ const ContactPage = () => {
             <br />
             I'd be happy to provide a formal resume or technical information on request.</p>
         </section>
-        <section className="max-w-screen-xl mx-auto mb-20 px-8 sm:px-20">
+        <section className="max-w-screen-lg mx-auto mb-20 px-8 sm:px-20">
           <form action="https://submit-form.com/IGF6avhh" method="POST">
-            <fieldset className="flex flex-col gap-8 mb-10 text-lg">
+            <fieldset className="flex flex-col gap-6 mb-10 text-lg">
               <label className="flex flex-col gap-2" for="full-name">
                 Name
                 <input

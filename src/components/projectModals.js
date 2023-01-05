@@ -46,6 +46,124 @@ class ProjectModals extends React.Component {
   render() {
     return (
       <>
+        
+        
+        <div
+          className="modalTile"
+          aria-label="battery"
+          onClick={() => this.handleOpenModal("battery")}
+          onKeyDown={this.handleClick}
+          role="button"
+          tabIndex={0}
+        >
+          <StaticImage
+            className="modalThumbnail"
+            src="../../projects/media/website-timeline.jpg"
+          />
+          <h1 className="text-lg text-teal-100">
+            Vehicle Enclosures
+          </h1>
+          <i className="text-gray-400">Fall 2021 - Spring 2022</i>
+          <p className="text-gray-300">
+            High voltage enclosures for electric FSAE racecar.
+          </p>
+        </div>
+
+
+
+
+        <Modal
+          className="modalPortal"
+          isOpen={this.state.showModal && this.state.activeModal === "battery"}
+          onRequestClose={this.handleCloseModal}
+          contentLabel="battery modal"
+          ariaHideApp={false}
+        >
+          <div
+            className="modalExit"
+            onClick={this.handleCloseModal}
+            onKeyDown={this.handleClick}
+            role="button"
+            tabIndex={0}
+          >
+            <FontAwesomeIcon
+              size="5x"
+              icon={faTimes}
+              className="modalExitIcon"
+            />
+          </div>
+          <div className="modalContent">
+            <h1 className="text-4xl text-teal-100 text-center">Vehicle Enclosures</h1>
+            <h2 className="text-lg text-gray-300 text-center">
+              High voltage enclosures for electric FSAE racecar.
+            </h2>
+            <p>
+              
+            </p>
+          </div>
+        </Modal>
+
+
+        <div
+          className="modalTile"
+          aria-label="COPV"
+          onClick={() => this.handleOpenModal("COPV")}
+          onKeyDown={this.handleClick}
+          role="button"
+          tabIndex={0}
+        >
+          <StaticImage
+            className="modalThumbnail"
+            src="../../projects/media/website-timeline.jpg"
+          />
+          <h1 className="text-lg text-teal-100">
+            Composite Overwrapped Pressure Vessel
+          </h1>
+          <i className="text-gray-400">Fall 2021</i>
+          <p className="text-gray-300">
+            High-pressure simulation and tank analysis for liquid bipropellant rocket.
+          </p>
+        </div>
+
+
+
+
+        <Modal
+          className="modalPortal"
+          isOpen={this.state.showModal && this.state.activeModal === "COPV"}
+          onRequestClose={this.handleCloseModal}
+          contentLabel="COPV modal"
+          ariaHideApp={false}
+        >
+          <div
+            className="modalExit"
+            onClick={this.handleCloseModal}
+            onKeyDown={this.handleClick}
+            role="button"
+            tabIndex={0}
+          >
+            <FontAwesomeIcon
+              size="5x"
+              icon={faTimes}
+              className="modalExitIcon"
+            />
+          </div>
+          <div className="modalContent">
+            <h1 className="text-4xl text-teal-100 text-center">Composite Overwrapped Pressure Vessel</h1>
+            <h2 className="text-lg text-gray-300 text-center">
+              High-pressure simulation and tank analysis for liquid bipropellant rocket.
+            </h2>
+            <p>
+
+            </p>
+          </div>
+        </Modal>
+
+
+
+
+
+
         <div
           className="modalTile"
           aria-label="website"

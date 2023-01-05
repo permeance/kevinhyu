@@ -16,10 +16,10 @@ const ProjectsPage = () => {
         <html lang="en" />
       </Helmet>
 
-      <div className="max-w-screen-xl m-auto">
+      <div className="max-w-screen-lg m-auto">
         <section className="mt-40 mb-40">
-          <h1 className="m-10 text-center text-teal-100 font-bold text-5xl">Projects</h1>
-          <h2 className="mx-10 text-center text-white text-2xl">
+          <h1 className="m-10 text-center text-teal-100 font-bold text-4xl">Projects</h1>
+          <h2 className="mx-10 text-center text-white text-xl">
             Here's a brief look at some of the recent projects I've worked on! Please
             reach out for specific details.
           </h2>
