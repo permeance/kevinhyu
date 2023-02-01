@@ -46,7 +46,7 @@ class ProjectModals extends React.Component {
   render() {
     return (
       <>
-        
+        {/*
         
         <div
           className="modalTile"
@@ -160,7 +160,7 @@ class ProjectModals extends React.Component {
         </Modal>
 
 
-
+    */}
 
 
 
